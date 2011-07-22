@@ -318,7 +318,9 @@ void parse(int argc, char* argv[])
 
            mysql_init(&mysql);
 
-           mysql_options(&mysql, MYSQL_READ_DEFAULT_FILE,  "/opt/lampp/etc/my.cnf");
+           //mysql_options(&mysql, MYSQL_READ_DEFAULT_FILE,  "/opt/lampp/etc/my.cnf");
+           mysql_options(&mysql, MYSQL_OPT_SSL_VERIFY_SERVER_CERT, "/etc/ssl/certs/ComodoIntermediate.pem");
+
 
            connection = mysql_real_connect(&mysql,opt->getValue("sql-host"),opt->getValue("sql-user"),opt->getValue("sql-pw"),opt->getValue("sql-database"),0,0,0);
 
