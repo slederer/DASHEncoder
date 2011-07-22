@@ -16,7 +16,6 @@ class x264Encoder : public AbstractVideoEncoder
 
         std::string         preset;
         std::string         profile;
-
     public:
 
         std::string     encode              (std::string input);
@@ -26,6 +25,7 @@ class x264Encoder : public AbstractVideoEncoder
         std::string     getPreset           ();
         void            setProfile          (std::string pro);
         std::string     getProfile          ();
+
 
 };
 

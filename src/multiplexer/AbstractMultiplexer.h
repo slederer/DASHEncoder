@@ -28,6 +28,7 @@ class AbstractMultiplexer : public IMultiplexer
 
         virtual     std::string multiplex       (std::string input) = 0;
         virtual     std::string multiplex       () = 0;
+        virtual     std::string unSegment       (std::string input) = 0;
 
         void            setInput                (std::string in);
         std::string     getInput                ();
@@ -43,6 +44,7 @@ class AbstractMultiplexer : public IMultiplexer
         std::string     getOutputDir            ();
         void            setAudioFile            (std::string file);
         std::string     getAudioFile            ();
+
 
 };
 #endif /* ABSTRACTMULTIPLEXER_H_ */

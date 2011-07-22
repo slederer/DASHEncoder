@@ -83,3 +83,81 @@ std::string     MP4BoxMultiplexer::multiplex                  (){
     mpd.append("_dash.mpd");
     return mpd;
 }
+
+std::string     MP4BoxMultiplexer::unSegment                  (std::string act_rep){
+    std::string mpd = "";
+    std::string byterange = "";
+    int actpos = 0;
+    int size = 0;
+    std::string path = "";
+    std::string mainfile = "";
+    std::string catcmd = "";
+
+    int s_pos    = act_rep.find("<InitialisationSegmentURL");
+
+    int path_start = act_rep.find("sourceURL=\"", s_pos, 11 )+11;
+    path = act_rep.substr(path_start, act_rep.find("\"", path_start, 1 )-path_start);
+    size = this->fileSize(path.c_str());
+
+    mainfile = path;
+    mainfile.replace(mainfile.find_last_of("."), 1, "NonSeg.");
+
+    byterange = " range=\"";
+    byterange.append(DASHHelper::itos(actpos));
+    byterange.append("-");
+    byterange.append(DASHHelper::itos(actpos+size));
+    byterange.append("\" />");
+    actpos += size+1;
+
+    act_rep.replace(act_rep.find("/>", s_pos),2,byterange);
+    act_rep.replace(act_rep.find(path), path.length(), mainfile);
+
+    s_pos +=26;
+
+    catcmd = "cat ";
+    catcmd.append(path);
+    catcmd.append(" > ");
+    catcmd.append(mainfile);
+
+    system(catcmd.c_str());
+
+    while (act_rep.find("<Url", s_pos) != std::string::npos)
+    {
+        s_pos       = act_rep.find("<Url", s_pos);
+
+        path_start  = act_rep.find("sourceURL=\"", s_pos, 11 )+11;
+        path        = act_rep.substr(path_start, act_rep.find("\"", path_start, 1 )-path_start);
+        size        = this->fileSize(path.c_str());
+
+        byterange = " range=\"";
+        byterange.append(DASHHelper::itos(actpos));
+        byterange.append("-");
+        byterange.append(DASHHelper::itos(actpos+size));
+        byterange.append("\" />");
+        actpos += size+1;
+
+        catcmd = "cat ";
+        catcmd.append(path);
+        catcmd.append(" >> ");
+        catcmd.append(mainfile);
+
+        system(catcmd.c_str());
+
+        act_rep.replace(act_rep.find("/>", s_pos),2,byterange);
+        act_rep.replace(act_rep.find(path), path.length(), mainfile);
+        s_pos +=5;
+    }
+    return act_rep;
+}
+
+
+int             MP4BoxMultiplexer::fileSize(const char* sFileName)
+{
+    std::ifstream f;
+    f.open(sFileName, std::ios_base::binary | std::ios_base::in);
+    if (!f.good() || f.eof() || !f.is_open()) { return 0; }
+    f.seekg(0, std::ios_base::beg);
+    std::ifstream::pos_type begin_pos = f.tellg();
+    f.seekg(0, std::ios_base::end);
+    return static_cast<int>(f.tellg() - begin_pos);
+}

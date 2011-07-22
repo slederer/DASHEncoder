@@ -5,6 +5,8 @@ AbstractVideoEncoder::AbstractVideoEncoder()
 {
     this->width = 0;
     this->height = 0;
+    this->passes = 1;
+    this->isConstFS = false;
 }
 
 AbstractVideoEncoder::~AbstractVideoEncoder()
@@ -52,4 +54,16 @@ void            AbstractVideoEncoder::setHeight           (int h){
 }
 int             AbstractVideoEncoder::getHeight           (){
     return this->height;
+}
+void            AbstractVideoEncoder::setConstFileSize    (bool c){
+    isConstFS = c;
+}
+bool            AbstractVideoEncoder::isConstFileSize     (){
+    return isConstFS;
+}
+void            AbstractVideoEncoder::setPasses           (int p){
+    this->passes = p;
+}
+int             AbstractVideoEncoder::getPasses           (){
+    return this->passes;
 }

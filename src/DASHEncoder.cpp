@@ -10,6 +10,7 @@
 #include <iostream>
 #include <fstream>
 #include <map>
+#include <mysql/mysql.h>
 
 void parse(int argc, char* argv[]);
 void setHelp(AnyOption*);
@@ -56,11 +57,19 @@ void parse(int argc, char* argv[])
     AbstractAudioEncoder* a = (AbstractAudioEncoder*)encoder_factory->getEncoder(opt, getEncoder(opt->getValue("audio-encoder")));
 
     MPDGenerator* mpdgen = new MPDGenerator();
-
+    MPDGenerator* mpdgenNonSeg = new MPDGenerator();
     MP4BoxMultiplexer* m = new MP4BoxMultiplexer();
 
     std::map<int, std::string> audio_files;
     std::map<int, int> av_mux_mapping;
+
+    MYSQL_RES *result;
+
+    MYSQL_ROW row;
+
+    MYSQL *connection, mysql;
+
+    int state;
 
     m->setFragSize(atoi(opt->getValue("fragment-size")));
     m->setRAPAligned(opt->getFlag("rap-aligned"));
@@ -78,16 +87,32 @@ void parse(int argc, char* argv[])
     std::string finalMPDfoot = "";
     std::string video_length;
 
+    std::string baseURL = "";
+
     std::string exp_name = opt->getValue("dest-directory");
     exp_name.append(opt->getValue("mpd-name"));
 
+    std::string exp_nameNonSeg = opt->getValue("dest-directory");
+    exp_nameNonSeg.append("NonSeg");
+    exp_nameNonSeg.append(opt->getValue("mpd-name"));
+
     ofstream mpdexportfile;
     mpdexportfile.open(exp_name.c_str());
+
+    ofstream mpdexportfileNonSeg;
+    mpdexportfileNonSeg.open(exp_nameNonSeg.c_str());
+
 
     std::string act = "";
     std::string mpd_temp;
     std::string act_line;
     std::string act_rep;
+
+    if(opt->getFlag("set-base-url")){
+       baseURL = "<BaseURL>";
+       baseURL.append(opt->getValue("url-root"));
+       baseURL.append("</BaseURL>");
+    }
 
     /************* AUDIO/VIDEO MULTIPLEXING INFORMATION ******************************/
 
@@ -231,6 +256,8 @@ void parse(int argc, char* argv[])
     strcpy(c1, bitrates.c_str());
     char* pch = strtok(c1, "|");
 
+
+
     while (pch != NULL)
     {
         /************ ENCODING *****************************/
@@ -249,6 +276,7 @@ void parse(int argc, char* argv[])
         }
 
         h264file = e->encode();
+
 
         /************ FOLDER CREATION **********************/
 
@@ -284,6 +312,69 @@ void parse(int argc, char* argv[])
             system(folder.c_str());
         }
 
+        /************ STORE STATISTICS *********************/
+
+        if(opt->getFlag("store-psnr")){
+
+           mysql_init(&mysql);
+
+           mysql_options(&mysql, MYSQL_READ_DEFAULT_FILE,  "/opt/lampp/etc/my.cnf");
+
+           connection = mysql_real_connect(&mysql,opt->getValue("sql-host"),opt->getValue("sql-user"),opt->getValue("sql-pw"),opt->getValue("sql-database"),0,0,0);
+
+           if (connection == NULL)
+           {
+               std::cout << "MySQL Error: " << mysql_error(&mysql) << "\n";
+               return ;
+           }
+           infile.open("out.txt", ifstream::in);
+
+           act_rep = "";
+           std::string query;
+           int posStart;
+           int posEnd;
+
+           if (infile.is_open())
+           {
+               while (infile.good())
+               {
+                   getline(infile, act_line);
+                   if(act_line.find("x264 [debug]: frame=") != std::string::npos){
+                       //std::cout << act_line << "\n";
+                       query = "INSERT INTO frames (framenr, type, ypsnr,upsnr, vpsnr, representation) Values (";
+
+                       posStart = act_line.find("frame=")+6;
+                       query.append(act_line.substr(posStart,  act_line.find("QP")-posStart));
+                       query.append(", \"");
+
+                       query.append(act_line.substr(act_line.find("Slice:")+6, 1));
+                       query.append("\", ");
+
+                       posStart = act_line.find("Y:")+2;
+                       query.append(act_line.substr(posStart,  act_line.find("U:")-posStart));
+                       query.append(", ");
+
+                       posStart = act_line.find("U:")+2;
+                       query.append(act_line.substr(posStart,  act_line.find("V:")-posStart));
+                       query.append(", ");
+
+                       query.append(act_line.substr(act_line.find("V:")+2));
+                       query.append(", \"");
+
+                       query.append(foldername);
+                       query.append("\")");
+                       //std::cout << "\n" << query;
+                       mysql_query(connection, query.c_str());
+                   }
+               }
+               std::cout << "PSNR data stored in MySQL database!";
+               infile.close();
+           }
+           else
+               cout << "Error: Unable to open Log file!";
+        }
+
+
         /************ MULTIPLEXING & SEGMENTATION **************/
 
         h264new = opt->getValue("dest-directory");
@@ -311,6 +402,8 @@ void parse(int argc, char* argv[])
         std::string mpd = m->multiplex(h264new);
         mpds.push_back(mpd);
 
+
+
         /************ MPD READ **********************/
 
         mpd_temp = opt->getValue("dest-directory");
@@ -337,10 +430,45 @@ void parse(int argc, char* argv[])
             cout << "Error: Unable to open MPD file!";
 
         act_rep = act_rep.substr(act_rep.find("<Representation"), act_rep.find("</Representation>") - act_rep.find("<Representation") + 17);
+
+
+
+        if(opt->getFlag("add-non-segmented")){
+            /************ GENERATE UNSEGMENTED FILE *****/
+            std::string tmp_rep = act_rep;
+            tmp_rep = m->unSegment(tmp_rep);
+
+            while (tmp_rep.find(m->getOutputDir()) != std::string::npos)
+            {
+                if(opt->getFlag("set-base-url"))
+                    tmp_rep.replace(tmp_rep.find(m->getOutputDir()), m->getOutputDir().size(), "");
+                else
+                    tmp_rep.replace(tmp_rep.find(m->getOutputDir()), m->getOutputDir().size(), opt->getValue("url-root"));
+            }
+
+            if(opt->getFlag("set-base-url")){
+                std::string tmp_base = baseURL;
+                tmp_base.append("\n<Init");
+                tmp_rep.replace(tmp_rep.find("<Init"), 5, tmp_base);
+            }
+            mpdgenNonSeg->appendMPDbody(tmp_rep);
+            mpdgenNonSeg->appendMPDbody("\n");
+        }
+
         while (act_rep.find(m->getOutputDir()) != std::string::npos)
         {
-            act_rep.replace(act_rep.find(m->getOutputDir()), m->getOutputDir().size(), opt->getValue("url-root"));
+            if(opt->getFlag("set-base-url"))
+                act_rep.replace(act_rep.find(m->getOutputDir()), m->getOutputDir().size(), "");
+            else
+                act_rep.replace(act_rep.find(m->getOutputDir()), m->getOutputDir().size(), opt->getValue("url-root"));
         }
+
+        if(opt->getFlag("set-base-url")){
+            std::string tmp_base = baseURL;
+            tmp_base.append("\n<Init");
+            act_rep.replace(act_rep.find("<Init"), 5, tmp_base);
+        }
+
         std::cout << "\nDone...\n";
 
         mpdgen->appendMPDbody(act_rep);
@@ -355,9 +483,12 @@ void parse(int argc, char* argv[])
     std::cout << "\nWriting final MPD...\n";
 
     mpdexportfile << mpdgen->getMPD();
-
     mpdexportfile.close();
 
+    if(opt->getFlag("add-non-segmented")){
+        mpdexportfileNonSeg << mpdgenNonSeg->getMPD();
+        mpdexportfileNonSeg.close();
+    }
     std::cout << "\nFINISHED\n";
 
     delete opt;
@@ -380,8 +511,8 @@ void setOptions(AnyOption* opt)
 {
     opt->setFlag("help", 'h'); /* a flag (takes no argument), supporting long and short form */
     opt->setOption("input", 'i'); /* an option (takes an argument), supporting long and short form */
-    opt->setOption("x264pass1", 'x'); /* an option (takes an argument), supporting only long form */
-    opt->setOption("x264pass2", 'X');
+    opt->setOption("pass1", 'x'); /* an option (takes an argument), supporting only long form */
+    opt->setOption("pass2", 'X');
     opt->setOption("bitrate", 'b');
     opt->setOption("statistics", 's');
     opt->setOption("gop", 'g');
@@ -390,6 +521,7 @@ void setOptions(AnyOption* opt)
     opt->setOption("preset", 'P');
     opt->setOption("fragment-size", 'f');
     opt->setFlag("rap-aligned", 'r');
+    opt->setFlag("store-psnr", 'o');
     opt->setOption("segment-name", 'N');
     opt->setOption("segment-size", 'S');
     opt->setOption("folder-prefix", 'F');
@@ -398,11 +530,20 @@ void setOptions(AnyOption* opt)
     opt->setOption("url-root", 'u');
     opt->setOption("audio-quality", 'a');
     opt->setOption("audio-input", 'I');
-    opt->setOption("audio-codec", 'c');
+    opt->setOption("audio-codec", 'C');
     opt->setOption("mux-combi", 'M');
     opt->setOption("video-encoder", 'V');
     opt->setOption("audio-encoder", 'A');
     opt->setOption("multiplexer", 'R');
+    opt->setOption("const-filesize", 'K');
+    opt->setOption("passes", 'k');
+    opt->setOption("sql-host", 'y');
+    opt->setOption("sql-user", 'z');
+    opt->setOption("sql-pw", 'Z');
+    opt->setOption("sql-database", 'Y');
+    opt->setFlag("add-non-segmented", 'D');
+    opt->setFlag("set-base-url", 'J');
+
 }
 
 IEncoder::EncoderType getEncoder(std::string e){

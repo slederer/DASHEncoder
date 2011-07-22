@@ -8,6 +8,8 @@
 #ifndef MP4BOXMULTIPLEXER_H_
 #define MP4BOXMULTIPLEXER_H_
 
+#include <fstream>
+
 #include "AbstractMultiplexer.h"
 
 
@@ -19,6 +21,8 @@ class MP4BoxMultiplexer : public AbstractMultiplexer
 
         std::string     multiplex                  (std::string input);
         std::string     multiplex                  ();
+        std::string     unSegment                  (std::string input);
+        int             fileSize                   (const char* sFileName);
 };
 
 #endif /* MP4BOXMULTIPLEXER_H_ */

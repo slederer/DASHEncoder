@@ -26,9 +26,16 @@ IEncoder* EncoderFactory::getEncoder (AnyOption* opt, IEncoder::EncoderType type
         e->setPreset(opt->getValue("preset"));
         e->setSceneCut(atoi(opt->getValue("scenecut")));
         e->setGOPSize(atoi(opt->getValue("gop")));
+        e->setPasses(atoi(opt->getValue("passes")));
         e->setStatisticFile(opt->getValue("statistics"));
         e->setInput(opt->getValue("input"));
         e->setOutputDir(opt->getValue("dest-directory"));
+        e->setSpecFirstPassOpt(opt->getValue("pass1"));
+        e->setSpecSecPassOpt(opt->getValue("pass2"));
+        if(atoi(opt->getValue("const-filesize")) ==1)
+            e->setConstFileSize(true);
+        else
+            e->setConstFileSize(false);
 
         retval = e;
 

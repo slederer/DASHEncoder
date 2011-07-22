@@ -23,6 +23,8 @@ class AbstractVideoEncoder : public AbstractEncoder
         std::string         secondPassOpt;
         int                 width;
         int                 height;
+        bool                isConstFS;
+        int                 passes;
 
     public:
         AbstractVideoEncoder();
@@ -46,5 +48,10 @@ class AbstractVideoEncoder : public AbstractEncoder
         int             getWidth            ();
         void            setHeight           (int h);
         int             getHeight           ();
+        void            setConstFileSize    (bool c);
+        bool            isConstFileSize     ();
+        void            setPasses           (int p);
+        int             getPasses           ();
+
 };
 #endif /* ABSTRACTVIDEOENCODER_H_ */
