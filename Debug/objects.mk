@@ -4,4 +4,4 @@
 
 USER_OBJS :=
 
-LIBS := -lxml2
+LIBS :=
