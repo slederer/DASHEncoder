@@ -10,7 +10,7 @@
 #include <iostream>
 #include <fstream>
 #include <map>
-#include <mysql/mysql.h>
+#include "mysql/mysql.h"
 
 void parse(int argc, char* argv[]);
 void setHelp(AnyOption*);
