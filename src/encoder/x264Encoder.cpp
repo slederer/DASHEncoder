@@ -78,7 +78,23 @@ std::string     x264Encoder::encode              (){
         x264.append("kbit.h264 ");
     }
 
-    x264.append(this->input);
+
+    if(pipe)
+    {
+       std::string ffmpeg = "ffmpeg -i ";
+       ffmpeg.append(this->input);
+       ffmpeg.append(" ");
+       ffmpeg.append(ffmpegopt);
+       ffmpeg.append(" - | ");
+       ffmpeg.append(x264);
+       x264 = ffmpeg;
+       x264.append("--input-res ");
+       x264.append(inputres);
+       x264.append(" -");
+    }
+    else
+        x264.append(this->input);
+
     x264.append(" >out.txt 2>&1 ");
     std::cout << "x264: " <<x264 << "\n";
     system(x264.c_str());
@@ -172,5 +188,20 @@ void            x264Encoder::setProfile          (std::string pro){
 }
 std::string     x264Encoder::getProfile          (){
     return this->profile;
+}
+void            x264Encoder::setFFMpegOpt        (std::string opt){
+    this->ffmpegopt = opt;
+}
+std::string     x264Encoder::getFFMpegOpt        (){
+    return this->ffmpegopt;
+}
+void            x264Encoder::usePipe             (bool b){
+    this->pipe = b;
+}
+void            x264Encoder::setInputRes         (std::string opt){
+    this->inputres = opt;
+}
+std::string     x264Encoder::getInputRes         (){
+    return this->inputres;
 }
 

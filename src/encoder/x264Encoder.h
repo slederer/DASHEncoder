@@ -16,6 +16,9 @@ class x264Encoder : public AbstractVideoEncoder
 
         std::string         preset;
         std::string         profile;
+        bool                pipe;
+        std::string         ffmpegopt;
+        std::string         inputres;
     public:
 
         std::string     encode              (std::string input);
@@ -25,6 +28,11 @@ class x264Encoder : public AbstractVideoEncoder
         std::string     getPreset           ();
         void            setProfile          (std::string pro);
         std::string     getProfile          ();
+        void            setFFMpegOpt        (std::string opt);
+        std::string     getFFMpegOpt        ();
+        void            setInputRes         (std::string opt);
+        std::string     getInputRes         ();
+        void            usePipe             (bool b);
 
 
 };

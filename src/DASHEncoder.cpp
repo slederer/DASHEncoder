@@ -318,9 +318,9 @@ void parse(int argc, char* argv[])
 
            mysql_init(&mysql);
 
-           //mysql_options(&mysql, MYSQL_READ_DEFAULT_FILE,  "/opt/lampp/etc/my.cnf");
-           mysql_options(&mysql, MYSQL_OPT_SSL_VERIFY_SERVER_CERT, "/etc/ssl/certs/ComodoIntermediate.pem");
-
+           mysql_options(&mysql, MYSQL_READ_DEFAULT_FILE,  "/opt/lampp/etc/my.cnf");
+           //mysql_options(&mysql, MYSQL_OPT_SSL_VERIFY_SERVER_CERT, "/etc/ssl/certs/ComodoIntermediate.pem");
+           //mysql_ssl_set(&mysql, NULL, NULL, "/etc/ssl/certs/ComodoIntermediate.pem",NULL, NULL);
 
            connection = mysql_real_connect(&mysql,opt->getValue("sql-host"),opt->getValue("sql-user"),opt->getValue("sql-pw"),opt->getValue("sql-database"),0,0,0);
 
@@ -545,7 +545,9 @@ void setOptions(AnyOption* opt)
     opt->setOption("sql-database", 'Y');
     opt->setFlag("add-non-segmented", 'D');
     opt->setFlag("set-base-url", 'J');
-
+    opt->setFlag("use-ffmpeg-pipe", 'G');
+    opt->setOption("ffmpeg-opt", 'g');
+    opt->setOption("input-res", 'I');
 }
 
 IEncoder::EncoderType getEncoder(std::string e){

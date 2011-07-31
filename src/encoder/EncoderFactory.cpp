@@ -29,6 +29,7 @@ IEncoder* EncoderFactory::getEncoder (AnyOption* opt, IEncoder::EncoderType type
         e->setPasses(atoi(opt->getValue("passes")));
         e->setStatisticFile(opt->getValue("statistics"));
         e->setInput(opt->getValue("input"));
+        e->setInputRes(opt->getValue("input-res"));
         e->setOutputDir(opt->getValue("dest-directory"));
         e->setSpecFirstPassOpt(opt->getValue("pass1"));
         e->setSpecSecPassOpt(opt->getValue("pass2"));
@@ -36,6 +37,13 @@ IEncoder* EncoderFactory::getEncoder (AnyOption* opt, IEncoder::EncoderType type
             e->setConstFileSize(true);
         else
             e->setConstFileSize(false);
+
+        if(opt->getFlag("use-ffmpeg-pipe")){
+            e->setFFMpegOpt(opt->getValue("ffmpeg-opt"));
+            e->usePipe(true);
+        }
+        else
+            e->usePipe(false);
 
         retval = e;
 
