@@ -16,6 +16,7 @@ void parse(int argc, char* argv[]);
 void setHelp(AnyOption*);
 void setOptions(AnyOption*);
 IEncoder::EncoderType getEncoder(std::string);
+int convertMPD(std::string input, std::string output, std::string duration, std::string baseurl, std::string minbuffer, std::string segduration);
 
 AnyOption *opt;
 
@@ -85,7 +86,7 @@ void parse(int argc, char* argv[])
     std::string finalMPDhead = "";
     std::string finalMPDbody = "";
     std::string finalMPDfoot = "";
-    std::string video_length;
+    std::string video_length = "";
 
     std::string baseURL = "";
 
@@ -482,17 +483,29 @@ void parse(int argc, char* argv[])
         pch = strtok(NULL, "|");
     }
 
+    /* MPD Gneration */
     std::cout << "\nWriting final MPD...\n";
 
     mpdexportfile << mpdgen->getMPD();
     mpdexportfile.close();
 
+    if(opt->getFlag("transform-mpd")){
+       std::cout << "\nConverting MPDs to actual standard ...";
+       convertMPD(exp_name.c_str(), opt->getValue("mpdActStandardPostfix"),  opt->getValue("duration"), opt->getValue("url-root"), opt->getValue("minBufferTime"), opt->getValue("segDuration"));
+    }
+
+    /* Non-Segmented MPD Gneration */
     if(opt->getFlag("add-non-segmented")){
         mpdexportfileNonSeg << mpdgenNonSeg->getMPD();
         mpdexportfileNonSeg.close();
+
+        /* Run MPD Converion */
+        if(opt->getFlag("transform-mpd")){
+            std::cout << "\nConverting MPDs to actual standard ...";
+            convertMPD(exp_nameNonSeg.c_str(), opt->getValue("mpdActStandardPostfix"),  opt->getValue("duration"), opt->getValue("url-root"),opt->getValue("minBufferTime"), opt->getValue("segDuration"));
+        }
     }
     std::cout << "\nFINISHED\n";
-
     delete opt;
 }
 
@@ -501,19 +514,55 @@ void setHelp(AnyOption* opt)
     opt->addUsage("");
     opt->addUsage("Usage: ");
     opt->addUsage("");
-    opt->addUsage(" -h  --help          Print help ");
-    opt->addUsage(" -i  --input         YUV input file ");
-    opt->addUsage(" -x  --x264          x264 Parameter ");
-    opt->addUsage(" -s  --scenecut      use Scene cut ");
-    opt->addUsage(" -c              convert Image ");
-    opt->addUsage("     --name image.jpg    Image Name ");
+    opt->addUsage(" -h  --help              Print help ");
+    opt->addUsage(" -i  --input             Input file");
+    opt->addUsage(" -x  --pass1             Additional Options: 1st pass video encoding");
+    opt->addUsage(" -X  --pass2             Additional Options: 2nd pass video encoding");
+    opt->addUsage(" -b  --bitrate           Video bitrates (exmaple: see config file)");
+    opt->addUsage(" -s  --statistics        Statistic file for multi pass video encoding");
+    opt->addUsage(" -g  --gop               GOP Size");
+    opt->addUsage(" -c  --scenecut          Scenecut sensitivity");
+    opt->addUsage(" -p  --profile           h.264 profile");
+    opt->addUsage(" -P  --preset            x264 preset");
+    opt->addUsage(" -f  --fragment-size     Fragment size in seconds");
+    opt->addUsage(" -r  --rap-aligned       Muliplexing at GOP boundaries");
+    opt->addUsage(" -o  --store-psnr        Store PSNR statistics to database");
+    opt->addUsage(" -y  --sql-host          MySQL host");
+    opt->addUsage(" -z  --sql-user          MySQL user");
+    opt->addUsage(" -Z  --sql-pw            MySQL password");
+    opt->addUsage(" -Y  --sql-database      MySQL database");
+    opt->addUsage(" -N  --segment-name      DASH segment name");
+    opt->addUsage(" -S  --segment-size      DASH segment size in seconds");
+    opt->addUsage(" -F  --folder-prefix     Represenation folder prefix");
+    opt->addUsage(" -d  --dest-directory    Destination directory");
+    opt->addUsage(" -m  --mpd-name          MPD name");
+    opt->addUsage(" -u  --url-root          Base url");
+    opt->addUsage(" -a  --audio-quality     Audio qualities (see config file)");
+    opt->addUsage(" -I  --audio-input       Audio source");
+    opt->addUsage(" -C  --audio-codec       Audio codec");
+    opt->addUsage(" -M  --mux-combi         A/V muxing combinations");
+    opt->addUsage(" -V  --video-encoder     Video encoder");
+    opt->addUsage(" -A  --audio-encoder     Audio encoder");
+    opt->addUsage(" -R  --multiplexer       Multiplexing tool");
+    opt->addUsage(" -K  --const-filesize    Encode using constant filesize");
+    opt->addUsage(" -k  --passes            Encoding passes");
+    opt->addUsage(" -D  --add-non-segmented Generate also non-segmented version");
+    opt->addUsage(" -J  --set-base-url      Use the base url");
+    opt->addUsage(" -G  --use-ffmpeg-pipe   FFMPEG input conversion pipe");
+    opt->addUsage(" -g  --ffmpeg-opt        Additional FFMPEG options");
+    opt->addUsage(" -I  --input-res         Resolution of input video");
+    opt->addUsage(" -t  --transform-mpd     Transform MPD to act standard");
+    opt->addUsage(" -T  --duration          Content duration for MPD");
+    opt->addUsage(" -a  --mpdActStandardPostfix ");
+    opt->addUsage(" -B  --minBufferTime     Minimum Buffer in MPD");
+    opt->addUsage(" -e  --segDuration       Segment Duration for MPD");
     opt->addUsage("");
 }
 void setOptions(AnyOption* opt)
 {
-    opt->setFlag("help", 'h'); /* a flag (takes no argument), supporting long and short form */
-    opt->setOption("input", 'i'); /* an option (takes an argument), supporting long and short form */
-    opt->setOption("pass1", 'x'); /* an option (takes an argument), supporting only long form */
+    opt->setFlag("help", 'h');
+    opt->setOption("input", 'i');
+    opt->setOption("pass1", 'x');
     opt->setOption("pass2", 'X');
     opt->setOption("bitrate", 'b');
     opt->setOption("statistics", 's');
@@ -548,6 +597,11 @@ void setOptions(AnyOption* opt)
     opt->setFlag("use-ffmpeg-pipe", 'G');
     opt->setOption("ffmpeg-opt", 'g');
     opt->setOption("input-res", 'I');
+    opt->setFlag("transform-mpd", 't');
+    opt->setOption("duration", 'T');
+    opt->setOption("mpdActStandardPostfix", 'a');
+    opt->setOption("minBufferTime", 'B');
+    opt->setOption("segDuration", 'e');
 }
 
 IEncoder::EncoderType getEncoder(std::string e){
@@ -559,4 +613,156 @@ IEncoder::EncoderType getEncoder(std::string e){
         return IEncoder::x264;
 
     return IEncoder::x264;
+}
+int convertMPD(std::string input, std::string output, std::string duration, std::string baseurl, std::string minbuffer, std::string segduration){
+    std::cout << "\nConvert the to act DASH standard: " << input << "\nto: " << output << "\n";
+
+    string mpd_temp = "", act_line = "", temp;
+    string filename = input;
+
+    temp = ".mpd";
+    filename.replace(filename.find(temp), temp.length(),output);
+
+    ofstream mpdexportfile;
+    mpdexportfile.open(filename.c_str());
+
+
+    ifstream infile;
+
+    infile.open(input.c_str(), ifstream::in);
+
+
+
+    if (infile.is_open())
+    {
+        while (infile.good())
+        {
+            getline(infile, act_line);
+            mpd_temp.append(act_line);
+            mpd_temp.append("\n");
+        }
+        infile.close();
+    }
+    else
+        cout << "Error: Unable to open MPD file!";
+
+    string finalMPDhead, finalMPDfoot, finalMPDbody;
+    int pos;
+
+    finalMPDhead.append("<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n");
+    finalMPDhead.append("<MPD xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\"\n");
+    finalMPDhead.append("     xmlns=\"urn:mpeg:DASH:schema:MPD:2011\"\n");
+    finalMPDhead.append("     xsi:schemaLocation=\"urn:mpeg:DASH:schema:MPD:2011\"\n");
+    finalMPDhead.append("     profiles= \"urn:mpeg:dash:profile:isoff-on-demand:2011\"\n");
+    finalMPDhead.append("     type=\"static\"\n");
+
+    //adding Duration
+    finalMPDhead.append("     mediaPresentationDuration=\"PT");
+    finalMPDhead.append(duration);
+    finalMPDhead.append("\"\n");
+
+    //adding Buffer Time
+    finalMPDhead.append("     minBufferTime=\"PT");
+    finalMPDhead.append(minbuffer);
+    finalMPDhead.append("\">   \n");
+/*    pos = mpd_temp.find("minBufferTime");
+    if(pos != std::string::npos){
+        pos = pos + 15;
+        temp = mpd_temp.substr(pos,mpd_temp.find("\"", pos)- pos );
+        pos = temp.length(); //1000
+        string millisec, sec;
+        millisec = temp.substr(pos-3,1);
+        sec = temp.substr(0,pos-3);
+        finalMPDhead.append(sec);
+        finalMPDhead.append(".");
+        finalMPDhead.append(millisec);
+        finalMPDhead.append("\">   \n");
+    }
+    else{
+        std::cout << "ERROR: Could not find buffer time!\n";
+        std::cout << mpd_temp;
+        return 1;
+    }*/
+
+    //adding base URL
+    finalMPDhead.append("     <BaseURL>");
+    finalMPDhead.append(baseurl);
+    finalMPDhead.append("</BaseURL>\n");
+    finalMPDhead.append("     <Period start=\"PT0S\">\n");
+    finalMPDhead.append("          <AdaptationSet bitstreamSwitching=\"true\" >\n");
+    mpdexportfile << finalMPDhead;
+
+
+    finalMPDfoot.append("          </AdaptationSet>\n");
+    finalMPDfoot.append("    </Period>\n");
+    finalMPDfoot.append("</MPD>\n");
+
+
+    finalMPDbody = "";
+
+    int lastRep = 0, id = 0;
+    string act_rep, finalRep, temp2;
+
+
+    while(mpd_temp.find("<Representation", lastRep)!= std::string::npos){
+            act_rep = mpd_temp.substr(mpd_temp.find("<Representation", lastRep), mpd_temp.find("</Representation>", lastRep)+ 17 - mpd_temp.find("<Representation", lastRep) );
+            lastRep = mpd_temp.find("</Representation>", lastRep)+ 17;
+
+            finalRep = "";
+
+            string addID = "<Representation id=\"";
+            addID.append(DASHHelper::itos(id));
+            addID.append("\"");
+
+            temp2 = "<Representation";
+            act_rep.replace(act_rep.find(temp2), temp2.length(),addID);
+            temp2 = "startWithRAP=\"true\"";
+            act_rep.replace(act_rep.find(temp2), temp2.length(),"startWithSAP=\"1\"");
+
+            temp2 = "mimeType=\"video/mp4\"";
+            act_rep.replace(act_rep.find(temp2), temp2.length(),"codecs=\"avc1\" mimeType=\"video/mp4\"");
+
+            temp = act_rep.substr(0, act_rep.find(">"));
+            temp.append(">\n");
+            finalRep.append(temp);
+
+
+            //add init segment
+            pos = act_rep.find("<InitialisationSegmentURL");
+            temp = act_rep.substr(pos,act_rep.find("/>", pos)+2 - pos);
+            temp2 = "InitialisationSegmentURL";
+            temp.replace(temp.find(temp2), temp2.length(), "Initialisation");
+            pos = act_rep.find("/>", pos)+2;
+
+            finalRep.append("<SegmentBase>\n    ");
+            finalRep.append(temp);
+            finalRep.append("\n</SegmentBase>\n");
+
+            //add segments
+            finalRep.append("<SegmentList duration=\"");
+            finalRep.append(segduration);
+            finalRep.append("\">");
+            temp = act_rep.substr(pos, act_rep.find("</SegmentInfo>",pos) -pos);
+            temp2 = "<Url";
+            while(temp.find(temp2)!= std::string::npos){
+                temp.replace(temp.find(temp2), temp2.length(),"<SegmentURL");
+                string temp3 = "sourceURL";
+                temp.replace(temp.find(temp3), temp3.length(),"media");
+                string temp4 = "range";
+                if(temp.find(temp4)!= std::string::npos)
+                    temp.replace(temp.find(temp4), temp4.length(),"mediaRange");
+            }
+            finalRep.append(temp);
+            finalRep.append("</SegmentList>\n");
+            finalRep.append("</Representation>\n");
+
+            mpdexportfile << finalRep;
+            id++;
+    }
+
+
+    mpdexportfile << finalMPDfoot;
+    mpdexportfile.close();
+
+    return 0;
 }

@@ -69,6 +69,17 @@ std::string     MP4BoxMultiplexer::multiplex                  (){
         system(mp4box.c_str());
     }
 
+    std::cout << "MP4Box Cleaning ... \n";
+
+   mp4box = "MP4Box ";
+   mp4box.append("-no-sys ");
+   mp4box.append(" ");
+   mp4box.append(this->input.substr(0,this->input.find_last_of(".")));
+   mp4box.append(".mp4");
+
+   std::cout << "mp4box: " <<mp4box << "\n";
+   system(mp4box.c_str());
+
 
     std::cout << "MP4Box segmentation: " << this->input << " \n";
 

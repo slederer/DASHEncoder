@@ -34,6 +34,7 @@ class MPDGenerator
     std::string finalMPDhead;
     std::string finalMPDbody;
     std::string finalMPDfoot;
+    std::string version;
 
     public:
         MPDGenerator();
