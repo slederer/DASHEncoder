@@ -1,0 +1,23 @@
+DASHEncoder - How to Install: 
+==============================
+
+Dependencies:
+
+	* x264: use a version with scaling enabled. To be sure, get the latest version from the x264 git repository and compile it by your own. 
+
+	* MP4Box: 	use the actual version from the SVN repository of GPAC (this will support dash multiplexing)
+			http://gpac.wp.institut-telecom.fr/2011/04/20/compiling-gpac-on-ubuntu/
+
+	* ffmepg (optional): if you use other input source formats than YUV, use ffmpeg for the pipe to x264
+
+	* Install to mysql client libraries (may needs some changes in the make file of DASHEncoder because of the paths)
+
+Installation:
+	* Get the actual version from the git repository
+	* run: make
+	* Finished! 
+
+Run:
+	* Edit the paramters of the example config file
+	* run: ./DASHEncoder
+	
