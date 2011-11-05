@@ -653,7 +653,7 @@ int convertMPD(std::string input, std::string output, std::string duration, std:
     finalMPDhead.append("<MPD xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\"\n");
     finalMPDhead.append("     xmlns=\"urn:mpeg:DASH:schema:MPD:2011\"\n");
     finalMPDhead.append("     xsi:schemaLocation=\"urn:mpeg:DASH:schema:MPD:2011\"\n");
-    finalMPDhead.append("     profiles= \"urn:mpeg:dash:profile:isoff-on-demand:2011\"\n");
+    finalMPDhead.append("     profiles= \"urn:mpeg:dash:profile:isoff-main:2011\"\n");
     finalMPDhead.append("     type=\"static\"\n");
 
     //adding Duration
