@@ -26,7 +26,7 @@ all: DASHEncoder
 DASHEncoder: $(OBJS) $(USER_OBJS)
 	@echo 'Building target: $@'
 	@echo 'Invoking: GCC C++ Linker'
-	g++ -I/usr/include/mysql /usr/lib/libmysqlclient.so -o"DASHEncoder" $(OBJS) $(USER_OBJS) $(LIBS)
+	g++ -o"DASHEncoder" $(OBJS) $(USER_OBJS) $(LIBS)
 	@echo 'Finished building target: $@'
 	@echo ' '
 

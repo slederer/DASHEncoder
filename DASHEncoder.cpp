@@ -10,7 +10,7 @@
 #include <iostream>
 #include <fstream>
 #include <map>
-#include "mysql/mysql.h"
+//#include "mysql/mysql.h"
 
 void parse(int argc, char* argv[]);
 void setHelp(AnyOption*);
@@ -64,11 +64,15 @@ void parse(int argc, char* argv[])
     std::map<int, std::string> audio_files;
     std::map<int, int> av_mux_mapping;
 
+    /* MySQL Support Disabled
+
     MYSQL_RES *result;
 
     MYSQL_ROW row;
 
     MYSQL *connection, mysql;
+
+    */
 
     int state;
 
@@ -314,7 +318,7 @@ void parse(int argc, char* argv[])
         }
 
         /************ STORE STATISTICS *********************/
-
+/* MySQL Support Disabled
         if(opt->getFlag("store-psnr")){
 
            mysql_init(&mysql);
@@ -377,7 +381,7 @@ void parse(int argc, char* argv[])
                cout << "Error: Unable to open Log file!";
         }
 
-
+*/
         /************ MULTIPLEXING & SEGMENTATION **************/
 
         h264new = opt->getValue("dest-directory");
