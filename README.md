@@ -45,3 +45,7 @@ Stefan Lederer, Christopher Müller and Christian Timmerer, “Dynamic Adaptive 
 
 ### Support or Contact
 Having trouble with Pages? Check out the documentation at [http://dash.itec.aau.at](http://www-itec.uni-klu.ac.at/dash/?page_id=282). We also offer professional services via [www.bitmovin.net](http://www.bitmovin.net), so you are welcome to contact sales@bitmovin.net and we’ll get in touch with you.  
+
+
+[![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/slederer/dashencoder/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
+
