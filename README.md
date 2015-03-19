@@ -1,6 +1,10 @@
 ### Welcome to DASHEncoder
 We (http://dash.itec.aau.at and http://www.bitmovin.net) developed a new content generation tool – on top of GPAC’s MP4Box and x264 – for MPEG-DASH content generation, called DASHEncoder.
 
+Alternatively it is possible to generate MPEG-DASH and Apple HLS content with the cloud based transcoding service [bitcodin](http://www.bitcodin.com). Visit [www.bitcodin.com](http://www.bitcodin.com) and experience the fastest way of MPEG-DASH and Apple HLS video transcoding with $ 25 transcoding credit's for free.
+
+[![bitcodin](http://www.bitmovin.net/wp-content/uploads/2015/03/General-Try-Now-1024x538.jpg)](http://www.bitcodin.com)
+
 ### How it works?
 The DASHEncoder steps are depicted here:
 ![Structure](http://www.bitmovin.net/wp-content/uploads/2013/03/DASHEncoder.png)
