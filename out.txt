@@ -1,0 +1,1270 @@
+y4m [info]: 854x480p 1:1 @ 24/1 fps (cfr)
+x264 [debug]: using mv_range_thread = 40
+x264 [info]: using SAR=1/1
+x264 [info]: using cpu capabilities: MMX2 SSE2Fast SSSE3 SSE4.2 AVX
+x264 [info]: profile Constrained Baseline, level 3.0
+x264 [debug]: frame=   0 QP=16.00 NAL=3 Slice:I Poc:0   I:1620 P:0    SKIP:0    size=1956 bytes
+x264 [debug]: frame=   1 QP=19.00 NAL=2 Slice:P Poc:2   I:0    P:0    SKIP:1620 size=11 bytes
+x264 [debug]: frame=   2 QP=19.00 NAL=2 Slice:P Poc:4   I:0    P:0    SKIP:1620 size=12 bytes
+x264 [debug]: frame=   3 QP=19.00 NAL=2 Slice:P Poc:6   I:0    P:0    SKIP:1620 size=12 bytes
+x264 [debug]: frame=   4 QP=19.00 NAL=2 Slice:P Poc:8   I:0    P:0    SKIP:1620 size=12 bytes
+x264 [debug]: frame=   5 QP=19.00 NAL=2 Slice:P Poc:10  I:0    P:0    SKIP:1620 size=11 bytes
+x264 [debug]: frame=   6 QP=18.00 NAL=2 Slice:P Poc:12  I:0    P:0    SKIP:1620 size=11 bytes
+x264 [debug]: frame=   7 QP=11.00 NAL=2 Slice:P Poc:14  I:0    P:0    SKIP:1620 size=11 bytes
+x264 [debug]: frame=   8 QP=11.00 NAL=2 Slice:P Poc:16  I:0    P:0    SKIP:1620 size=11 bytes
+x264 [debug]: frame=   9 QP=11.00 NAL=2 Slice:P Poc:18  I:0    P:0    SKIP:1620 size=11 bytes
+x264 [debug]: frame=  10 QP=11.00 NAL=2 Slice:P Poc:20  I:0    P:0    SKIP:1620 size=11 bytes
+x264 [debug]: frame=  11 QP=11.00 NAL=2 Slice:P Poc:22  I:0    P:0    SKIP:1620 size=11 bytes
+x264 [debug]: frame=  12 QP=12.00 NAL=2 Slice:P Poc:24  I:0    P:0    SKIP:1620 size=11 bytes
+x264 [debug]: frame=  13 QP=13.00 NAL=2 Slice:P Poc:26  I:370  P:0    SKIP:1250 size=465 bytes
+x264 [debug]: frame=  14 QP=14.39 NAL=2 Slice:P Poc:28  I:1134 P:12   SKIP:474  size=1656 bytes
+x264 [debug]: frame=  15 QP=13.88 NAL=2 Slice:P Poc:30  I:827  P:74   SKIP:719  size=1301 bytes
+x264 [debug]: frame=  16 QP=14.80 NAL=2 Slice:P Poc:32  I:834  P:69   SKIP:717  size=1309 bytes
+x264 [debug]: frame=  17 QP=16.03 NAL=2 Slice:P Poc:34  I:871  P:110  SKIP:639  size=1693 bytes
+x264 [debug]: frame=  18 QP=16.25 NAL=2 Slice:P Poc:36  I:658  P:180  SKIP:782  size=1531 bytes
+x264 [debug]: frame=  19 QP=16.77 NAL=2 Slice:P Poc:38  I:798  P:198  SKIP:624  size=2114 bytes
+x264 [debug]: frame=  20 QP=16.72 NAL=2 Slice:P Poc:40  I:607  P:219  SKIP:794  size=1502 bytes
+x264 [debug]: frame=  21 QP=18.28 NAL=2 Slice:P Poc:42  I:664  P:224  SKIP:732  size=1782 bytes
+x264 [debug]: frame=  22 QP=18.87 NAL=2 Slice:P Poc:44  I:723  P:265  SKIP:632  size=2161 bytes
+x264 [debug]: frame=  23 QP=18.83 NAL=2 Slice:P Poc:46  I:544  P:278  SKIP:798  size=1584 bytes
+x264 [debug]: frame=  24 QP=19.63 NAL=2 Slice:P Poc:48  I:655  P:313  SKIP:652  size=2093 bytes
+x264 [debug]: frame=  25 QP=18.76 NAL=2 Slice:P Poc:50  I:533  P:301  SKIP:786  size=1609 bytes
+x264 [debug]: frame=  26 QP=20.20 NAL=2 Slice:P Poc:52  I:648  P:339  SKIP:633  size=2201 bytes
+x264 [debug]: frame=  27 QP=21.14 NAL=2 Slice:P Poc:54  I:568  P:343  SKIP:709  size=1964 bytes
+x264 [debug]: frame=  28 QP=21.82 NAL=2 Slice:P Poc:56  I:464  P:264  SKIP:892  size=1427 bytes
+x264 [debug]: frame=  29 QP=22.26 NAL=2 Slice:P Poc:58  I:589  P:323  SKIP:708  size=1972 bytes
+x264 [debug]: frame=  30 QP=23.04 NAL=2 Slice:P Poc:60  I:545  P:308  SKIP:767  size=1839 bytes
+x264 [debug]: frame=  31 QP=22.98 NAL=2 Slice:P Poc:62  I:492  P:299  SKIP:829  size=1652 bytes
+x264 [debug]: frame=  32 QP=22.47 NAL=2 Slice:P Poc:64  I:500  P:336  SKIP:784  size=1762 bytes
+x264 [debug]: frame=  33 QP=24.14 NAL=2 Slice:P Poc:66  I:435  P:304  SKIP:881  size=1538 bytes
+x264 [debug]: frame=  34 QP=22.40 NAL=2 Slice:P Poc:68  I:511  P:374  SKIP:735  size=2115 bytes
+x264 [debug]: frame=  35 QP=23.85 NAL=2 Slice:P Poc:70  I:545  P:313  SKIP:762  size=1794 bytes
+x264 [debug]: frame=  36 QP=24.73 NAL=2 Slice:P Poc:72  I:378  P:345  SKIP:897  size=1519 bytes
+x264 [debug]: frame=  37 QP=22.85 NAL=2 Slice:P Poc:74  I:481  P:359  SKIP:780  size=1854 bytes
+x264 [debug]: frame=  38 QP=24.79 NAL=2 Slice:P Poc:76  I:336  P:359  SKIP:925  size=1503 bytes
+x264 [debug]: frame=  39 QP=24.92 NAL=2 Slice:P Poc:78  I:444  P:360  SKIP:816  size=1880 bytes
+x264 [debug]: frame=  40 QP=25.47 NAL=2 Slice:P Poc:80  I:423  P:354  SKIP:843  size=1705 bytes
+x264 [debug]: frame=  41 QP=25.08 NAL=2 Slice:P Poc:82  I:360  P:384  SKIP:876  size=1603 bytes
+x264 [debug]: frame=  42 QP=25.43 NAL=2 Slice:P Poc:84  I:424  P:383  SKIP:813  size=1877 bytes
+x264 [debug]: frame=  43 QP=25.76 NAL=2 Slice:P Poc:86  I:356  P:378  SKIP:886  size=1641 bytes
+x264 [debug]: frame=  44 QP=24.99 NAL=2 Slice:P Poc:88  I:427  P:444  SKIP:749  size=2077 bytes
+x264 [debug]: frame=  45 QP=25.67 NAL=2 Slice:P Poc:90  I:420  P:375  SKIP:825  size=1683 bytes
+x264 [debug]: frame=  46 QP=24.48 NAL=2 Slice:P Poc:92  I:301  P:399  SKIP:920  size=1538 bytes
+x264 [debug]: frame=  47 QP=25.23 NAL=2 Slice:P Poc:94  I:341  P:436  SKIP:843  size=1782 bytes
+x264 [debug]: frame=  48 QP=22.37 NAL=3 Slice:I Poc:0   I:1620 P:0    SKIP:0    size=4592 bytes
+x264 [debug]: frame=  49 QP=24.33 NAL=2 Slice:P Poc:2   I:189  P:329  SKIP:1102 size=1026 bytes
+x264 [debug]: frame=  50 QP=25.61 NAL=2 Slice:P Poc:4   I:308  P:387  SKIP:925  size=1363 bytes
+x264 [debug]: frame=  51 QP=25.26 NAL=2 Slice:P Poc:6   I:254  P:389  SKIP:977  size=1349 bytes
+x264 [debug]: frame=  52 QP=25.59 NAL=2 Slice:P Poc:8   I:363  P:429  SKIP:828  size=1730 bytes
+x264 [debug]: frame=  53 QP=26.17 NAL=2 Slice:P Poc:10  I:345  P:438  SKIP:837  size=1737 bytes
+x264 [debug]: frame=  54 QP=24.91 NAL=2 Slice:P Poc:12  I:261  P:453  SKIP:906  size=1670 bytes
+x264 [debug]: frame=  55 QP=25.29 NAL=2 Slice:P Poc:14  I:355  P:580  SKIP:685  size=2585 bytes
+x264 [debug]: frame=  56 QP=24.57 NAL=2 Slice:P Poc:16  I:222  P:520  SKIP:878  size=1907 bytes
+x264 [debug]: frame=  57 QP=25.05 NAL=2 Slice:P Poc:18  I:285  P:548  SKIP:787  size=2189 bytes
+x264 [debug]: frame=  58 QP=24.90 NAL=2 Slice:P Poc:20  I:284  P:479  SKIP:857  size=1740 bytes
+x264 [debug]: frame=  59 QP=26.47 NAL=2 Slice:P Poc:22  I:219  P:463  SKIP:938  size=1569 bytes
+x264 [debug]: frame=  60 QP=26.47 NAL=2 Slice:P Poc:24  I:252  P:470  SKIP:898  size=1709 bytes
+x264 [debug]: frame=  61 QP=25.56 NAL=2 Slice:P Poc:26  I:283  P:460  SKIP:877  size=1724 bytes
+x264 [debug]: frame=  62 QP=26.41 NAL=2 Slice:P Poc:28  I:185  P:458  SKIP:977  size=1595 bytes
+x264 [debug]: frame=  63 QP=26.88 NAL=2 Slice:P Poc:30  I:259  P:508  SKIP:853  size=1851 bytes
+x264 [debug]: frame=  64 QP=24.73 NAL=2 Slice:P Poc:32  I:228  P:503  SKIP:889  size=1855 bytes
+x264 [debug]: frame=  65 QP=25.91 NAL=2 Slice:P Poc:34  I:299  P:564  SKIP:757  size=2205 bytes
+x264 [debug]: frame=  66 QP=26.35 NAL=2 Slice:P Poc:36  I:302  P:499  SKIP:819  size=2016 bytes
+x264 [debug]: frame=  67 QP=26.13 NAL=2 Slice:P Poc:38  I:230  P:499  SKIP:891  size=1758 bytes
+x264 [debug]: frame=  68 QP=26.18 NAL=2 Slice:P Poc:40  I:296  P:533  SKIP:791  size=2168 bytes
+x264 [debug]: frame=  69 QP=27.17 NAL=2 Slice:P Poc:42  I:185  P:473  SKIP:962  size=1553 bytes
+x264 [debug]: frame=  70 QP=24.87 NAL=2 Slice:P Poc:44  I:274  P:486  SKIP:860  size=1833 bytes
+x264 [debug]: frame=  71 QP=25.87 NAL=2 Slice:P Poc:46  I:187  P:507  SKIP:926  size=1668 bytes
+x264 [debug]: frame=  72 QP=28.34 NAL=2 Slice:P Poc:48  I:198  P:509  SKIP:913  size=1737 bytes
+x264 [debug]: frame=  73 QP=26.26 NAL=2 Slice:P Poc:50  I:289  P:533  SKIP:798  size=2187 bytes
+x264 [debug]: frame=  74 QP=27.68 NAL=2 Slice:P Poc:52  I:209  P:517  SKIP:894  size=1806 bytes
+x264 [debug]: frame=  75 QP=27.34 NAL=2 Slice:P Poc:54  I:285  P:625  SKIP:710  size=2522 bytes
+x264 [debug]: frame=  76 QP=25.80 NAL=2 Slice:P Poc:56  I:246  P:614  SKIP:760  size=2323 bytes
+x264 [debug]: frame=  77 QP=27.36 NAL=2 Slice:P Poc:58  I:211  P:599  SKIP:810  size=2132 bytes
+x264 [debug]: frame=  78 QP=27.45 NAL=2 Slice:P Poc:60  I:233  P:587  SKIP:800  size=2171 bytes
+x264 [debug]: frame=  79 QP=27.65 NAL=2 Slice:P Poc:62  I:244  P:617  SKIP:759  size=2165 bytes
+x264 [debug]: frame=  80 QP=27.87 NAL=2 Slice:P Poc:64  I:198  P:579  SKIP:843  size=1991 bytes
+x264 [debug]: frame=  81 QP=28.72 NAL=2 Slice:P Poc:66  I:247  P:575  SKIP:798  size=1968 bytes
+x264 [debug]: frame=  82 QP=27.80 NAL=2 Slice:P Poc:68  I:212  P:552  SKIP:856  size=1799 bytes
+x264 [debug]: frame=  83 QP=26.82 NAL=2 Slice:P Poc:70  I:270  P:562  SKIP:788  size=2087 bytes
+x264 [debug]: frame=  84 QP=28.47 NAL=2 Slice:P Poc:72  I:290  P:567  SKIP:763  size=1997 bytes
+x264 [debug]: frame=  85 QP=28.26 NAL=2 Slice:P Poc:74  I:248  P:548  SKIP:824  size=1897 bytes
+x264 [debug]: frame=  86 QP=26.77 NAL=2 Slice:P Poc:76  I:312  P:556  SKIP:752  size=2226 bytes
+x264 [debug]: frame=  87 QP=26.57 NAL=2 Slice:P Poc:78  I:232  P:544  SKIP:844  size=1938 bytes
+x264 [debug]: frame=  88 QP=27.61 NAL=2 Slice:P Poc:80  I:299  P:592  SKIP:729  size=2385 bytes
+x264 [debug]: frame=  89 QP=28.50 NAL=2 Slice:P Poc:82  I:266  P:571  SKIP:783  size=2156 bytes
+x264 [debug]: frame=  90 QP=27.37 NAL=2 Slice:P Poc:84  I:176  P:532  SKIP:912  size=1730 bytes
+x264 [debug]: frame=  91 QP=26.63 NAL=2 Slice:P Poc:86  I:231  P:575  SKIP:814  size=1897 bytes
+x264 [debug]: frame=  92 QP=28.64 NAL=2 Slice:P Poc:88  I:194  P:569  SKIP:857  size=1718 bytes
+x264 [debug]: frame=  93 QP=28.50 NAL=2 Slice:P Poc:90  I:224  P:525  SKIP:871  size=1798 bytes
+x264 [debug]: frame=  94 QP=27.99 NAL=2 Slice:P Poc:92  I:217  P:555  SKIP:848  size=1787 bytes
+x264 [debug]: frame=  95 QP=29.29 NAL=2 Slice:P Poc:94  I:193  P:533  SKIP:894  size=1665 bytes
+x264 [debug]: frame=  96 QP=24.89 NAL=3 Slice:I Poc:0   I:1620 P:0    SKIP:0    size=5122 bytes
+x264 [debug]: frame=  97 QP=28.08 NAL=2 Slice:P Poc:2   I:195  P:461  SKIP:964  size=1523 bytes
+x264 [debug]: frame=  98 QP=29.21 NAL=2 Slice:P Poc:4   I:223  P:578  SKIP:819  size=1873 bytes
+x264 [debug]: frame=  99 QP=28.49 NAL=2 Slice:P Poc:6   I:239  P:547  SKIP:834  size=1917 bytes
+x264 [debug]: frame= 100 QP=29.08 NAL=2 Slice:P Poc:8   I:201  P:579  SKIP:840  size=1900 bytes
+x264 [debug]: frame= 101 QP=27.51 NAL=2 Slice:P Poc:10  I:235  P:605  SKIP:780  size=2011 bytes
+x264 [debug]: frame= 102 QP=28.71 NAL=2 Slice:P Poc:12  I:203  P:623  SKIP:794  size=2059 bytes
+x264 [debug]: frame= 103 QP=27.68 NAL=2 Slice:P Poc:14  I:180  P:638  SKIP:802  size=2195 bytes
+x264 [debug]: frame= 104 QP=28.21 NAL=2 Slice:P Poc:16  I:226  P:602  SKIP:792  size=1984 bytes
+x264 [debug]: frame= 105 QP=28.43 NAL=2 Slice:P Poc:18  I:166  P:578  SKIP:876  size=1836 bytes
+x264 [debug]: frame= 106 QP=30.65 NAL=2 Slice:P Poc:20  I:201  P:571  SKIP:848  size=1852 bytes
+x264 [debug]: frame= 107 QP=27.91 NAL=2 Slice:P Poc:22  I:214  P:520  SKIP:886  size=1684 bytes
+x264 [debug]: frame= 108 QP=30.12 NAL=2 Slice:P Poc:24  I:143  P:541  SKIP:936  size=1611 bytes
+x264 [debug]: frame= 109 QP=29.96 NAL=2 Slice:P Poc:26  I:177  P:540  SKIP:903  size=1650 bytes
+x264 [debug]: frame= 110 QP=29.21 NAL=2 Slice:P Poc:28  I:207  P:529  SKIP:884  size=1760 bytes
+x264 [debug]: frame= 111 QP=29.86 NAL=2 Slice:P Poc:30  I:128  P:546  SKIP:946  size=1632 bytes
+x264 [debug]: frame= 112 QP=29.76 NAL=2 Slice:P Poc:32  I:111  P:526  SKIP:983  size=1395 bytes
+x264 [debug]: frame= 113 QP=28.74 NAL=2 Slice:P Poc:34  I:93   P:520  SKIP:1007 size=1428 bytes
+x264 [debug]: frame= 114 QP=29.84 NAL=2 Slice:P Poc:36  I:88   P:584  SKIP:948  size=1666 bytes
+x264 [debug]: frame= 115 QP=29.11 NAL=2 Slice:P Poc:38  I:100  P:501  SKIP:1019 size=1458 bytes
+x264 [debug]: frame= 116 QP=30.69 NAL=2 Slice:P Poc:40  I:93   P:528  SKIP:999  size=1441 bytes
+x264 [debug]: frame= 117 QP=29.99 NAL=2 Slice:P Poc:42  I:91   P:489  SKIP:1040 size=1302 bytes
+x264 [debug]: frame= 118 QP=28.94 NAL=2 Slice:P Poc:44  I:609  P:524  SKIP:487  size=3089 bytes
+x264 [debug]: frame= 119 QP=29.19 NAL=2 Slice:P Poc:46  I:922  P:265  SKIP:433  size=3243 bytes
+x264 [debug]: frame= 120 QP=27.29 NAL=2 Slice:P Poc:48  I:957  P:261  SKIP:402  size=2869 bytes
+x264 [debug]: frame= 121 QP=26.92 NAL=2 Slice:P Poc:50  I:1021 P:212  SKIP:387  size=2496 bytes
+x264 [debug]: frame= 122 QP=25.14 NAL=2 Slice:P Poc:52  I:1167 P:52   SKIP:401  size=1980 bytes
+x264 [debug]: frame= 123 QP=22.21 NAL=2 Slice:P Poc:54  I:1238 P:28   SKIP:354  size=1556 bytes
+x264 [debug]: frame= 124 QP=22.00 NAL=2 Slice:P Poc:56  I:54   P:1    SKIP:1565 size=93 bytes
+x264 [debug]: frame= 125 QP=24.42 NAL=2 Slice:P Poc:58  I:105  P:1    SKIP:1514 size=217 bytes
+x264 [debug]: frame= 126 QP=26.29 NAL=2 Slice:P Poc:60  I:493  P:14   SKIP:1113 size=840 bytes
+x264 [debug]: frame= 127 QP=27.85 NAL=2 Slice:P Poc:62  I:580  P:72   SKIP:968  size=1109 bytes
+x264 [debug]: frame= 128 QP=30.52 NAL=2 Slice:P Poc:64  I:537  P:53   SKIP:1030 size=1004 bytes
+x264 [debug]: frame= 129 QP=31.44 NAL=2 Slice:P Poc:66  I:423  P:45   SKIP:1152 size=822 bytes
+x264 [debug]: frame= 130 QP=30.18 NAL=2 Slice:P Poc:68  I:561  P:93   SKIP:966  size=1258 bytes
+x264 [debug]: frame= 131 QP=28.52 NAL=2 Slice:P Poc:70  I:590  P:203  SKIP:827  size=1633 bytes
+x264 [debug]: frame= 132 QP=30.58 NAL=2 Slice:P Poc:72  I:546  P:151  SKIP:923  size=1291 bytes
+x264 [debug]: frame= 133 QP=30.01 NAL=2 Slice:P Poc:74  I:439  P:151  SKIP:1030 size=1053 bytes
+x264 [debug]: frame= 134 QP=31.96 NAL=2 Slice:P Poc:76  I:390  P:145  SKIP:1085 size=982 bytes
+x264 [debug]: frame= 135 QP=32.17 NAL=2 Slice:P Poc:78  I:413  P:161  SKIP:1046 size=1078 bytes
+x264 [debug]: frame= 136 QP=33.76 NAL=2 Slice:P Poc:80  I:425  P:206  SKIP:989  size=1225 bytes
+x264 [debug]: frame= 137 QP=30.92 NAL=2 Slice:P Poc:82  I:352  P:225  SKIP:1043 size=1198 bytes
+x264 [debug]: frame= 138 QP=32.31 NAL=2 Slice:P Poc:84  I:385  P:269  SKIP:966  size=1440 bytes
+x264 [debug]: frame= 139 QP=32.53 NAL=2 Slice:P Poc:86  I:304  P:287  SKIP:1029 size=1351 bytes
+x264 [debug]: frame= 140 QP=30.59 NAL=2 Slice:P Poc:88  I:329  P:321  SKIP:970  size=1562 bytes
+x264 [debug]: frame= 141 QP=30.81 NAL=2 Slice:P Poc:90  I:260  P:364  SKIP:996  size=1441 bytes
+x264 [debug]: frame= 142 QP=31.05 NAL=2 Slice:P Poc:92  I:240  P:330  SKIP:1050 size=1291 bytes
+x264 [debug]: frame= 143 QP=31.49 NAL=2 Slice:P Poc:94  I:254  P:381  SKIP:985  size=1579 bytes
+x264 [debug]: frame= 144 QP=29.58 NAL=3 Slice:I Poc:0   I:1620 P:0    SKIP:0    size=3943 bytes
+x264 [debug]: frame= 145 QP=29.99 NAL=2 Slice:P Poc:2   I:168  P:274  SKIP:1178 size=820 bytes
+x264 [debug]: frame= 146 QP=31.00 NAL=2 Slice:P Poc:4   I:204  P:366  SKIP:1050 size=1070 bytes
+x264 [debug]: frame= 147 QP=31.76 NAL=2 Slice:P Poc:6   I:223  P:366  SKIP:1031 size=1249 bytes
+x264 [debug]: frame= 148 QP=33.05 NAL=2 Slice:P Poc:8   I:184  P:407  SKIP:1029 size=1475 bytes
+x264 [debug]: frame= 149 QP=32.94 NAL=2 Slice:P Poc:10  I:212  P:408  SKIP:1000 size=1545 bytes
+x264 [debug]: frame= 150 QP=33.71 NAL=2 Slice:P Poc:12  I:166  P:437  SKIP:1017 size=1536 bytes
+x264 [debug]: frame= 151 QP=32.04 NAL=2 Slice:P Poc:14  I:243  P:508  SKIP:869  size=2490 bytes
+x264 [debug]: frame= 152 QP=32.27 NAL=2 Slice:P Poc:16  I:197  P:550  SKIP:873  size=2313 bytes
+x264 [debug]: frame= 153 QP=31.81 NAL=2 Slice:P Poc:18  I:175  P:550  SKIP:895  size=2112 bytes
+x264 [debug]: frame= 154 QP=32.53 NAL=2 Slice:P Poc:20  I:107  P:504  SKIP:1009 size=1798 bytes
+x264 [debug]: frame= 155 QP=31.58 NAL=2 Slice:P Poc:22  I:63   P:372  SKIP:1185 size=1071 bytes
+x264 [debug]: frame= 156 QP=33.63 NAL=2 Slice:P Poc:24  I:59   P:440  SKIP:1121 size=1207 bytes
+x264 [debug]: frame= 157 QP=31.90 NAL=2 Slice:P Poc:26  I:67   P:375  SKIP:1178 size=1001 bytes
+x264 [debug]: frame= 158 QP=33.66 NAL=2 Slice:P Poc:28  I:61   P:427  SKIP:1132 size=1123 bytes
+x264 [debug]: frame= 159 QP=31.69 NAL=2 Slice:P Poc:30  I:78   P:460  SKIP:1082 size=1279 bytes
+x264 [debug]: frame= 160 QP=32.45 NAL=2 Slice:P Poc:32  I:65   P:484  SKIP:1071 size=1290 bytes
+x264 [debug]: frame= 161 QP=30.72 NAL=2 Slice:P Poc:34  I:80   P:567  SKIP:973  size=1822 bytes
+x264 [debug]: frame= 162 QP=31.21 NAL=2 Slice:P Poc:36  I:91   P:494  SKIP:1035 size=1617 bytes
+x264 [debug]: frame= 163 QP=30.24 NAL=2 Slice:P Poc:38  I:97   P:552  SKIP:971  size=1838 bytes
+x264 [debug]: frame= 164 QP=31.32 NAL=2 Slice:P Poc:40  I:69   P:531  SKIP:1020 size=1652 bytes
+x264 [debug]: frame= 165 QP=30.17 NAL=2 Slice:P Poc:42  I:62   P:504  SKIP:1054 size=1486 bytes
+x264 [debug]: frame= 166 QP=30.31 NAL=2 Slice:P Poc:44  I:65   P:532  SKIP:1023 size=1513 bytes
+x264 [debug]: frame= 167 QP=32.09 NAL=2 Slice:P Poc:46  I:71   P:465  SKIP:1084 size=1405 bytes
+x264 [debug]: frame= 168 QP=29.02 NAL=2 Slice:P Poc:48  I:67   P:516  SKIP:1037 size=1598 bytes
+x264 [debug]: frame= 169 QP=31.12 NAL=2 Slice:P Poc:50  I:61   P:513  SKIP:1046 size=1563 bytes
+x264 [debug]: frame= 170 QP=30.39 NAL=2 Slice:P Poc:52  I:78   P:516  SKIP:1026 size=1641 bytes
+x264 [debug]: frame= 171 QP=29.93 NAL=2 Slice:P Poc:54  I:66   P:532  SKIP:1022 size=1815 bytes
+x264 [debug]: frame= 172 QP=28.51 NAL=2 Slice:P Poc:56  I:73   P:581  SKIP:966  size=1956 bytes
+x264 [debug]: frame= 173 QP=28.31 NAL=2 Slice:P Poc:58  I:71   P:623  SKIP:926  size=2192 bytes
+x264 [debug]: frame= 174 QP=29.03 NAL=2 Slice:P Poc:60  I:78   P:568  SKIP:974  size=1964 bytes
+x264 [debug]: frame= 175 QP=30.41 NAL=2 Slice:P Poc:62  I:58   P:593  SKIP:969  size=1931 bytes
+x264 [debug]: frame= 176 QP=27.81 NAL=2 Slice:P Poc:64  I:71   P:600  SKIP:949  size=1950 bytes
+x264 [debug]: frame= 177 QP=29.51 NAL=2 Slice:P Poc:66  I:71   P:579  SKIP:970  size=1907 bytes
+x264 [debug]: frame= 178 QP=28.84 NAL=2 Slice:P Poc:68  I:66   P:601  SKIP:953  size=1968 bytes
+x264 [debug]: frame= 179 QP=27.95 NAL=2 Slice:P Poc:70  I:78   P:592  SKIP:950  size=1944 bytes
+x264 [debug]: frame= 180 QP=29.33 NAL=2 Slice:P Poc:72  I:90   P:614  SKIP:916  size=2108 bytes
+x264 [debug]: frame= 181 QP=28.85 NAL=2 Slice:P Poc:74  I:80   P:637  SKIP:903  size=2039 bytes
+x264 [debug]: frame= 182 QP=27.00 NAL=2 Slice:P Poc:76  I:71   P:648  SKIP:901  size=2123 bytes
+x264 [debug]: frame= 183 QP=26.90 NAL=2 Slice:P Poc:78  I:73   P:628  SKIP:919  size=2055 bytes
+x264 [debug]: frame= 184 QP=29.56 NAL=2 Slice:P Poc:80  I:64   P:642  SKIP:914  size=2038 bytes
+x264 [debug]: frame= 185 QP=27.42 NAL=2 Slice:P Poc:82  I:75   P:622  SKIP:923  size=1956 bytes
+x264 [debug]: frame= 186 QP=28.62 NAL=2 Slice:P Poc:84  I:76   P:607  SKIP:937  size=1908 bytes
+x264 [debug]: frame= 187 QP=28.52 NAL=2 Slice:P Poc:86  I:74   P:611  SKIP:935  size=1901 bytes
+x264 [debug]: frame= 188 QP=28.71 NAL=2 Slice:P Poc:88  I:64   P:623  SKIP:933  size=2039 bytes
+x264 [debug]: frame= 189 QP=29.08 NAL=2 Slice:P Poc:90  I:77   P:632  SKIP:911  size=2138 bytes
+x264 [debug]: frame= 190 QP=28.81 NAL=2 Slice:P Poc:92  I:71   P:681  SKIP:868  size=2266 bytes
+x264 [debug]: frame= 191 QP=28.80 NAL=2 Slice:P Poc:94  I:69   P:645  SKIP:906  size=2134 bytes
+x264 [debug]: frame= 192 QP=25.66 NAL=3 Slice:I Poc:0   I:1620 P:0    SKIP:0    size=5419 bytes
+x264 [debug]: frame= 193 QP=25.02 NAL=2 Slice:P Poc:2   I:412  P:649  SKIP:559  size=4033 bytes
+x264 [debug]: frame= 194 QP=25.38 NAL=2 Slice:P Poc:4   I:408  P:697  SKIP:515  size=4160 bytes
+x264 [debug]: frame= 195 QP=25.71 NAL=2 Slice:P Poc:6   I:399  P:688  SKIP:533  size=3971 bytes
+x264 [debug]: frame= 196 QP=27.73 NAL=2 Slice:P Poc:8   I:363  P:693  SKIP:564  size=3656 bytes
+x264 [debug]: frame= 197 QP=28.42 NAL=2 Slice:P Poc:10  I:394  P:646  SKIP:580  size=3547 bytes
+x264 [debug]: frame= 198 QP=28.67 NAL=2 Slice:P Poc:12  I:396  P:636  SKIP:588  size=3319 bytes
+x264 [debug]: frame= 199 QP=29.27 NAL=2 Slice:P Poc:14  I:440  P:607  SKIP:573  size=3178 bytes
+x264 [debug]: frame= 200 QP=29.84 NAL=2 Slice:P Poc:16  I:409  P:511  SKIP:700  size=2501 bytes
+x264 [debug]: frame= 201 QP=30.39 NAL=2 Slice:P Poc:18  I:479  P:473  SKIP:668  size=2409 bytes
+x264 [debug]: frame= 202 QP=31.17 NAL=2 Slice:P Poc:20  I:458  P:451  SKIP:711  size=2279 bytes
+x264 [debug]: frame= 203 QP=29.07 NAL=2 Slice:P Poc:22  I:487  P:419  SKIP:714  size=2189 bytes
+x264 [debug]: frame= 204 QP=29.01 NAL=2 Slice:P Poc:24  I:501  P:395  SKIP:724  size=2124 bytes
+x264 [debug]: frame= 205 QP=28.72 NAL=2 Slice:P Poc:26  I:583  P:370  SKIP:667  size=2285 bytes
+x264 [debug]: frame= 206 QP=28.22 NAL=2 Slice:P Poc:28  I:599  P:342  SKIP:679  size=2268 bytes
+x264 [debug]: frame= 207 QP=28.37 NAL=2 Slice:P Poc:30  I:624  P:339  SKIP:657  size=2170 bytes
+x264 [debug]: frame= 208 QP=30.09 NAL=2 Slice:P Poc:32  I:663  P:327  SKIP:630  size=2065 bytes
+x264 [debug]: frame= 209 QP=30.04 NAL=2 Slice:P Poc:34  I:637  P:321  SKIP:662  size=2159 bytes
+x264 [debug]: frame= 210 QP=28.09 NAL=2 Slice:P Poc:36  I:713  P:284  SKIP:623  size=2085 bytes
+x264 [debug]: frame= 211 QP=29.05 NAL=2 Slice:P Poc:38  I:749  P:251  SKIP:620  size=2047 bytes
+x264 [debug]: frame= 212 QP=27.80 NAL=2 Slice:P Poc:40  I:774  P:222  SKIP:624  size=1939 bytes
+x264 [debug]: frame= 213 QP=27.87 NAL=2 Slice:P Poc:42  I:882  P:198  SKIP:540  size=2063 bytes
+x264 [debug]: frame= 214 QP=27.49 NAL=2 Slice:P Poc:44  I:893  P:198  SKIP:529  size=1942 bytes
+x264 [debug]: frame= 215 QP=27.99 NAL=2 Slice:P Poc:46  I:876  P:200  SKIP:544  size=1913 bytes
+x264 [debug]: frame= 216 QP=28.08 NAL=2 Slice:P Poc:48  I:918  P:170  SKIP:532  size=1860 bytes
+x264 [debug]: frame= 217 QP=28.36 NAL=2 Slice:P Poc:50  I:951  P:118  SKIP:551  size=1793 bytes
+x264 [debug]: frame= 218 QP=28.51 NAL=2 Slice:P Poc:52  I:964  P:105  SKIP:551  size=1738 bytes
+x264 [debug]: frame= 219 QP=28.45 NAL=2 Slice:P Poc:54  I:1058 P:77   SKIP:485  size=1714 bytes
+x264 [debug]: frame= 220 QP=28.31 NAL=2 Slice:P Poc:56  I:1007 P:45   SKIP:568  size=1545 bytes
+x264 [debug]: frame= 221 QP=27.71 NAL=2 Slice:P Poc:58  I:1089 P:47   SKIP:484  size=1620 bytes
+x264 [debug]: frame= 222 QP=26.50 NAL=2 Slice:P Poc:60  I:1111 P:29   SKIP:480  size=1573 bytes
+x264 [debug]: frame= 223 QP=25.01 NAL=2 Slice:P Poc:62  I:1154 P:25   SKIP:441  size=1529 bytes
+x264 [debug]: frame= 224 QP=20.51 NAL=2 Slice:P Poc:64  I:1290 P:0    SKIP:330  size=2313 bytes
+x264 [debug]: frame= 225 QP=22.66 NAL=2 Slice:P Poc:66  I:12   P:4    SKIP:1604 size=79 bytes
+x264 [debug]: frame= 226 QP=28.87 NAL=2 Slice:P Poc:68  I:0    P:10   SKIP:1610 size=60 bytes
+x264 [debug]: frame= 227 QP=30.18 NAL=2 Slice:P Poc:70  I:0    P:8    SKIP:1612 size=54 bytes
+x264 [debug]: frame= 228 QP=31.90 NAL=2 Slice:P Poc:72  I:0    P:11   SKIP:1609 size=45 bytes
+x264 [debug]: frame= 229 QP=31.21 NAL=2 Slice:P Poc:74  I:0    P:12   SKIP:1608 size=63 bytes
+x264 [debug]: frame= 230 QP=28.80 NAL=2 Slice:P Poc:76  I:0    P:21   SKIP:1599 size=166 bytes
+x264 [debug]: frame= 231 QP=19.89 NAL=2 Slice:P Poc:78  I:2    P:38   SKIP:1580 size=396 bytes
+x264 [debug]: frame= 232 QP=22.94 NAL=2 Slice:P Poc:80  I:0    P:22   SKIP:1598 size=513 bytes
+x264 [debug]: frame= 233 QP=14.68 NAL=2 Slice:P Poc:82  I:2    P:26   SKIP:1592 size=482 bytes
+x264 [debug]: frame= 234 QP=14.63 NAL=2 Slice:P Poc:84  I:1    P:21   SKIP:1598 size=432 bytes
+x264 [debug]: frame= 235 QP=14.71 NAL=2 Slice:P Poc:86  I:1    P:19   SKIP:1600 size=466 bytes
+x264 [debug]: frame= 236 QP=13.85 NAL=2 Slice:P Poc:88  I:3    P:26   SKIP:1591 size=547 bytes
+x264 [debug]: frame= 237 QP=13.45 NAL=2 Slice:P Poc:90  I:5    P:22   SKIP:1593 size=480 bytes
+x264 [debug]: frame= 238 QP=20.42 NAL=2 Slice:P Poc:92  I:0    P:22   SKIP:1598 size=483 bytes
+x264 [debug]: frame= 239 QP=20.42 NAL=2 Slice:P Poc:94  I:0    P:21   SKIP:1599 size=495 bytes
+x264 [debug]: frame= 240 QP=11.70 NAL=3 Slice:I Poc:0   I:1620 P:0    SKIP:0    size=2566 bytes
+x264 [debug]: frame= 241 QP=11.55 NAL=2 Slice:P Poc:2   I:3    P:37   SKIP:1580 size=492 bytes
+x264 [debug]: frame= 242 QP=20.89 NAL=2 Slice:P Poc:4   I:0    P:22   SKIP:1598 size=500 bytes
+x264 [debug]: frame= 243 QP=12.75 NAL=2 Slice:P Poc:6   I:1    P:21   SKIP:1598 size=428 bytes
+x264 [debug]: frame= 244 QP=19.85 NAL=2 Slice:P Poc:8   I:0    P:23   SKIP:1597 size=445 bytes
+x264 [debug]: frame= 245 QP=19.94 NAL=2 Slice:P Poc:10  I:0    P:20   SKIP:1600 size=475 bytes
+x264 [debug]: frame= 246 QP=19.85 NAL=2 Slice:P Poc:12  I:0    P:23   SKIP:1597 size=557 bytes
+x264 [debug]: frame= 247 QP=19.88 NAL=2 Slice:P Poc:14  I:0    P:24   SKIP:1596 size=539 bytes
+x264 [debug]: frame= 248 QP=12.52 NAL=2 Slice:P Poc:16  I:1    P:26   SKIP:1593 size=517 bytes
+x264 [debug]: frame= 249 QP=12.44 NAL=2 Slice:P Poc:18  I:3    P:25   SKIP:1592 size=530 bytes
+x264 [debug]: frame= 250 QP=12.51 NAL=2 Slice:P Poc:20  I:8    P:27   SKIP:1585 size=562 bytes
+x264 [debug]: frame= 251 QP=20.37 NAL=2 Slice:P Poc:22  I:5    P:29   SKIP:1586 size=603 bytes
+x264 [debug]: frame= 252 QP=12.59 NAL=2 Slice:P Poc:24  I:2    P:26   SKIP:1592 size=438 bytes
+x264 [debug]: frame= 253 QP=12.62 NAL=2 Slice:P Poc:26  I:1    P:28   SKIP:1591 size=444 bytes
+x264 [debug]: frame= 254 QP=12.64 NAL=2 Slice:P Poc:28  I:1    P:33   SKIP:1586 size=477 bytes
+x264 [debug]: frame= 255 QP=12.69 NAL=2 Slice:P Poc:30  I:1    P:49   SKIP:1570 size=513 bytes
+x264 [debug]: frame= 256 QP=12.65 NAL=2 Slice:P Poc:32  I:2    P:33   SKIP:1585 size=441 bytes
+x264 [debug]: frame= 257 QP=12.66 NAL=2 Slice:P Poc:34  I:1    P:28   SKIP:1591 size=377 bytes
+x264 [debug]: frame= 258 QP=12.19 NAL=2 Slice:P Poc:36  I:2    P:28   SKIP:1590 size=392 bytes
+x264 [debug]: frame= 259 QP=19.29 NAL=2 Slice:P Poc:38  I:0    P:46   SKIP:1574 size=404 bytes
+x264 [debug]: frame= 260 QP=19.31 NAL=2 Slice:P Poc:40  I:0    P:48   SKIP:1572 size=437 bytes
+x264 [debug]: frame= 261 QP=15.15 NAL=2 Slice:P Poc:42  I:0    P:30   SKIP:1590 size=401 bytes
+x264 [debug]: frame= 262 QP=18.81 NAL=2 Slice:P Poc:44  I:0    P:61   SKIP:1559 size=364 bytes
+x264 [debug]: frame= 263 QP=18.91 NAL=2 Slice:P Poc:46  I:1    P:49   SKIP:1570 size=413 bytes
+x264 [debug]: frame= 264 QP=19.27 NAL=2 Slice:P Poc:48  I:0    P:29   SKIP:1591 size=294 bytes
+x264 [debug]: frame= 265 QP=19.30 NAL=2 Slice:P Poc:50  I:0    P:51   SKIP:1569 size=399 bytes
+x264 [debug]: frame= 266 QP=16.15 NAL=2 Slice:P Poc:52  I:0    P:49   SKIP:1571 size=369 bytes
+x264 [debug]: frame= 267 QP=13.01 NAL=2 Slice:P Poc:54  I:1    P:50   SKIP:1569 size=402 bytes
+x264 [debug]: frame= 268 QP=11.59 NAL=2 Slice:P Poc:56  I:1    P:29   SKIP:1590 size=280 bytes
+x264 [debug]: frame= 269 QP=11.23 NAL=2 Slice:P Poc:58  I:2    P:34   SKIP:1584 size=384 bytes
+x264 [debug]: frame= 270 QP=18.28 NAL=2 Slice:P Poc:60  I:0    P:33   SKIP:1587 size=296 bytes
+x264 [debug]: frame= 271 QP=18.76 NAL=2 Slice:P Poc:62  I:0    P:31   SKIP:1589 size=303 bytes
+x264 [debug]: frame= 272 QP=19.79 NAL=2 Slice:P Poc:64  I:0    P:33   SKIP:1587 size=302 bytes
+x264 [debug]: frame= 273 QP=20.17 NAL=2 Slice:P Poc:66  I:4    P:46   SKIP:1570 size=372 bytes
+x264 [debug]: frame= 274 QP=18.17 NAL=2 Slice:P Poc:68  I:13   P:17   SKIP:1590 size=359 bytes
+x264 [debug]: frame= 275 QP=15.00 NAL=2 Slice:P Poc:70  I:13   P:37   SKIP:1570 size=298 bytes
+x264 [debug]: frame= 276 QP=10.00 NAL=2 Slice:P Poc:72  I:36   P:0    SKIP:1584 size=56 bytes
+x264 [debug]: frame= 277 QP=12.00 NAL=2 Slice:P Poc:74  I:0    P:0    SKIP:1620 size=11 bytes
+x264 [debug]: frame= 278 QP=12.00 NAL=2 Slice:P Poc:76  I:0    P:0    SKIP:1620 size=11 bytes
+x264 [debug]: frame= 279 QP=12.00 NAL=2 Slice:P Poc:78  I:0    P:0    SKIP:1620 size=11 bytes
+x264 [debug]: frame= 280 QP=12.00 NAL=2 Slice:P Poc:80  I:0    P:0    SKIP:1620 size=11 bytes
+x264 [debug]: frame= 281 QP=12.00 NAL=2 Slice:P Poc:82  I:0    P:0    SKIP:1620 size=11 bytes
+x264 [debug]: frame= 282 QP=12.00 NAL=2 Slice:P Poc:84  I:0    P:0    SKIP:1620 size=11 bytes
+x264 [debug]: frame= 283 QP=12.00 NAL=2 Slice:P Poc:86  I:0    P:0    SKIP:1620 size=11 bytes
+x264 [debug]: frame= 284 QP=13.00 NAL=2 Slice:P Poc:88  I:0    P:0    SKIP:1620 size=11 bytes
+x264 [debug]: frame= 285 QP=18.84 NAL=2 Slice:P Poc:90  I:426  P:30   SKIP:1164 size=1070 bytes
+x264 [debug]: frame= 286 QP=19.68 NAL=2 Slice:P Poc:92  I:656  P:121  SKIP:843  size=2304 bytes
+x264 [debug]: frame= 287 QP=20.36 NAL=2 Slice:P Poc:94  I:546  P:336  SKIP:738  size=3033 bytes
+x264 [debug]: frame= 288 QP=17.29 NAL=3 Slice:I Poc:0   I:1620 P:0    SKIP:0    size=7922 bytes
+x264 [debug]: frame= 289 QP=22.85 NAL=2 Slice:P Poc:2   I:266  P:627  SKIP:727  size=3041 bytes
+x264 [debug]: frame= 290 QP=23.47 NAL=2 Slice:P Poc:4   I:241  P:694  SKIP:685  size=3844 bytes
+x264 [debug]: frame= 291 QP=23.27 NAL=2 Slice:P Poc:6   I:293  P:717  SKIP:610  size=4527 bytes
+x264 [debug]: frame= 292 QP=24.10 NAL=2 Slice:P Poc:8   I:192  P:662  SKIP:766  size=3292 bytes
+x264 [debug]: frame= 293 QP=27.11 NAL=2 Slice:P Poc:10  I:169  P:594  SKIP:857  size=2627 bytes
+x264 [debug]: frame= 294 QP=26.01 NAL=2 Slice:P Poc:12  I:243  P:737  SKIP:640  size=3895 bytes
+x264 [debug]: frame= 295 QP=26.37 NAL=2 Slice:P Poc:14  I:98   P:616  SKIP:906  size=2610 bytes
+x264 [debug]: frame= 296 QP=29.56 NAL=2 Slice:P Poc:16  I:94   P:518  SKIP:1008 size=1905 bytes
+x264 [debug]: frame= 297 QP=29.50 NAL=2 Slice:P Poc:18  I:103  P:495  SKIP:1022 size=1771 bytes
+x264 [debug]: frame= 298 QP=29.32 NAL=2 Slice:P Poc:20  I:143  P:569  SKIP:908  size=2485 bytes
+x264 [debug]: frame= 299 QP=28.63 NAL=2 Slice:P Poc:22  I:159  P:651  SKIP:810  size=3003 bytes
+x264 [debug]: frame= 300 QP=30.51 NAL=2 Slice:P Poc:24  I:68   P:463  SKIP:1089 size=1569 bytes
+x264 [debug]: frame= 301 QP=31.60 NAL=2 Slice:P Poc:26  I:118  P:610  SKIP:892  size=2607 bytes
+x264 [debug]: frame= 302 QP=28.64 NAL=2 Slice:P Poc:28  I:146  P:678  SKIP:796  size=3584 bytes
+x264 [debug]: frame= 303 QP=28.92 NAL=2 Slice:P Poc:30  I:139  P:653  SKIP:828  size=3463 bytes
+x264 [debug]: frame= 304 QP=29.87 NAL=2 Slice:P Poc:32  I:115  P:628  SKIP:877  size=2508 bytes
+x264 [debug]: frame= 305 QP=30.86 NAL=2 Slice:P Poc:34  I:14   P:359  SKIP:1247 size=934 bytes
+x264 [debug]: frame= 306 QP=29.61 NAL=2 Slice:P Poc:36  I:28   P:525  SKIP:1067 size=1641 bytes
+x264 [debug]: frame= 307 QP=30.68 NAL=2 Slice:P Poc:38  I:24   P:379  SKIP:1217 size=1011 bytes
+x264 [debug]: frame= 308 QP=33.25 NAL=2 Slice:P Poc:40  I:16   P:350  SKIP:1254 size=844 bytes
+x264 [debug]: frame= 309 QP=31.58 NAL=2 Slice:P Poc:42  I:25   P:356  SKIP:1239 size=875 bytes
+x264 [debug]: frame= 310 QP=32.72 NAL=2 Slice:P Poc:44  I:21   P:370  SKIP:1229 size=954 bytes
+x264 [debug]: frame= 311 QP=28.13 NAL=2 Slice:P Poc:46  I:54   P:614  SKIP:952  size=2399 bytes
+x264 [debug]: frame= 312 QP=28.17 NAL=2 Slice:P Poc:48  I:42   P:509  SKIP:1069 size=1989 bytes
+x264 [debug]: frame= 313 QP=26.55 NAL=2 Slice:P Poc:50  I:63   P:690  SKIP:867  size=3737 bytes
+x264 [debug]: frame= 314 QP=26.03 NAL=2 Slice:P Poc:52  I:42   P:649  SKIP:929  size=3069 bytes
+x264 [debug]: frame= 315 QP=25.84 NAL=2 Slice:P Poc:54  I:40   P:638  SKIP:942  size=2892 bytes
+x264 [debug]: frame= 316 QP=27.14 NAL=2 Slice:P Poc:56  I:28   P:591  SKIP:1001 size=2549 bytes
+x264 [debug]: frame= 317 QP=29.77 NAL=2 Slice:P Poc:58  I:12   P:397  SKIP:1211 size=952 bytes
+x264 [debug]: frame= 318 QP=30.57 NAL=2 Slice:P Poc:60  I:16   P:457  SKIP:1147 size=1150 bytes
+x264 [debug]: frame= 319 QP=30.60 NAL=2 Slice:P Poc:62  I:17   P:363  SKIP:1240 size=800 bytes
+x264 [debug]: frame= 320 QP=30.60 NAL=2 Slice:P Poc:64  I:18   P:450  SKIP:1152 size=1088 bytes
+x264 [debug]: frame= 321 QP=29.36 NAL=2 Slice:P Poc:66  I:24   P:434  SKIP:1162 size=1083 bytes
+x264 [debug]: frame= 322 QP=30.63 NAL=2 Slice:P Poc:68  I:16   P:498  SKIP:1106 size=1420 bytes
+x264 [debug]: frame= 323 QP=28.12 NAL=2 Slice:P Poc:70  I:34   P:681  SKIP:905  size=3061 bytes
+x264 [debug]: frame= 324 QP=25.21 NAL=2 Slice:P Poc:72  I:32   P:711  SKIP:877  size=3457 bytes
+x264 [debug]: frame= 325 QP=25.75 NAL=2 Slice:P Poc:74  I:21   P:718  SKIP:881  size=3835 bytes
+x264 [debug]: frame= 326 QP=24.74 NAL=2 Slice:P Poc:76  I:14   P:578  SKIP:1028 size=2330 bytes
+x264 [debug]: frame= 327 QP=24.17 NAL=2 Slice:P Poc:78  I:15   P:654  SKIP:951  size=2600 bytes
+x264 [debug]: frame= 328 QP=26.17 NAL=2 Slice:P Poc:80  I:4    P:452  SKIP:1164 size=1449 bytes
+x264 [debug]: frame= 329 QP=27.22 NAL=2 Slice:P Poc:82  I:6    P:167  SKIP:1447 size=353 bytes
+x264 [debug]: frame= 330 QP=29.39 NAL=2 Slice:P Poc:84  I:3    P:249  SKIP:1368 size=452 bytes
+x264 [debug]: frame= 331 QP=29.40 NAL=2 Slice:P Poc:86  I:6    P:224  SKIP:1390 size=439 bytes
+x264 [debug]: frame= 332 QP=30.59 NAL=2 Slice:P Poc:88  I:4    P:294  SKIP:1322 size=600 bytes
+x264 [debug]: frame= 333 QP=27.46 NAL=2 Slice:P Poc:90  I:2    P:198  SKIP:1420 size=426 bytes
+x264 [debug]: frame= 334 QP=26.81 NAL=2 Slice:P Poc:92  I:981  P:306  SKIP:333  size=7703 bytes
+x264 [debug]: frame= 335 QP=23.07 NAL=2 Slice:P Poc:94  I:63   P:554  SKIP:1003 size=2738 bytes
+x264 [debug]: frame= 336 QP=21.26 NAL=3 Slice:I Poc:0   I:1620 P:0    SKIP:0    size=13934 bytes
+x264 [debug]: frame= 337 QP=22.41 NAL=2 Slice:P Poc:2   I:5    P:234  SKIP:1381 size=694 bytes
+x264 [debug]: frame= 338 QP=22.53 NAL=2 Slice:P Poc:4   I:6    P:223  SKIP:1391 size=657 bytes
+x264 [debug]: frame= 339 QP=21.85 NAL=2 Slice:P Poc:6   I:6    P:248  SKIP:1366 size=677 bytes
+x264 [debug]: frame= 340 QP=25.00 NAL=2 Slice:P Poc:8   I:1    P:9    SKIP:1610 size=38 bytes
+x264 [debug]: frame= 341 QP=24.00 NAL=2 Slice:P Poc:10  I:0    P:61   SKIP:1559 size=116 bytes
+x264 [debug]: frame= 342 QP=26.52 NAL=2 Slice:P Poc:12  I:10   P:104  SKIP:1506 size=216 bytes
+x264 [debug]: frame= 343 QP=28.82 NAL=2 Slice:P Poc:14  I:35   P:186  SKIP:1399 size=605 bytes
+x264 [debug]: frame= 344 QP=27.04 NAL=2 Slice:P Poc:16  I:30   P:281  SKIP:1309 size=1178 bytes
+x264 [debug]: frame= 345 QP=25.67 NAL=2 Slice:P Poc:18  I:7    P:243  SKIP:1370 size=835 bytes
+x264 [debug]: frame= 346 QP=24.60 NAL=2 Slice:P Poc:20  I:12   P:335  SKIP:1273 size=1244 bytes
+x264 [debug]: frame= 347 QP=21.83 NAL=2 Slice:P Poc:22  I:23   P:384  SKIP:1213 size=1836 bytes
+x264 [debug]: frame= 348 QP=22.39 NAL=2 Slice:P Poc:24  I:27   P:414  SKIP:1179 size=1887 bytes
+x264 [debug]: frame= 349 QP=22.96 NAL=2 Slice:P Poc:26  I:1    P:350  SKIP:1269 size=1234 bytes
+x264 [debug]: frame= 350 QP=24.21 NAL=2 Slice:P Poc:28  I:2    P:215  SKIP:1403 size=481 bytes
+x264 [debug]: frame= 351 QP=25.73 NAL=2 Slice:P Poc:30  I:1    P:281  SKIP:1338 size=632 bytes
+x264 [debug]: frame= 352 QP=25.99 NAL=2 Slice:P Poc:32  I:15   P:288  SKIP:1317 size=813 bytes
+x264 [debug]: frame= 353 QP=25.51 NAL=2 Slice:P Poc:34  I:13   P:253  SKIP:1354 size=817 bytes
+x264 [debug]: frame= 354 QP=26.99 NAL=2 Slice:P Poc:36  I:6    P:188  SKIP:1426 size=412 bytes
+x264 [debug]: frame= 355 QP=28.33 NAL=2 Slice:P Poc:38  I:1    P:219  SKIP:1400 size=422 bytes
+x264 [debug]: frame= 356 QP=24.21 NAL=2 Slice:P Poc:40  I:38   P:392  SKIP:1190 size=1237 bytes
+x264 [debug]: frame= 357 QP=25.78 NAL=2 Slice:P Poc:42  I:16   P:408  SKIP:1196 size=1418 bytes
+x264 [debug]: frame= 358 QP=25.24 NAL=2 Slice:P Poc:44  I:15   P:368  SKIP:1237 size=1325 bytes
+x264 [debug]: frame= 359 QP=25.44 NAL=2 Slice:P Poc:46  I:22   P:515  SKIP:1083 size=1958 bytes
+x264 [debug]: frame= 360 QP=23.19 NAL=2 Slice:P Poc:48  I:49   P:598  SKIP:973  size=2597 bytes
+x264 [debug]: frame= 361 QP=24.00 NAL=2 Slice:P Poc:50  I:70   P:613  SKIP:937  size=3082 bytes
+x264 [debug]: frame= 362 QP=23.70 NAL=2 Slice:P Poc:52  I:74   P:644  SKIP:902  size=2989 bytes
+x264 [debug]: frame= 363 QP=26.91 NAL=2 Slice:P Poc:54  I:24   P:377  SKIP:1219 size=1014 bytes
+x264 [debug]: frame= 364 QP=27.54 NAL=2 Slice:P Poc:56  I:28   P:386  SKIP:1206 size=1157 bytes
+x264 [debug]: frame= 365 QP=29.61 NAL=2 Slice:P Poc:58  I:21   P:353  SKIP:1246 size=960 bytes
+x264 [debug]: frame= 366 QP=30.02 NAL=2 Slice:P Poc:60  I:17   P:236  SKIP:1367 size=640 bytes
+x264 [debug]: frame= 367 QP=31.24 NAL=2 Slice:P Poc:62  I:26   P:338  SKIP:1256 size=851 bytes
+x264 [debug]: frame= 368 QP=32.00 NAL=2 Slice:P Poc:64  I:46   P:279  SKIP:1295 size=755 bytes
+x264 [debug]: frame= 369 QP=28.62 NAL=2 Slice:P Poc:66  I:83   P:505  SKIP:1032 size=1700 bytes
+x264 [debug]: frame= 370 QP=27.64 NAL=2 Slice:P Poc:68  I:108  P:461  SKIP:1051 size=1730 bytes
+x264 [debug]: frame= 371 QP=27.54 NAL=2 Slice:P Poc:70  I:69   P:418  SKIP:1133 size=1462 bytes
+x264 [debug]: frame= 372 QP=26.33 NAL=2 Slice:P Poc:72  I:109  P:411  SKIP:1100 size=1472 bytes
+x264 [debug]: frame= 373 QP=27.08 NAL=2 Slice:P Poc:74  I:94   P:378  SKIP:1148 size=1313 bytes
+x264 [debug]: frame= 374 QP=26.48 NAL=2 Slice:P Poc:76  I:93   P:372  SKIP:1155 size=1236 bytes
+x264 [debug]: frame= 375 QP=29.81 NAL=2 Slice:P Poc:78  I:76   P:229  SKIP:1315 size=716 bytes
+x264 [debug]: frame= 376 QP=30.70 NAL=2 Slice:P Poc:80  I:95   P:201  SKIP:1324 size=696 bytes
+x264 [debug]: frame= 377 QP=30.61 NAL=2 Slice:P Poc:82  I:108  P:187  SKIP:1325 size=736 bytes
+x264 [debug]: frame= 378 QP=26.97 NAL=2 Slice:P Poc:84  I:254  P:305  SKIP:1061 size=1414 bytes
+x264 [debug]: frame= 379 QP=28.09 NAL=2 Slice:P Poc:86  I:169  P:235  SKIP:1216 size=964 bytes
+x264 [debug]: frame= 380 QP=26.67 NAL=2 Slice:P Poc:88  I:241  P:225  SKIP:1154 size=1069 bytes
+x264 [debug]: frame= 381 QP=24.96 NAL=2 Slice:P Poc:90  I:253  P:268  SKIP:1099 size=1315 bytes
+x264 [debug]: frame= 382 QP=24.85 NAL=2 Slice:P Poc:92  I:266  P:234  SKIP:1120 size=1116 bytes
+x264 [debug]: frame= 383 QP=24.36 NAL=2 Slice:P Poc:94  I:375  P:209  SKIP:1036 size=1213 bytes
+x264 [debug]: frame= 384 QP=20.82 NAL=3 Slice:I Poc:0   I:1620 P:0    SKIP:0    size=2035 bytes
+x264 [debug]: frame= 385 QP=22.35 NAL=2 Slice:P Poc:2   I:204  P:68   SKIP:1348 size=515 bytes
+x264 [debug]: frame= 386 QP=21.76 NAL=2 Slice:P Poc:4   I:496  P:89   SKIP:1035 size=997 bytes
+x264 [debug]: frame= 387 QP=19.27 NAL=2 Slice:P Poc:6   I:428  P:33   SKIP:1159 size=734 bytes
+x264 [debug]: frame= 388 QP=16.00 NAL=2 Slice:P Poc:8   I:300  P:0    SKIP:1320 size=396 bytes
+x264 [debug]: frame= 389 QP=18.00 NAL=2 Slice:P Poc:10  I:0    P:0    SKIP:1620 size=11 bytes
+x264 [debug]: frame= 390 QP=18.00 NAL=2 Slice:P Poc:12  I:0    P:0    SKIP:1620 size=11 bytes
+x264 [debug]: frame= 391 QP=16.00 NAL=2 Slice:P Poc:14  I:0    P:0    SKIP:1620 size=11 bytes
+x264 [debug]: frame= 392 QP=18.00 NAL=2 Slice:P Poc:16  I:0    P:0    SKIP:1620 size=11 bytes
+x264 [debug]: frame= 393 QP=19.00 NAL=2 Slice:P Poc:18  I:19   P:0    SKIP:1601 size=54 bytes
+x264 [debug]: frame= 394 QP=18.00 NAL=2 Slice:P Poc:20  I:0    P:0    SKIP:1620 size=11 bytes
+x264 [debug]: frame= 395 QP=17.00 NAL=2 Slice:P Poc:22  I:0    P:0    SKIP:1620 size=11 bytes
+x264 [debug]: frame= 396 QP=30.11 NAL=2 Slice:P Poc:24  I:1296 P:0    SKIP:324  size=6183 bytes
+x264 [debug]: frame= 397 QP=26.06 NAL=2 Slice:P Poc:26  I:247  P:804  SKIP:569  size=4456 bytes
+x264 [debug]: frame= 398 QP=27.97 NAL=2 Slice:P Poc:28  I:179  P:876  SKIP:565  size=4721 bytes
+x264 [debug]: frame= 399 QP=26.53 NAL=2 Slice:P Poc:30  I:227  P:892  SKIP:501  size=5805 bytes
+x264 [debug]: frame= 400 QP=26.91 NAL=2 Slice:P Poc:32  I:143  P:944  SKIP:533  size=4815 bytes
+x264 [debug]: frame= 401 QP=29.63 NAL=2 Slice:P Poc:34  I:264  P:823  SKIP:533  size=5256 bytes
+x264 [debug]: frame= 402 QP=35.55 NAL=2 Slice:P Poc:36  I:359  P:645  SKIP:616  size=2997 bytes
+x264 [debug]: frame= 403 QP=36.09 NAL=2 Slice:P Poc:38  I:283  P:739  SKIP:598  size=3508 bytes
+x264 [debug]: frame= 404 QP=31.35 NAL=2 Slice:P Poc:40  I:1095 P:143  SKIP:382  size=3459 bytes
+x264 [debug]: frame= 405 QP=30.38 NAL=2 Slice:P Poc:42  I:375  P:404  SKIP:841  size=2186 bytes
+x264 [debug]: frame= 406 QP=32.18 NAL=2 Slice:P Poc:44  I:303  P:467  SKIP:850  size=1966 bytes
+x264 [debug]: frame= 407 QP=34.53 NAL=2 Slice:P Poc:46  I:492  P:441  SKIP:687  size=2764 bytes
+x264 [debug]: frame= 408 QP=32.89 NAL=2 Slice:P Poc:48  I:575  P:436  SKIP:609  size=2789 bytes
+x264 [debug]: frame= 409 QP=33.99 NAL=2 Slice:P Poc:50  I:791  P:358  SKIP:471  size=2956 bytes
+x264 [debug]: frame= 410 QP=36.29 NAL=2 Slice:P Poc:52  I:571  P:351  SKIP:698  size=2109 bytes
+x264 [debug]: frame= 411 QP=35.69 NAL=2 Slice:P Poc:54  I:538  P:417  SKIP:665  size=2031 bytes
+x264 [debug]: frame= 412 QP=36.48 NAL=2 Slice:P Poc:56  I:564  P:488  SKIP:568  size=2388 bytes
+x264 [debug]: frame= 413 QP=36.66 NAL=2 Slice:P Poc:58  I:405  P:530  SKIP:685  size=2255 bytes
+x264 [debug]: frame= 414 QP=36.87 NAL=2 Slice:P Poc:60  I:427  P:540  SKIP:653  size=2421 bytes
+x264 [debug]: frame= 415 QP=36.08 NAL=2 Slice:P Poc:62  I:215  P:534  SKIP:871  size=1657 bytes
+x264 [debug]: frame= 416 QP=37.28 NAL=2 Slice:P Poc:64  I:206  P:494  SKIP:920  size=1509 bytes
+x264 [debug]: frame= 417 QP=37.42 NAL=2 Slice:P Poc:66  I:370  P:539  SKIP:711  size=2026 bytes
+x264 [debug]: frame= 418 QP=35.03 NAL=2 Slice:P Poc:68  I:242  P:486  SKIP:892  size=1644 bytes
+x264 [debug]: frame= 419 QP=35.36 NAL=2 Slice:P Poc:70  I:268  P:558  SKIP:794  size=1901 bytes
+x264 [debug]: frame= 420 QP=22.00 NAL=2 Slice:P Poc:72  I:1304 P:0    SKIP:316  size=1484 bytes
+x264 [debug]: frame= 421 QP=23.00 NAL=2 Slice:P Poc:74  I:0    P:0    SKIP:1620 size=10 bytes
+x264 [debug]: frame= 422 QP=22.00 NAL=2 Slice:P Poc:76  I:0    P:0    SKIP:1620 size=11 bytes
+x264 [debug]: frame= 423 QP=23.00 NAL=2 Slice:P Poc:78  I:0    P:0    SKIP:1620 size=10 bytes
+x264 [debug]: frame= 424 QP=22.00 NAL=2 Slice:P Poc:80  I:0    P:0    SKIP:1620 size=11 bytes
+x264 [debug]: frame= 425 QP=22.00 NAL=2 Slice:P Poc:82  I:0    P:0    SKIP:1620 size=11 bytes
+x264 [debug]: frame= 426 QP=27.00 NAL=2 Slice:P Poc:84  I:0    P:0    SKIP:1620 size=11 bytes
+x264 [debug]: frame= 427 QP=23.00 NAL=2 Slice:P Poc:86  I:0    P:0    SKIP:1620 size=10 bytes
+x264 [debug]: frame= 428 QP=20.00 NAL=2 Slice:P Poc:88  I:0    P:0    SKIP:1620 size=11 bytes
+x264 [debug]: frame= 429 QP=18.00 NAL=2 Slice:P Poc:90  I:1    P:0    SKIP:1619 size=14 bytes
+x264 [debug]: frame= 430 QP=17.00 NAL=2 Slice:P Poc:92  I:0    P:0    SKIP:1620 size=11 bytes
+x264 [debug]: frame= 431 QP=17.00 NAL=2 Slice:P Poc:94  I:0    P:0    SKIP:1620 size=11 bytes
+x264 [debug]: frame= 432 QP=18.00 NAL=3 Slice:I Poc:0   I:1620 P:0    SKIP:0    size=1266 bytes
+x264 [debug]: frame= 433 QP=19.00 NAL=2 Slice:P Poc:2   I:0    P:0    SKIP:1620 size=11 bytes
+x264 [debug]: frame= 434 QP=24.69 NAL=2 Slice:P Poc:4   I:49   P:0    SKIP:1571 size=124 bytes
+x264 [debug]: frame= 435 QP=25.97 NAL=2 Slice:P Poc:6   I:375  P:11   SKIP:1234 size=797 bytes
+x264 [debug]: frame= 436 QP=26.97 NAL=2 Slice:P Poc:8   I:527  P:162  SKIP:931  size=1452 bytes
+x264 [debug]: frame= 437 QP=27.56 NAL=2 Slice:P Poc:10  I:477  P:246  SKIP:897  size=1804 bytes
+x264 [debug]: frame= 438 QP=27.53 NAL=2 Slice:P Poc:12  I:442  P:313  SKIP:865  size=1986 bytes
+x264 [debug]: frame= 439 QP=28.52 NAL=2 Slice:P Poc:14  I:266  P:340  SKIP:1014 size=1736 bytes
+x264 [debug]: frame= 440 QP=29.06 NAL=2 Slice:P Poc:16  I:277  P:453  SKIP:890  size=2243 bytes
+x264 [debug]: frame= 441 QP=29.27 NAL=2 Slice:P Poc:18  I:247  P:443  SKIP:930  size=2307 bytes
+x264 [debug]: frame= 442 QP=30.19 NAL=2 Slice:P Poc:20  I:184  P:428  SKIP:1008 size=1973 bytes
+x264 [debug]: frame= 443 QP=29.77 NAL=2 Slice:P Poc:22  I:141  P:400  SKIP:1079 size=1597 bytes
+x264 [debug]: frame= 444 QP=32.09 NAL=2 Slice:P Poc:24  I:106  P:299  SKIP:1215 size=1152 bytes
+x264 [debug]: frame= 445 QP=32.47 NAL=2 Slice:P Poc:26  I:170  P:483  SKIP:967  size=2180 bytes
+x264 [debug]: frame= 446 QP=33.11 NAL=2 Slice:P Poc:28  I:128  P:391  SKIP:1101 size=1645 bytes
+x264 [debug]: frame= 447 QP=33.36 NAL=2 Slice:P Poc:30  I:92   P:342  SKIP:1186 size=1284 bytes
+x264 [debug]: frame= 448 QP=33.74 NAL=2 Slice:P Poc:32  I:145  P:397  SKIP:1078 size=1908 bytes
+x264 [debug]: frame= 449 QP=32.91 NAL=2 Slice:P Poc:34  I:119  P:415  SKIP:1086 size=1805 bytes
+x264 [debug]: frame= 450 QP=32.72 NAL=2 Slice:P Poc:36  I:172  P:561  SKIP:887  size=3013 bytes
+x264 [debug]: frame= 451 QP=33.34 NAL=2 Slice:P Poc:38  I:46   P:162  SKIP:1412 size=614 bytes
+x264 [debug]: frame= 452 QP=34.95 NAL=2 Slice:P Poc:40  I:63   P:355  SKIP:1202 size=1391 bytes
+x264 [debug]: frame= 453 QP=33.09 NAL=2 Slice:P Poc:42  I:88   P:490  SKIP:1042 size=2182 bytes
+x264 [debug]: frame= 454 QP=35.33 NAL=2 Slice:P Poc:44  I:40   P:310  SKIP:1270 size=1053 bytes
+x264 [debug]: frame= 455 QP=35.96 NAL=2 Slice:P Poc:46  I:61   P:319  SKIP:1240 size=1171 bytes
+x264 [debug]: frame= 456 QP=37.10 NAL=2 Slice:P Poc:48  I:37   P:114  SKIP:1469 size=418 bytes
+x264 [debug]: frame= 457 QP=36.04 NAL=2 Slice:P Poc:50  I:165  P:558  SKIP:897  size=2911 bytes
+x264 [debug]: frame= 458 QP=35.50 NAL=2 Slice:P Poc:52  I:88   P:499  SKIP:1033 size=2139 bytes
+x264 [debug]: frame= 459 QP=36.76 NAL=2 Slice:P Poc:54  I:16   P:171  SKIP:1433 size=538 bytes
+x264 [debug]: frame= 460 QP=36.07 NAL=2 Slice:P Poc:56  I:81   P:476  SKIP:1063 size=2246 bytes
+x264 [debug]: frame= 461 QP=34.94 NAL=2 Slice:P Poc:58  I:66   P:466  SKIP:1088 size=2021 bytes
+x264 [debug]: frame= 462 QP=35.81 NAL=2 Slice:P Poc:60  I:76   P:438  SKIP:1106 size=2054 bytes
+x264 [debug]: frame= 463 QP=37.19 NAL=2 Slice:P Poc:62  I:12   P:96   SKIP:1512 size=252 bytes
+x264 [debug]: frame= 464 QP=37.69 NAL=2 Slice:P Poc:64  I:27   P:209  SKIP:1384 size=669 bytes
+x264 [debug]: frame= 465 QP=37.42 NAL=2 Slice:P Poc:66  I:81   P:502  SKIP:1037 size=2265 bytes
+x264 [debug]: frame= 466 QP=34.84 NAL=2 Slice:P Poc:68  I:33   P:277  SKIP:1310 size=842 bytes
+x264 [debug]: frame= 467 QP=38.78 NAL=2 Slice:P Poc:70  I:25   P:276  SKIP:1319 size=848 bytes
+x264 [debug]: frame= 468 QP=39.30 NAL=2 Slice:P Poc:72  I:44   P:377  SKIP:1199 size=1358 bytes
+x264 [debug]: frame= 469 QP=38.50 NAL=2 Slice:P Poc:74  I:64   P:513  SKIP:1043 size=2193 bytes
+x264 [debug]: frame= 470 QP=37.10 NAL=2 Slice:P Poc:76  I:85   P:626  SKIP:909  size=2946 bytes
+x264 [debug]: frame= 471 QP=36.51 NAL=2 Slice:P Poc:78  I:35   P:294  SKIP:1291 size=1082 bytes
+x264 [debug]: frame= 472 QP=35.42 NAL=2 Slice:P Poc:80  I:72   P:589  SKIP:959  size=2891 bytes
+x264 [debug]: frame= 473 QP=36.90 NAL=2 Slice:P Poc:82  I:47   P:523  SKIP:1050 size=2325 bytes
+x264 [debug]: frame= 474 QP=36.29 NAL=2 Slice:P Poc:84  I:69   P:605  SKIP:946  size=3090 bytes
+x264 [debug]: frame= 475 QP=38.05 NAL=2 Slice:P Poc:86  I:1    P:129  SKIP:1490 size=273 bytes
+x264 [debug]: frame= 476 QP=33.84 NAL=2 Slice:P Poc:88  I:1    P:111  SKIP:1508 size=230 bytes
+x264 [debug]: frame= 477 QP=40.15 NAL=2 Slice:P Poc:90  I:1    P:207  SKIP:1412 size=466 bytes
+x264 [debug]: frame= 478 QP=40.73 NAL=2 Slice:P Poc:92  I:1    P:116  SKIP:1503 size=245 bytes
+x264 [debug]: frame= 479 QP=41.03 NAL=2 Slice:P Poc:94  I:1    P:175  SKIP:1444 size=351 bytes
+x264 [debug]: frame= 480 QP=35.17 NAL=3 Slice:I Poc:0   I:1620 P:0    SKIP:0    size=10575 bytes
+x264 [debug]: frame= 481 QP=35.92 NAL=2 Slice:P Poc:2   I:9    P:196  SKIP:1415 size=472 bytes
+x264 [debug]: frame= 482 QP=32.95 NAL=2 Slice:P Poc:4   I:19   P:411  SKIP:1190 size=1648 bytes
+x264 [debug]: frame= 483 QP=32.56 NAL=2 Slice:P Poc:6   I:19   P:357  SKIP:1244 size=1571 bytes
+x264 [debug]: frame= 484 QP=33.07 NAL=2 Slice:P Poc:8   I:12   P:406  SKIP:1202 size=1807 bytes
+x264 [debug]: frame= 485 QP=32.53 NAL=2 Slice:P Poc:10  I:9    P:322  SKIP:1289 size=1405 bytes
+x264 [debug]: frame= 486 QP=31.71 NAL=2 Slice:P Poc:12  I:18   P:378  SKIP:1224 size=1727 bytes
+x264 [debug]: frame= 487 QP=32.16 NAL=2 Slice:P Poc:14  I:9    P:332  SKIP:1279 size=1462 bytes
+x264 [debug]: frame= 488 QP=31.77 NAL=2 Slice:P Poc:16  I:12   P:408  SKIP:1200 size=1642 bytes
+x264 [debug]: frame= 489 QP=31.28 NAL=2 Slice:P Poc:18  I:6    P:420  SKIP:1194 size=1615 bytes
+x264 [debug]: frame= 490 QP=32.34 NAL=2 Slice:P Poc:20  I:0    P:273  SKIP:1347 size=820 bytes
+x264 [debug]: frame= 491 QP=31.02 NAL=2 Slice:P Poc:22  I:12   P:673  SKIP:935  size=2716 bytes
+x264 [debug]: frame= 492 QP=31.31 NAL=2 Slice:P Poc:24  I:22   P:712  SKIP:886  size=3227 bytes
+x264 [debug]: frame= 493 QP=31.65 NAL=2 Slice:P Poc:26  I:14   P:714  SKIP:892  size=3334 bytes
+x264 [debug]: frame= 494 QP=32.00 NAL=2 Slice:P Poc:28  I:14   P:714  SKIP:892  size=3230 bytes
+x264 [debug]: frame= 495 QP=34.57 NAL=2 Slice:P Poc:30  I:14   P:480  SKIP:1126 size=1962 bytes
+x264 [debug]: frame= 496 QP=34.63 NAL=2 Slice:P Poc:32  I:28   P:717  SKIP:875  size=3294 bytes
+x264 [debug]: frame= 497 QP=35.67 NAL=2 Slice:P Poc:34  I:25   P:631  SKIP:964  size=2697 bytes
+x264 [debug]: frame= 498 QP=37.00 NAL=2 Slice:P Poc:36  I:21   P:452  SKIP:1147 size=1526 bytes
+x264 [debug]: frame= 499 QP=38.24 NAL=2 Slice:P Poc:38  I:29   P:421  SKIP:1170 size=1405 bytes
+x264 [debug]: frame= 500 QP=38.10 NAL=2 Slice:P Poc:40  I:30   P:431  SKIP:1159 size=1387 bytes
+x264 [debug]: frame= 501 QP=37.93 NAL=2 Slice:P Poc:42  I:61   P:541  SKIP:1018 size=1961 bytes
+x264 [debug]: frame= 502 QP=39.40 NAL=2 Slice:P Poc:44  I:66   P:401  SKIP:1153 size=1444 bytes
+x264 [debug]: frame= 503 QP=39.79 NAL=2 Slice:P Poc:46  I:97   P:382  SKIP:1141 size=1251 bytes
+x264 [debug]: frame= 504 QP=38.11 NAL=2 Slice:P Poc:48  I:144  P:510  SKIP:966  size=1858 bytes
+x264 [debug]: frame= 505 QP=37.27 NAL=2 Slice:P Poc:50  I:138  P:501  SKIP:981  size=1823 bytes
+x264 [debug]: frame= 506 QP=37.73 NAL=2 Slice:P Poc:52  I:113  P:320  SKIP:1187 size=1083 bytes
+x264 [debug]: frame= 507 QP=40.00 NAL=2 Slice:P Poc:54  I:70   P:186  SKIP:1364 size=607 bytes
+x264 [debug]: frame= 508 QP=39.32 NAL=2 Slice:P Poc:56  I:179  P:305  SKIP:1136 size=1049 bytes
+x264 [debug]: frame= 509 QP=39.29 NAL=2 Slice:P Poc:58  I:187  P:237  SKIP:1196 size=912 bytes
+x264 [debug]: frame= 510 QP=40.43 NAL=2 Slice:P Poc:60  I:177  P:141  SKIP:1302 size=669 bytes
+x264 [debug]: frame= 511 QP=39.40 NAL=2 Slice:P Poc:62  I:302  P:164  SKIP:1154 size=872 bytes
+x264 [debug]: frame= 512 QP=39.88 NAL=2 Slice:P Poc:64  I:351  P:188  SKIP:1081 size=1046 bytes
+x264 [debug]: frame= 513 QP=36.23 NAL=2 Slice:P Poc:66  I:393  P:226  SKIP:1001 size=1224 bytes
+x264 [debug]: frame= 514 QP=37.59 NAL=2 Slice:P Poc:68  I:319  P:117  SKIP:1184 size=806 bytes
+x264 [debug]: frame= 515 QP=37.31 NAL=2 Slice:P Poc:70  I:457  P:76   SKIP:1087 size=905 bytes
+x264 [debug]: frame= 516 QP=36.39 NAL=2 Slice:P Poc:72  I:584  P:52   SKIP:984  size=1024 bytes
+x264 [debug]: frame= 517 QP=34.18 NAL=2 Slice:P Poc:74  I:610  P:31   SKIP:979  size=1037 bytes
+x264 [debug]: frame= 518 QP=28.00 NAL=2 Slice:P Poc:76  I:1180 P:10   SKIP:430  size=1432 bytes
+x264 [debug]: frame= 519 QP=30.00 NAL=2 Slice:P Poc:78  I:28   P:10   SKIP:1582 size=99 bytes
+x264 [debug]: frame= 520 QP=29.00 NAL=2 Slice:P Poc:80  I:2    P:1    SKIP:1617 size=21 bytes
+x264 [debug]: frame= 521 QP=29.00 NAL=2 Slice:P Poc:82  I:2    P:0    SKIP:1618 size=17 bytes
+x264 [debug]: frame= 522 QP=30.00 NAL=2 Slice:P Poc:84  I:3    P:0    SKIP:1617 size=20 bytes
+x264 [debug]: frame= 523 QP=31.00 NAL=2 Slice:P Poc:86  I:1    P:0    SKIP:1619 size=15 bytes
+x264 [debug]: frame= 524 QP=35.00 NAL=2 Slice:P Poc:88  I:0    P:0    SKIP:1620 size=11 bytes
+x264 [debug]: frame= 525 QP=32.00 NAL=2 Slice:P Poc:90  I:0    P:0    SKIP:1620 size=11 bytes
+x264 [debug]: frame= 526 QP=36.63 NAL=2 Slice:P Poc:92  I:23   P:1    SKIP:1596 size=96 bytes
+x264 [debug]: frame= 527 QP=31.34 NAL=2 Slice:P Poc:94  I:412  P:29   SKIP:1179 size=1002 bytes
+x264 [debug]: frame= 528 QP=31.24 NAL=3 Slice:I Poc:0   I:1620 P:0    SKIP:0    size=1892 bytes
+x264 [debug]: frame= 529 QP=28.53 NAL=2 Slice:P Poc:2   I:333  P:237  SKIP:1050 size=1629 bytes
+x264 [debug]: frame= 530 QP=28.20 NAL=2 Slice:P Poc:4   I:472  P:325  SKIP:823  size=2328 bytes
+x264 [debug]: frame= 531 QP=28.38 NAL=2 Slice:P Poc:6   I:441  P:385  SKIP:794  size=2502 bytes
+x264 [debug]: frame= 532 QP=28.84 NAL=2 Slice:P Poc:8   I:346  P:448  SKIP:826  size=2424 bytes
+x264 [debug]: frame= 533 QP=30.40 NAL=2 Slice:P Poc:10  I:302  P:379  SKIP:939  size=1916 bytes
+x264 [debug]: frame= 534 QP=31.50 NAL=2 Slice:P Poc:12  I:350  P:451  SKIP:819  size=2435 bytes
+x264 [debug]: frame= 535 QP=32.69 NAL=2 Slice:P Poc:14  I:345  P:443  SKIP:832  size=2406 bytes
+x264 [debug]: frame= 536 QP=36.63 NAL=2 Slice:P Poc:16  I:240  P:389  SKIP:991  size=1678 bytes
+x264 [debug]: frame= 537 QP=36.45 NAL=2 Slice:P Poc:18  I:260  P:406  SKIP:954  size=1757 bytes
+x264 [debug]: frame= 538 QP=36.66 NAL=2 Slice:P Poc:20  I:184  P:431  SKIP:1005 size=1628 bytes
+x264 [debug]: frame= 539 QP=36.28 NAL=2 Slice:P Poc:22  I:261  P:459  SKIP:900  size=2118 bytes
+x264 [debug]: frame= 540 QP=36.80 NAL=2 Slice:P Poc:24  I:204  P:438  SKIP:978  size=1696 bytes
+x264 [debug]: frame= 541 QP=37.05 NAL=2 Slice:P Poc:26  I:204  P:422  SKIP:994  size=1695 bytes
+x264 [debug]: frame= 542 QP=39.00 NAL=2 Slice:P Poc:28  I:275  P:494  SKIP:851  size=2295 bytes
+x264 [debug]: frame= 543 QP=37.30 NAL=2 Slice:P Poc:30  I:230  P:478  SKIP:912  size=2017 bytes
+x264 [debug]: frame= 544 QP=38.59 NAL=2 Slice:P Poc:32  I:172  P:431  SKIP:1017 size=1630 bytes
+x264 [debug]: frame= 545 QP=39.69 NAL=2 Slice:P Poc:34  I:165  P:427  SKIP:1028 size=1581 bytes
+x264 [debug]: frame= 546 QP=40.36 NAL=2 Slice:P Poc:36  I:227  P:523  SKIP:870  size=2042 bytes
+x264 [debug]: frame= 547 QP=38.77 NAL=2 Slice:P Poc:38  I:186  P:512  SKIP:922  size=1961 bytes
+x264 [debug]: frame= 548 QP=40.39 NAL=2 Slice:P Poc:40  I:179  P:510  SKIP:931  size=1893 bytes
+x264 [debug]: frame= 549 QP=40.56 NAL=2 Slice:P Poc:42  I:170  P:485  SKIP:965  size=1737 bytes
+x264 [debug]: frame= 550 QP=39.34 NAL=2 Slice:P Poc:44  I:201  P:550  SKIP:869  size=2237 bytes
+x264 [debug]: frame= 551 QP=38.65 NAL=2 Slice:P Poc:46  I:244  P:583  SKIP:793  size=2565 bytes
+x264 [debug]: frame= 552 QP=41.33 NAL=2 Slice:P Poc:48  I:109  P:461  SKIP:1050 size=1537 bytes
+x264 [debug]: frame= 553 QP=42.09 NAL=2 Slice:P Poc:50  I:67   P:461  SKIP:1092 size=1394 bytes
+x264 [debug]: frame= 554 QP=39.88 NAL=2 Slice:P Poc:52  I:48   P:400  SKIP:1172 size=1098 bytes
+x264 [debug]: frame= 555 QP=41.09 NAL=2 Slice:P Poc:54  I:47   P:453  SKIP:1120 size=1211 bytes
+x264 [debug]: frame= 556 QP=41.94 NAL=2 Slice:P Poc:56  I:61   P:383  SKIP:1176 size=1115 bytes
+x264 [debug]: frame= 557 QP=42.30 NAL=2 Slice:P Poc:58  I:62   P:368  SKIP:1190 size=1069 bytes
+x264 [debug]: frame= 558 QP=41.48 NAL=2 Slice:P Poc:60  I:78   P:469  SKIP:1073 size=1364 bytes
+x264 [debug]: frame= 559 QP=41.28 NAL=2 Slice:P Poc:62  I:99   P:457  SKIP:1064 size=1512 bytes
+x264 [debug]: frame= 560 QP=40.09 NAL=2 Slice:P Poc:64  I:49   P:501  SKIP:1070 size=1447 bytes
+x264 [debug]: frame= 561 QP=39.12 NAL=2 Slice:P Poc:66  I:56   P:501  SKIP:1063 size=1395 bytes
+x264 [debug]: frame= 562 QP=41.14 NAL=2 Slice:P Poc:68  I:71   P:542  SKIP:1007 size=1649 bytes
+x264 [debug]: frame= 563 QP=40.20 NAL=2 Slice:P Poc:70  I:111  P:455  SKIP:1054 size=1789 bytes
+x264 [debug]: frame= 564 QP=38.80 NAL=2 Slice:P Poc:72  I:84   P:369  SKIP:1167 size=1240 bytes
+x264 [debug]: frame= 565 QP=39.11 NAL=2 Slice:P Poc:74  I:73   P:422  SKIP:1125 size=1404 bytes
+x264 [debug]: frame= 566 QP=38.92 NAL=2 Slice:P Poc:76  I:104  P:412  SKIP:1104 size=1509 bytes
+x264 [debug]: frame= 567 QP=39.58 NAL=2 Slice:P Poc:78  I:65   P:370  SKIP:1185 size=1149 bytes
+x264 [debug]: frame= 568 QP=40.34 NAL=2 Slice:P Poc:80  I:39   P:367  SKIP:1214 size=1041 bytes
+x264 [debug]: frame= 569 QP=39.62 NAL=2 Slice:P Poc:82  I:47   P:392  SKIP:1181 size=1054 bytes
+x264 [debug]: frame= 570 QP=39.80 NAL=2 Slice:P Poc:84  I:75   P:320  SKIP:1225 size=1169 bytes
+x264 [debug]: frame= 571 QP=36.14 NAL=2 Slice:P Poc:86  I:1015 P:239  SKIP:366  size=3945 bytes
+x264 [debug]: frame= 572 QP=35.40 NAL=2 Slice:P Poc:88  I:108  P:361  SKIP:1151 size=1214 bytes
+x264 [debug]: frame= 573 QP=35.83 NAL=2 Slice:P Poc:90  I:84   P:393  SKIP:1143 size=1230 bytes
+x264 [debug]: frame= 574 QP=34.57 NAL=2 Slice:P Poc:92  I:97   P:429  SKIP:1094 size=1388 bytes
+x264 [debug]: frame= 575 QP=35.22 NAL=2 Slice:P Poc:94  I:87   P:460  SKIP:1073 size=1443 bytes
+x264 [debug]: frame= 576 QP=34.63 NAL=3 Slice:I Poc:0   I:1620 P:0    SKIP:0    size=4351 bytes
+x264 [debug]: frame= 577 QP=38.19 NAL=2 Slice:P Poc:2   I:128  P:257  SKIP:1235 size=952 bytes
+x264 [debug]: frame= 578 QP=35.18 NAL=2 Slice:P Poc:4   I:129  P:462  SKIP:1029 size=1400 bytes
+x264 [debug]: frame= 579 QP=36.19 NAL=2 Slice:P Poc:6   I:64   P:435  SKIP:1121 size=1170 bytes
+x264 [debug]: frame= 580 QP=34.55 NAL=2 Slice:P Poc:8   I:91   P:398  SKIP:1131 size=1275 bytes
+x264 [debug]: frame= 581 QP=35.87 NAL=2 Slice:P Poc:10  I:63   P:398  SKIP:1159 size=1197 bytes
+x264 [debug]: frame= 582 QP=35.44 NAL=2 Slice:P Poc:12  I:92   P:426  SKIP:1102 size=1339 bytes
+x264 [debug]: frame= 583 QP=34.43 NAL=2 Slice:P Poc:14  I:103  P:442  SKIP:1075 size=1510 bytes
+x264 [debug]: frame= 584 QP=35.42 NAL=2 Slice:P Poc:16  I:108  P:434  SKIP:1078 size=1539 bytes
+x264 [debug]: frame= 585 QP=34.70 NAL=2 Slice:P Poc:18  I:102  P:479  SKIP:1039 size=1690 bytes
+x264 [debug]: frame= 586 QP=35.20 NAL=2 Slice:P Poc:20  I:125  P:462  SKIP:1033 size=1877 bytes
+x264 [debug]: frame= 587 QP=36.28 NAL=2 Slice:P Poc:22  I:97   P:466  SKIP:1057 size=1719 bytes
+x264 [debug]: frame= 588 QP=34.90 NAL=2 Slice:P Poc:24  I:61   P:443  SKIP:1116 size=1298 bytes
+x264 [debug]: frame= 589 QP=34.40 NAL=2 Slice:P Poc:26  I:63   P:424  SKIP:1133 size=1278 bytes
+x264 [debug]: frame= 590 QP=34.92 NAL=2 Slice:P Poc:28  I:68   P:434  SKIP:1118 size=1315 bytes
+x264 [debug]: frame= 591 QP=35.83 NAL=2 Slice:P Poc:30  I:76   P:471  SKIP:1073 size=1430 bytes
+x264 [debug]: frame= 592 QP=36.02 NAL=2 Slice:P Poc:32  I:89   P:449  SKIP:1082 size=1558 bytes
+x264 [debug]: frame= 593 QP=36.17 NAL=2 Slice:P Poc:34  I:81   P:486  SKIP:1053 size=1579 bytes
+x264 [debug]: frame= 594 QP=35.42 NAL=2 Slice:P Poc:36  I:99   P:465  SKIP:1056 size=1690 bytes
+x264 [debug]: frame= 595 QP=35.13 NAL=2 Slice:P Poc:38  I:137  P:483  SKIP:1000 size=1996 bytes
+x264 [debug]: frame= 596 QP=34.37 NAL=2 Slice:P Poc:40  I:122  P:469  SKIP:1029 size=1692 bytes
+x264 [debug]: frame= 597 QP=35.83 NAL=2 Slice:P Poc:42  I:56   P:508  SKIP:1056 size=1389 bytes
+x264 [debug]: frame= 598 QP=35.50 NAL=2 Slice:P Poc:44  I:58   P:453  SKIP:1109 size=1325 bytes
+x264 [debug]: frame= 599 QP=34.80 NAL=2 Slice:P Poc:46  I:51   P:479  SKIP:1090 size=1393 bytes
+x264 [debug]: frame= 600 QP=35.58 NAL=2 Slice:P Poc:48  I:58   P:459  SKIP:1103 size=1368 bytes
+x264 [debug]: frame= 601 QP=37.31 NAL=2 Slice:P Poc:50  I:64   P:444  SKIP:1112 size=1390 bytes
+x264 [debug]: frame= 602 QP=35.64 NAL=2 Slice:P Poc:52  I:61   P:458  SKIP:1101 size=1394 bytes
+x264 [debug]: frame= 603 QP=35.33 NAL=2 Slice:P Poc:54  I:78   P:515  SKIP:1027 size=1681 bytes
+x264 [debug]: frame= 604 QP=36.09 NAL=2 Slice:P Poc:56  I:61   P:500  SKIP:1059 size=1682 bytes
+x264 [debug]: frame= 605 QP=34.97 NAL=2 Slice:P Poc:58  I:64   P:485  SKIP:1071 size=1519 bytes
+x264 [debug]: frame= 606 QP=36.38 NAL=2 Slice:P Poc:60  I:50   P:483  SKIP:1087 size=1516 bytes
+x264 [debug]: frame= 607 QP=34.67 NAL=2 Slice:P Poc:62  I:55   P:537  SKIP:1028 size=1676 bytes
+x264 [debug]: frame= 608 QP=36.36 NAL=2 Slice:P Poc:64  I:48   P:464  SKIP:1108 size=1425 bytes
+x264 [debug]: frame= 609 QP=34.79 NAL=2 Slice:P Poc:66  I:48   P:521  SKIP:1051 size=1483 bytes
+x264 [debug]: frame= 610 QP=35.75 NAL=2 Slice:P Poc:68  I:49   P:527  SKIP:1044 size=1566 bytes
+x264 [debug]: frame= 611 QP=36.89 NAL=2 Slice:P Poc:70  I:55   P:542  SKIP:1023 size=1746 bytes
+x264 [debug]: frame= 612 QP=36.31 NAL=2 Slice:P Poc:72  I:53   P:533  SKIP:1034 size=1754 bytes
+x264 [debug]: frame= 613 QP=35.67 NAL=2 Slice:P Poc:74  I:72   P:556  SKIP:992  size=1795 bytes
+x264 [debug]: frame= 614 QP=37.04 NAL=2 Slice:P Poc:76  I:86   P:531  SKIP:1003 size=1998 bytes
+x264 [debug]: frame= 615 QP=35.02 NAL=2 Slice:P Poc:78  I:61   P:577  SKIP:982  size=1763 bytes
+x264 [debug]: frame= 616 QP=36.48 NAL=2 Slice:P Poc:80  I:64   P:556  SKIP:1000 size=1973 bytes
+x264 [debug]: frame= 617 QP=38.05 NAL=2 Slice:P Poc:82  I:64   P:530  SKIP:1026 size=1836 bytes
+x264 [debug]: frame= 618 QP=36.59 NAL=2 Slice:P Poc:84  I:97   P:534  SKIP:989  size=1916 bytes
+x264 [debug]: frame= 619 QP=37.40 NAL=2 Slice:P Poc:86  I:143  P:537  SKIP:940  size=2193 bytes
+x264 [debug]: frame= 620 QP=37.07 NAL=2 Slice:P Poc:88  I:48   P:530  SKIP:1042 size=1397 bytes
+x264 [debug]: frame= 621 QP=35.85 NAL=2 Slice:P Poc:90  I:1254 P:40   SKIP:326  size=4038 bytes
+x264 [debug]: frame= 622 QP=31.89 NAL=2 Slice:P Poc:92  I:244  P:381  SKIP:995  size=1647 bytes
+x264 [debug]: frame= 623 QP=33.23 NAL=2 Slice:P Poc:94  I:249  P:414  SKIP:957  size=1793 bytes
+x264 [debug]: frame= 624 QP=30.14 NAL=3 Slice:I Poc:0   I:1620 P:0    SKIP:0    size=5114 bytes
+x264 [debug]: frame= 625 QP=33.66 NAL=2 Slice:P Poc:2   I:175  P:369  SKIP:1076 size=1221 bytes
+x264 [debug]: frame= 626 QP=32.86 NAL=2 Slice:P Poc:4   I:142  P:507  SKIP:971  size=1561 bytes
+x264 [debug]: frame= 627 QP=37.44 NAL=2 Slice:P Poc:6   I:177  P:305  SKIP:1138 size=1057 bytes
+x264 [debug]: frame= 628 QP=37.21 NAL=2 Slice:P Poc:8   I:209  P:382  SKIP:1029 size=1334 bytes
+x264 [debug]: frame= 629 QP=38.49 NAL=2 Slice:P Poc:10  I:224  P:343  SKIP:1053 size=1400 bytes
+x264 [debug]: frame= 630 QP=35.72 NAL=2 Slice:P Poc:12  I:280  P:363  SKIP:977  size=1594 bytes
+x264 [debug]: frame= 631 QP=35.64 NAL=2 Slice:P Poc:14  I:370  P:403  SKIP:847  size=2179 bytes
+x264 [debug]: frame= 632 QP=35.02 NAL=2 Slice:P Poc:16  I:286  P:419  SKIP:915  size=2090 bytes
+x264 [debug]: frame= 633 QP=37.47 NAL=2 Slice:P Poc:18  I:314  P:336  SKIP:970  size=1787 bytes
+x264 [debug]: frame= 634 QP=36.61 NAL=2 Slice:P Poc:20  I:303  P:344  SKIP:973  size=1746 bytes
+x264 [debug]: frame= 635 QP=36.72 NAL=2 Slice:P Poc:22  I:322  P:336  SKIP:962  size=1763 bytes
+x264 [debug]: frame= 636 QP=37.51 NAL=2 Slice:P Poc:24  I:282  P:341  SKIP:997  size=1792 bytes
+x264 [debug]: frame= 637 QP=37.98 NAL=2 Slice:P Poc:26  I:240  P:397  SKIP:983  size=1731 bytes
+x264 [debug]: frame= 638 QP=36.69 NAL=2 Slice:P Poc:28  I:317  P:396  SKIP:907  size=1773 bytes
+x264 [debug]: frame= 639 QP=38.23 NAL=2 Slice:P Poc:30  I:275  P:424  SKIP:921  size=1869 bytes
+x264 [debug]: frame= 640 QP=36.19 NAL=2 Slice:P Poc:32  I:347  P:399  SKIP:874  size=1957 bytes
+x264 [debug]: frame= 641 QP=37.85 NAL=2 Slice:P Poc:34  I:346  P:371  SKIP:903  size=1935 bytes
+x264 [debug]: frame= 642 QP=36.05 NAL=2 Slice:P Poc:36  I:312  P:342  SKIP:966  size=1886 bytes
+x264 [debug]: frame= 643 QP=35.40 NAL=2 Slice:P Poc:38  I:254  P:352  SKIP:1014 size=1683 bytes
+x264 [debug]: frame= 644 QP=36.75 NAL=2 Slice:P Poc:40  I:206  P:331  SKIP:1083 size=1412 bytes
+x264 [debug]: frame= 645 QP=37.27 NAL=2 Slice:P Poc:42  I:225  P:328  SKIP:1067 size=1403 bytes
+x264 [debug]: frame= 646 QP=37.61 NAL=2 Slice:P Poc:44  I:235  P:288  SKIP:1097 size=1355 bytes
+x264 [debug]: frame= 647 QP=36.71 NAL=2 Slice:P Poc:46  I:232  P:301  SKIP:1087 size=1336 bytes
+x264 [debug]: frame= 648 QP=36.92 NAL=2 Slice:P Poc:48  I:275  P:318  SKIP:1027 size=1446 bytes
+x264 [debug]: frame= 649 QP=36.59 NAL=2 Slice:P Poc:50  I:312  P:327  SKIP:981  size=1608 bytes
+x264 [debug]: frame= 650 QP=37.33 NAL=2 Slice:P Poc:52  I:338  P:336  SKIP:946  size=1778 bytes
+x264 [debug]: frame= 651 QP=36.48 NAL=2 Slice:P Poc:54  I:236  P:325  SKIP:1059 size=1611 bytes
+x264 [debug]: frame= 652 QP=38.07 NAL=2 Slice:P Poc:56  I:284  P:300  SKIP:1036 size=1559 bytes
+x264 [debug]: frame= 653 QP=36.29 NAL=2 Slice:P Poc:58  I:359  P:341  SKIP:920  size=1765 bytes
+x264 [debug]: frame= 654 QP=35.97 NAL=2 Slice:P Poc:60  I:395  P:377  SKIP:848  size=1938 bytes
+x264 [debug]: frame= 655 QP=36.03 NAL=2 Slice:P Poc:62  I:331  P:412  SKIP:877  size=1948 bytes
+x264 [debug]: frame= 656 QP=37.37 NAL=2 Slice:P Poc:64  I:359  P:406  SKIP:855  size=2003 bytes
+x264 [debug]: frame= 657 QP=36.26 NAL=2 Slice:P Poc:66  I:380  P:412  SKIP:828  size=2282 bytes
+x264 [debug]: frame= 658 QP=37.04 NAL=2 Slice:P Poc:68  I:1256 P:43   SKIP:321  size=3628 bytes
+x264 [debug]: frame= 659 QP=34.90 NAL=2 Slice:P Poc:70  I:52   P:295  SKIP:1273 size=780 bytes
+x264 [debug]: frame= 660 QP=35.63 NAL=2 Slice:P Poc:72  I:87   P:331  SKIP:1202 size=967 bytes
+x264 [debug]: frame= 661 QP=36.89 NAL=2 Slice:P Poc:74  I:79   P:293  SKIP:1248 size=899 bytes
+x264 [debug]: frame= 662 QP=37.63 NAL=2 Slice:P Poc:76  I:88   P:287  SKIP:1245 size=944 bytes
+x264 [debug]: frame= 663 QP=36.18 NAL=2 Slice:P Poc:78  I:72   P:325  SKIP:1223 size=944 bytes
+x264 [debug]: frame= 664 QP=38.50 NAL=2 Slice:P Poc:80  I:55   P:282  SKIP:1283 size=732 bytes
+x264 [debug]: frame= 665 QP=35.96 NAL=2 Slice:P Poc:82  I:43   P:429  SKIP:1148 size=1088 bytes
+x264 [debug]: frame= 666 QP=34.02 NAL=2 Slice:P Poc:84  I:30   P:347  SKIP:1243 size=855 bytes
+x264 [debug]: frame= 667 QP=35.80 NAL=2 Slice:P Poc:86  I:24   P:332  SKIP:1264 size=803 bytes
+x264 [debug]: frame= 668 QP=35.47 NAL=2 Slice:P Poc:88  I:13   P:267  SKIP:1340 size=631 bytes
+x264 [debug]: frame= 669 QP=33.33 NAL=2 Slice:P Poc:90  I:15   P:278  SKIP:1327 size=637 bytes
+x264 [debug]: frame= 670 QP=34.76 NAL=2 Slice:P Poc:92  I:7    P:239  SKIP:1374 size=509 bytes
+x264 [debug]: frame= 671 QP=34.83 NAL=2 Slice:P Poc:94  I:12   P:248  SKIP:1360 size=503 bytes
+x264 [debug]: frame= 672 QP=21.00 NAL=3 Slice:I Poc:0   I:1620 P:0    SKIP:0    size=1265 bytes
+x264 [debug]: frame= 673 QP=22.00 NAL=2 Slice:P Poc:2   I:0    P:0    SKIP:1620 size=11 bytes
+x264 [debug]: frame= 674 QP=22.00 NAL=2 Slice:P Poc:4   I:0    P:0    SKIP:1620 size=11 bytes
+x264 [debug]: frame= 675 QP=21.00 NAL=2 Slice:P Poc:6   I:0    P:0    SKIP:1620 size=11 bytes
+x264 [debug]: frame= 676 QP=21.00 NAL=2 Slice:P Poc:8   I:0    P:0    SKIP:1620 size=12 bytes
+x264 [debug]: frame= 677 QP=21.00 NAL=2 Slice:P Poc:10  I:0    P:0    SKIP:1620 size=11 bytes
+x264 [debug]: frame= 678 QP=21.00 NAL=2 Slice:P Poc:12  I:0    P:0    SKIP:1620 size=11 bytes
+x264 [debug]: frame= 679 QP=25.78 NAL=2 Slice:P Poc:14  I:1185 P:0    SKIP:435  size=1850 bytes
+x264 [debug]: frame= 680 QP=27.91 NAL=2 Slice:P Poc:16  I:1191 P:73   SKIP:356  size=2351 bytes
+x264 [debug]: frame= 681 QP=28.89 NAL=2 Slice:P Poc:18  I:1153 P:84   SKIP:383  size=2486 bytes
+x264 [debug]: frame= 682 QP=29.18 NAL=2 Slice:P Poc:20  I:1095 P:134  SKIP:391  size=2759 bytes
+x264 [debug]: frame= 683 QP=28.61 NAL=2 Slice:P Poc:22  I:1020 P:190  SKIP:410  size=3003 bytes
+x264 [debug]: frame= 684 QP=30.31 NAL=2 Slice:P Poc:24  I:1004 P:223  SKIP:393  size=3218 bytes
+x264 [debug]: frame= 685 QP=33.80 NAL=2 Slice:P Poc:26  I:858  P:205  SKIP:557  size=2252 bytes
+x264 [debug]: frame= 686 QP=36.68 NAL=2 Slice:P Poc:28  I:838  P:193  SKIP:589  size=2090 bytes
+x264 [debug]: frame= 687 QP=35.76 NAL=2 Slice:P Poc:30  I:779  P:210  SKIP:631  size=1955 bytes
+x264 [debug]: frame= 688 QP=39.86 NAL=2 Slice:P Poc:32  I:781  P:188  SKIP:651  size=1844 bytes
+x264 [debug]: frame= 689 QP=39.24 NAL=2 Slice:P Poc:34  I:739  P:217  SKIP:664  size=1894 bytes
+x264 [debug]: frame= 690 QP=40.98 NAL=2 Slice:P Poc:36  I:730  P:223  SKIP:667  size=1899 bytes
+x264 [debug]: frame= 691 QP=40.29 NAL=2 Slice:P Poc:38  I:700  P:218  SKIP:702  size=1789 bytes
+x264 [debug]: frame= 692 QP=41.95 NAL=2 Slice:P Poc:40  I:717  P:164  SKIP:739  size=1670 bytes
+x264 [debug]: frame= 693 QP=41.74 NAL=2 Slice:P Poc:42  I:710  P:203  SKIP:707  size=1787 bytes
+x264 [debug]: frame= 694 QP=44.41 NAL=2 Slice:P Poc:44  I:644  P:195  SKIP:781  size=1566 bytes
+x264 [debug]: frame= 695 QP=45.92 NAL=2 Slice:P Poc:46  I:562  P:203  SKIP:855  size=1488 bytes
+x264 [debug]: frame= 696 QP=44.29 NAL=2 Slice:P Poc:48  I:651  P:190  SKIP:779  size=1681 bytes
+x264 [debug]: frame= 697 QP=45.03 NAL=2 Slice:P Poc:50  I:589  P:225  SKIP:806  size=1598 bytes
+x264 [debug]: frame= 698 QP=47.12 NAL=2 Slice:P Poc:52  I:546  P:242  SKIP:832  size=1538 bytes
+x264 [debug]: frame= 699 QP=47.57 NAL=2 Slice:P Poc:54  I:596  P:237  SKIP:787  size=1610 bytes
+x264 [debug]: frame= 700 QP=47.65 NAL=2 Slice:P Poc:56  I:668  P:196  SKIP:756  size=1628 bytes
+x264 [debug]: frame= 701 QP=47.89 NAL=2 Slice:P Poc:58  I:211  P:198  SKIP:1211 size=856 bytes
+x264 [debug]: frame= 702 QP=48.03 NAL=2 Slice:P Poc:60  I:123  P:145  SKIP:1352 size=598 bytes
+x264 [debug]: frame= 703 QP=48.37 NAL=2 Slice:P Poc:62  I:118  P:130  SKIP:1372 size=529 bytes
+x264 [debug]: frame= 704 QP=47.64 NAL=2 Slice:P Poc:64  I:132  P:136  SKIP:1352 size=556 bytes
+x264 [debug]: frame= 705 QP=48.33 NAL=2 Slice:P Poc:66  I:124  P:129  SKIP:1367 size=506 bytes
+x264 [debug]: frame= 706 QP=49.73 NAL=2 Slice:P Poc:68  I:167  P:106  SKIP:1347 size=547 bytes
+x264 [debug]: frame= 707 QP=47.83 NAL=2 Slice:P Poc:70  I:197  P:155  SKIP:1268 size=701 bytes
+x264 [debug]: frame= 708 QP=46.29 NAL=2 Slice:P Poc:72  I:250  P:192  SKIP:1178 size=903 bytes
+x264 [debug]: frame= 709 QP=43.39 NAL=2 Slice:P Poc:74  I:228  P:212  SKIP:1180 size=923 bytes
+x264 [debug]: frame= 710 QP=44.55 NAL=2 Slice:P Poc:76  I:169  P:240  SKIP:1211 size=879 bytes
+x264 [debug]: frame= 711 QP=42.63 NAL=2 Slice:P Poc:78  I:146  P:222  SKIP:1252 size=874 bytes
+x264 [debug]: frame= 712 QP=45.37 NAL=2 Slice:P Poc:80  I:138  P:239  SKIP:1243 size=845 bytes
+x264 [debug]: frame= 713 QP=43.80 NAL=2 Slice:P Poc:82  I:146  P:288  SKIP:1186 size=967 bytes
+x264 [debug]: frame= 714 QP=46.16 NAL=2 Slice:P Poc:84  I:168  P:276  SKIP:1176 size=1010 bytes
+x264 [debug]: frame= 715 QP=46.42 NAL=2 Slice:P Poc:86  I:242  P:266  SKIP:1112 size=1176 bytes
+x264 [debug]: frame= 716 QP=44.67 NAL=2 Slice:P Poc:88  I:251  P:314  SKIP:1055 size=1310 bytes
+x264 [debug]: frame= 717 QP=46.21 NAL=2 Slice:P Poc:90  I:360  P:347  SKIP:913  size=1686 bytes
+x264 [debug]: frame= 718 QP=44.11 NAL=2 Slice:P Poc:92  I:549  P:339  SKIP:732  size=2276 bytes
+x264 [debug]: frame= 719 QP=45.88 NAL=2 Slice:P Poc:94  I:666  P:314  SKIP:640  size=2326 bytes
+x264 [debug]: frame= 720 QP=41.96 NAL=3 Slice:I Poc:0   I:1620 P:0    SKIP:0    size=3773 bytes
+x264 [debug]: frame= 721 QP=44.41 NAL=2 Slice:P Poc:2   I:581  P:325  SKIP:714  size=2203 bytes
+x264 [debug]: frame= 722 QP=45.64 NAL=2 Slice:P Poc:4   I:515  P:377  SKIP:728  size=2273 bytes
+x264 [debug]: frame= 723 QP=43.89 NAL=2 Slice:P Poc:6   I:447  P:405  SKIP:768  size=2148 bytes
+x264 [debug]: frame= 724 QP=43.36 NAL=2 Slice:P Poc:8   I:347  P:428  SKIP:845  size=2007 bytes
+x264 [debug]: frame= 725 QP=45.83 NAL=2 Slice:P Poc:10  I:361  P:503  SKIP:756  size=2151 bytes
+x264 [debug]: frame= 726 QP=44.23 NAL=2 Slice:P Poc:12  I:358  P:481  SKIP:781  size=2128 bytes
+x264 [debug]: frame= 727 QP=45.45 NAL=2 Slice:P Poc:14  I:331  P:539  SKIP:750  size=2310 bytes
+x264 [debug]: frame= 728 QP=42.67 NAL=2 Slice:P Poc:16  I:371  P:504  SKIP:745  size=2210 bytes
+x264 [debug]: frame= 729 QP=42.37 NAL=2 Slice:P Poc:18  I:388  P:452  SKIP:780  size=2136 bytes
+x264 [debug]: frame= 730 QP=42.43 NAL=2 Slice:P Poc:20  I:263  P:541  SKIP:816  size=2107 bytes
+x264 [debug]: frame= 731 QP=41.95 NAL=2 Slice:P Poc:22  I:281  P:460  SKIP:879  size=2180 bytes
+x264 [debug]: frame= 732 QP=42.30 NAL=2 Slice:P Poc:24  I:269  P:495  SKIP:856  size=2177 bytes
+x264 [debug]: frame= 733 QP=41.92 NAL=2 Slice:P Poc:26  I:216  P:591  SKIP:813  size=2226 bytes
+x264 [debug]: frame= 734 QP=42.59 NAL=2 Slice:P Poc:28  I:310  P:495  SKIP:815  size=2448 bytes
+x264 [debug]: frame= 735 QP=40.28 NAL=2 Slice:P Poc:30  I:268  P:456  SKIP:896  size=2231 bytes
+x264 [debug]: frame= 736 QP=39.19 NAL=2 Slice:P Poc:32  I:290  P:470  SKIP:860  size=2239 bytes
+x264 [debug]: frame= 737 QP=38.96 NAL=2 Slice:P Poc:34  I:327  P:462  SKIP:831  size=2410 bytes
+x264 [debug]: frame= 738 QP=37.98 NAL=2 Slice:P Poc:36  I:299  P:495  SKIP:826  size=2249 bytes
+x264 [debug]: frame= 739 QP=36.62 NAL=2 Slice:P Poc:38  I:300  P:465  SKIP:855  size=1940 bytes
+x264 [debug]: frame= 740 QP=37.55 NAL=2 Slice:P Poc:40  I:310  P:358  SKIP:952  size=1680 bytes
+x264 [debug]: frame= 741 QP=37.22 NAL=2 Slice:P Poc:42  I:244  P:356  SKIP:1020 size=1516 bytes
+x264 [debug]: frame= 742 QP=37.85 NAL=2 Slice:P Poc:44  I:311  P:366  SKIP:943  size=1630 bytes
+x264 [debug]: frame= 743 QP=37.19 NAL=2 Slice:P Poc:46  I:280  P:377  SKIP:963  size=1656 bytes
+x264 [debug]: frame= 744 QP=36.54 NAL=2 Slice:P Poc:48  I:408  P:396  SKIP:816  size=1900 bytes
+x264 [debug]: frame= 745 QP=38.39 NAL=2 Slice:P Poc:50  I:285  P:373  SKIP:962  size=1649 bytes
+x264 [debug]: frame= 746 QP=38.48 NAL=2 Slice:P Poc:52  I:388  P:367  SKIP:865  size=1724 bytes
+x264 [debug]: frame= 747 QP=37.15 NAL=2 Slice:P Poc:54  I:261  P:377  SKIP:982  size=1575 bytes
+x264 [debug]: frame= 748 QP=38.70 NAL=2 Slice:P Poc:56  I:260  P:375  SKIP:985  size=1557 bytes
+x264 [debug]: frame= 749 QP=38.83 NAL=2 Slice:P Poc:58  I:174  P:371  SKIP:1075 size=1374 bytes
+x264 [debug]: frame= 750 QP=37.99 NAL=2 Slice:P Poc:60  I:267  P:365  SKIP:988  size=1467 bytes
+x264 [debug]: frame= 751 QP=38.04 NAL=2 Slice:P Poc:62  I:269  P:381  SKIP:970  size=1494 bytes
+x264 [debug]: frame= 752 QP=36.76 NAL=2 Slice:P Poc:64  I:198  P:361  SKIP:1061 size=1349 bytes
+x264 [debug]: frame= 753 QP=38.23 NAL=2 Slice:P Poc:66  I:132  P:344  SKIP:1144 size=1081 bytes
+x264 [debug]: frame= 754 QP=36.63 NAL=2 Slice:P Poc:68  I:70   P:348  SKIP:1202 size=959 bytes
+x264 [debug]: frame= 755 QP=35.63 NAL=2 Slice:P Poc:70  I:517  P:453  SKIP:650  size=2264 bytes
+x264 [debug]: frame= 756 QP=36.05 NAL=2 Slice:P Poc:72  I:576  P:396  SKIP:648  size=2410 bytes
+x264 [debug]: frame= 757 QP=35.41 NAL=2 Slice:P Poc:74  I:604  P:426  SKIP:590  size=2586 bytes
+x264 [debug]: frame= 758 QP=35.72 NAL=2 Slice:P Poc:76  I:613  P:412  SKIP:595  size=2568 bytes
+x264 [debug]: frame= 759 QP=35.88 NAL=2 Slice:P Poc:78  I:648  P:377  SKIP:595  size=2552 bytes
+x264 [debug]: frame= 760 QP=35.11 NAL=2 Slice:P Poc:80  I:672  P:365  SKIP:583  size=2551 bytes
+x264 [debug]: frame= 761 QP=35.43 NAL=2 Slice:P Poc:82  I:670  P:328  SKIP:622  size=2267 bytes
+x264 [debug]: frame= 762 QP=37.23 NAL=2 Slice:P Poc:84  I:674  P:258  SKIP:688  size=1917 bytes
+x264 [debug]: frame= 763 QP=37.10 NAL=2 Slice:P Poc:86  I:717  P:234  SKIP:669  size=1887 bytes
+x264 [debug]: frame= 764 QP=37.46 NAL=2 Slice:P Poc:88  I:721  P:227  SKIP:672  size=1798 bytes
+x264 [debug]: frame= 765 QP=37.51 NAL=2 Slice:P Poc:90  I:759  P:195  SKIP:666  size=1751 bytes
+x264 [debug]: frame= 766 QP=37.15 NAL=2 Slice:P Poc:92  I:798  P:165  SKIP:657  size=1700 bytes
+x264 [debug]: frame= 767 QP=36.68 NAL=2 Slice:P Poc:94  I:809  P:124  SKIP:687  size=1623 bytes
+x264 [debug]: frame= 768 QP=34.09 NAL=3 Slice:I Poc:0   I:1620 P:0    SKIP:0    size=1958 bytes
+x264 [debug]: frame= 769 QP=35.45 NAL=2 Slice:P Poc:2   I:806  P:54   SKIP:760  size=1291 bytes
+x264 [debug]: frame= 770 QP=36.29 NAL=2 Slice:P Poc:4   I:1041 P:25   SKIP:554  size=1500 bytes
+x264 [debug]: frame= 771 QP=31.00 NAL=2 Slice:P Poc:6   I:1236 P:0    SKIP:384  size=1430 bytes
+x264 [debug]: frame= 772 QP=33.94 NAL=2 Slice:P Poc:8   I:102  P:37   SKIP:1481 size=243 bytes
+x264 [debug]: frame= 773 QP=35.60 NAL=2 Slice:P Poc:10  I:586  P:120  SKIP:914  size=1059 bytes
+x264 [debug]: frame= 774 QP=38.49 NAL=2 Slice:P Poc:12  I:432  P:188  SKIP:1000 size=1015 bytes
+x264 [debug]: frame= 775 QP=40.02 NAL=2 Slice:P Poc:14  I:656  P:75   SKIP:889  size=1282 bytes
+x264 [debug]: frame= 776 QP=43.38 NAL=2 Slice:P Poc:16  I:574  P:55   SKIP:991  size=1108 bytes
+x264 [debug]: frame= 777 QP=46.42 NAL=2 Slice:P Poc:18  I:455  P:56   SKIP:1109 size=906 bytes
+x264 [debug]: frame= 778 QP=40.77 NAL=2 Slice:P Poc:20  I:812  P:145  SKIP:663  size=1703 bytes
+x264 [debug]: frame= 779 QP=42.14 NAL=2 Slice:P Poc:22  I:634  P:84   SKIP:902  size=1265 bytes
+x264 [debug]: frame= 780 QP=41.96 NAL=2 Slice:P Poc:24  I:734  P:162  SKIP:724  size=1703 bytes
+x264 [debug]: frame= 781 QP=40.43 NAL=2 Slice:P Poc:26  I:643  P:88   SKIP:889  size=1322 bytes
+x264 [debug]: frame= 782 QP=41.09 NAL=2 Slice:P Poc:28  I:724  P:187  SKIP:709  size=1760 bytes
+x264 [debug]: frame= 783 QP=40.96 NAL=2 Slice:P Poc:30  I:641  P:117  SKIP:862  size=1381 bytes
+x264 [debug]: frame= 784 QP=42.58 NAL=2 Slice:P Poc:32  I:688  P:186  SKIP:746  size=1746 bytes
+x264 [debug]: frame= 785 QP=41.48 NAL=2 Slice:P Poc:34  I:644  P:118  SKIP:858  size=1495 bytes
+x264 [debug]: frame= 786 QP=41.48 NAL=2 Slice:P Poc:36  I:656  P:226  SKIP:738  size=1897 bytes
+x264 [debug]: frame= 787 QP=41.54 NAL=2 Slice:P Poc:38  I:664  P:146  SKIP:810  size=1593 bytes
+x264 [debug]: frame= 788 QP=41.48 NAL=2 Slice:P Poc:40  I:648  P:272  SKIP:700  size=2093 bytes
+x264 [debug]: frame= 789 QP=41.91 NAL=2 Slice:P Poc:42  I:633  P:137  SKIP:850  size=1518 bytes
+x264 [debug]: frame= 790 QP=41.59 NAL=2 Slice:P Poc:44  I:601  P:289  SKIP:730  size=2062 bytes
+x264 [debug]: frame= 791 QP=41.57 NAL=2 Slice:P Poc:46  I:607  P:215  SKIP:798  size=1740 bytes
+x264 [debug]: frame= 792 QP=40.40 NAL=2 Slice:P Poc:48  I:671  P:280  SKIP:669  size=2258 bytes
+x264 [debug]: frame= 793 QP=41.33 NAL=2 Slice:P Poc:50  I:104  P:288  SKIP:1228 size=827 bytes
+x264 [debug]: frame= 794 QP=42.28 NAL=2 Slice:P Poc:52  I:24   P:118  SKIP:1478 size=343 bytes
+x264 [debug]: frame= 795 QP=43.01 NAL=2 Slice:P Poc:54  I:84   P:289  SKIP:1247 size=778 bytes
+x264 [debug]: frame= 796 QP=41.05 NAL=2 Slice:P Poc:56  I:42   P:114  SKIP:1464 size=374 bytes
+x264 [debug]: frame= 797 QP=43.06 NAL=2 Slice:P Poc:58  I:87   P:295  SKIP:1238 size=756 bytes
+x264 [debug]: frame= 798 QP=41.01 NAL=2 Slice:P Poc:60  I:11   P:20   SKIP:1589 size=88 bytes
+x264 [debug]: frame= 799 QP=40.64 NAL=2 Slice:P Poc:62  I:83   P:333  SKIP:1204 size=904 bytes
+x264 [debug]: frame= 800 QP=41.45 NAL=2 Slice:P Poc:64  I:10   P:8    SKIP:1602 size=59 bytes
+x264 [debug]: frame= 801 QP=39.43 NAL=2 Slice:P Poc:66  I:100  P:320  SKIP:1200 size=953 bytes
+x264 [debug]: frame= 802 QP=33.77 NAL=2 Slice:P Poc:68  I:7    P:10   SKIP:1603 size=53 bytes
+x264 [debug]: frame= 803 QP=40.94 NAL=2 Slice:P Poc:70  I:103  P:340  SKIP:1177 size=1008 bytes
+x264 [debug]: frame= 804 QP=37.19 NAL=2 Slice:P Poc:72  I:26   P:17   SKIP:1577 size=117 bytes
+x264 [debug]: frame= 805 QP=38.43 NAL=2 Slice:P Poc:74  I:78   P:403  SKIP:1139 size=1187 bytes
+x264 [debug]: frame= 806 QP=36.92 NAL=2 Slice:P Poc:76  I:23   P:79   SKIP:1518 size=282 bytes
+x264 [debug]: frame= 807 QP=35.55 NAL=2 Slice:P Poc:78  I:131  P:433  SKIP:1056 size=1585 bytes
+x264 [debug]: frame= 808 QP=34.19 NAL=2 Slice:P Poc:80  I:26   P:61   SKIP:1533 size=255 bytes
+x264 [debug]: frame= 809 QP=35.27 NAL=2 Slice:P Poc:82  I:109  P:402  SKIP:1109 size=1479 bytes
+x264 [debug]: frame= 810 QP=30.61 NAL=2 Slice:P Poc:84  I:11   P:24   SKIP:1585 size=101 bytes
+x264 [debug]: frame= 811 QP=36.07 NAL=2 Slice:P Poc:86  I:62   P:374  SKIP:1184 size=1015 bytes
+x264 [debug]: frame= 812 QP=34.67 NAL=2 Slice:P Poc:88  I:2    P:20   SKIP:1598 size=64 bytes
+x264 [debug]: frame= 813 QP=32.14 NAL=2 Slice:P Poc:90  I:17   P:51   SKIP:1552 size=165 bytes
+x264 [debug]: frame= 814 QP=38.58 NAL=2 Slice:P Poc:92  I:48   P:274  SKIP:1298 size=669 bytes
+x264 [debug]: frame= 815 QP=37.20 NAL=2 Slice:P Poc:94  I:30   P:103  SKIP:1487 size=333 bytes
+x264 [debug]: frame= 816 QP=36.85 NAL=3 Slice:I Poc:0   I:1620 P:0    SKIP:0    size=5100 bytes
+x264 [debug]: frame= 817 QP=34.59 NAL=2 Slice:P Poc:2   I:57   P:175  SKIP:1388 size=576 bytes
+x264 [debug]: frame= 818 QP=33.28 NAL=2 Slice:P Poc:4   I:95   P:454  SKIP:1071 size=1509 bytes
+x264 [debug]: frame= 819 QP=30.57 NAL=2 Slice:P Poc:6   I:114  P:366  SKIP:1140 size=1683 bytes
+x264 [debug]: frame= 820 QP=30.38 NAL=2 Slice:P Poc:8   I:140  P:582  SKIP:898  size=2436 bytes
+x264 [debug]: frame= 821 QP=29.31 NAL=2 Slice:P Poc:10  I:41   P:88   SKIP:1491 size=348 bytes
+x264 [debug]: frame= 822 QP=32.80 NAL=2 Slice:P Poc:12  I:123  P:433  SKIP:1064 size=1371 bytes
+x264 [debug]: frame= 823 QP=33.44 NAL=2 Slice:P Poc:14  I:158  P:247  SKIP:1215 size=1051 bytes
+x264 [debug]: frame= 824 QP=34.23 NAL=2 Slice:P Poc:16  I:175  P:506  SKIP:939  size=1907 bytes
+x264 [debug]: frame= 825 QP=33.71 NAL=2 Slice:P Poc:18  I:92   P:156  SKIP:1372 size=666 bytes
+x264 [debug]: frame= 826 QP=33.69 NAL=2 Slice:P Poc:20  I:257  P:497  SKIP:866  size=2055 bytes
+x264 [debug]: frame= 827 QP=32.08 NAL=2 Slice:P Poc:22  I:269  P:473  SKIP:878  size=2383 bytes
+x264 [debug]: frame= 828 QP=31.16 NAL=2 Slice:P Poc:24  I:267  P:630  SKIP:723  size=2919 bytes
+x264 [debug]: frame= 829 QP=30.36 NAL=2 Slice:P Poc:26  I:220  P:431  SKIP:969  size=1894 bytes
+x264 [debug]: frame= 830 QP=34.44 NAL=2 Slice:P Poc:28  I:211  P:501  SKIP:908  size=2007 bytes
+x264 [debug]: frame= 831 QP=30.65 NAL=2 Slice:P Poc:30  I:333  P:577  SKIP:710  size=2807 bytes
+x264 [debug]: frame= 832 QP=32.45 NAL=2 Slice:P Poc:32  I:155  P:452  SKIP:1013 size=1644 bytes
+x264 [debug]: frame= 833 QP=35.49 NAL=2 Slice:P Poc:34  I:181  P:263  SKIP:1176 size=1034 bytes
+x264 [debug]: frame= 834 QP=33.81 NAL=2 Slice:P Poc:36  I:525  P:362  SKIP:733  size=2194 bytes
+x264 [debug]: frame= 835 QP=35.89 NAL=2 Slice:P Poc:38  I:192  P:394  SKIP:1034 size=1575 bytes
+x264 [debug]: frame= 836 QP=34.66 NAL=2 Slice:P Poc:40  I:243  P:384  SKIP:993  size=1612 bytes
+x264 [debug]: frame= 837 QP=36.26 NAL=2 Slice:P Poc:42  I:286  P:397  SKIP:937  size=1701 bytes
+x264 [debug]: frame= 838 QP=32.57 NAL=2 Slice:P Poc:44  I:423  P:434  SKIP:763  size=2345 bytes
+x264 [debug]: frame= 839 QP=34.28 NAL=2 Slice:P Poc:46  I:321  P:496  SKIP:803  size=2481 bytes
+x264 [debug]: frame= 840 QP=35.84 NAL=2 Slice:P Poc:48  I:246  P:235  SKIP:1139 size=1103 bytes
+x264 [debug]: frame= 841 QP=35.47 NAL=2 Slice:P Poc:50  I:486  P:468  SKIP:666  size=2469 bytes
+x264 [debug]: frame= 842 QP=34.73 NAL=2 Slice:P Poc:52  I:277  P:305  SKIP:1038 size=1435 bytes
+x264 [debug]: frame= 843 QP=35.08 NAL=2 Slice:P Poc:54  I:374  P:410  SKIP:836  size=2041 bytes
+x264 [debug]: frame= 844 QP=36.24 NAL=2 Slice:P Poc:56  I:339  P:225  SKIP:1056 size=1240 bytes
+x264 [debug]: frame= 845 QP=34.92 NAL=2 Slice:P Poc:58  I:433  P:367  SKIP:820  size=1956 bytes
+x264 [debug]: frame= 846 QP=33.22 NAL=2 Slice:P Poc:60  I:456  P:353  SKIP:811  size=2031 bytes
+x264 [debug]: frame= 847 QP=33.96 NAL=2 Slice:P Poc:62  I:375  P:332  SKIP:913  size=1708 bytes
+x264 [debug]: frame= 848 QP=35.41 NAL=2 Slice:P Poc:64  I:434  P:323  SKIP:863  size=1712 bytes
+x264 [debug]: frame= 849 QP=35.24 NAL=2 Slice:P Poc:66  I:368  P:374  SKIP:878  size=1763 bytes
+x264 [debug]: frame= 850 QP=32.44 NAL=2 Slice:P Poc:68  I:508  P:322  SKIP:790  size=1907 bytes
+x264 [debug]: frame= 851 QP=35.35 NAL=2 Slice:P Poc:70  I:345  P:311  SKIP:964  size=1502 bytes
+x264 [debug]: frame= 852 QP=34.48 NAL=2 Slice:P Poc:72  I:422  P:258  SKIP:940  size=1424 bytes
+x264 [debug]: frame= 853 QP=33.57 NAL=2 Slice:P Poc:74  I:421  P:317  SKIP:882  size=1642 bytes
+x264 [debug]: frame= 854 QP=33.13 NAL=2 Slice:P Poc:76  I:457  P:265  SKIP:898  size=1546 bytes
+x264 [debug]: frame= 855 QP=35.06 NAL=2 Slice:P Poc:78  I:414  P:304  SKIP:902  size=1588 bytes
+x264 [debug]: frame= 856 QP=32.50 NAL=2 Slice:P Poc:80  I:422  P:321  SKIP:877  size=1617 bytes
+x264 [debug]: frame= 857 QP=32.67 NAL=2 Slice:P Poc:82  I:432  P:322  SKIP:866  size=1523 bytes
+x264 [debug]: frame= 858 QP=34.59 NAL=2 Slice:P Poc:84  I:393  P:343  SKIP:884  size=1535 bytes
+x264 [debug]: frame= 859 QP=32.14 NAL=2 Slice:P Poc:86  I:380  P:256  SKIP:984  size=1268 bytes
+x264 [debug]: frame= 860 QP=32.41 NAL=2 Slice:P Poc:88  I:428  P:294  SKIP:898  size=1459 bytes
+x264 [debug]: frame= 861 QP=32.42 NAL=2 Slice:P Poc:90  I:320  P:233  SKIP:1067 size=1092 bytes
+x264 [debug]: frame= 862 QP=32.65 NAL=2 Slice:P Poc:92  I:405  P:249  SKIP:966  size=1297 bytes
+x264 [debug]: frame= 863 QP=33.79 NAL=2 Slice:P Poc:94  I:344  P:226  SKIP:1050 size=1122 bytes
+x264 [debug]: frame= 864 QP=30.58 NAL=3 Slice:I Poc:0   I:1620 P:0    SKIP:0    size=2247 bytes
+x264 [debug]: frame= 865 QP=29.60 NAL=2 Slice:P Poc:2   I:201  P:225  SKIP:1194 size=782 bytes
+x264 [debug]: frame= 866 QP=30.64 NAL=2 Slice:P Poc:4   I:252  P:299  SKIP:1069 size=968 bytes
+x264 [debug]: frame= 867 QP=29.72 NAL=2 Slice:P Poc:6   I:300  P:272  SKIP:1048 size=1097 bytes
+x264 [debug]: frame= 868 QP=29.49 NAL=2 Slice:P Poc:8   I:271  P:258  SKIP:1091 size=1032 bytes
+x264 [debug]: frame= 869 QP=30.02 NAL=2 Slice:P Poc:10  I:224  P:271  SKIP:1125 size=1000 bytes
+x264 [debug]: frame= 870 QP=30.80 NAL=2 Slice:P Poc:12  I:327  P:275  SKIP:1018 size=1240 bytes
+x264 [debug]: frame= 871 QP=29.72 NAL=2 Slice:P Poc:14  I:231  P:340  SKIP:1049 size=1229 bytes
+x264 [debug]: frame= 872 QP=28.04 NAL=2 Slice:P Poc:16  I:184  P:337  SKIP:1099 size=1126 bytes
+x264 [debug]: frame= 873 QP=27.83 NAL=2 Slice:P Poc:18  I:206  P:334  SKIP:1080 size=1233 bytes
+x264 [debug]: frame= 874 QP=29.51 NAL=2 Slice:P Poc:20  I:172  P:366  SKIP:1082 size=1151 bytes
+x264 [debug]: frame= 875 QP=26.80 NAL=2 Slice:P Poc:22  I:161  P:398  SKIP:1061 size=1173 bytes
+x264 [debug]: frame= 876 QP=30.08 NAL=2 Slice:P Poc:24  I:132  P:363  SKIP:1125 size=1050 bytes
+x264 [debug]: frame= 877 QP=30.51 NAL=2 Slice:P Poc:26  I:136  P:392  SKIP:1092 size=1119 bytes
+x264 [debug]: frame= 878 QP=27.18 NAL=2 Slice:P Poc:28  I:136  P:408  SKIP:1076 size=1218 bytes
+x264 [debug]: frame= 879 QP=28.60 NAL=2 Slice:P Poc:30  I:93   P:417  SKIP:1110 size=1097 bytes
+x264 [debug]: frame= 880 QP=28.42 NAL=2 Slice:P Poc:32  I:108  P:429  SKIP:1083 size=1197 bytes
+x264 [debug]: frame= 881 QP=26.35 NAL=2 Slice:P Poc:34  I:112  P:403  SKIP:1105 size=1176 bytes
+x264 [debug]: frame= 882 QP=26.98 NAL=2 Slice:P Poc:36  I:106  P:454  SKIP:1060 size=1375 bytes
+x264 [debug]: frame= 883 QP=26.81 NAL=2 Slice:P Poc:38  I:103  P:462  SKIP:1055 size=1349 bytes
+x264 [debug]: frame= 884 QP=26.72 NAL=2 Slice:P Poc:40  I:78   P:482  SKIP:1060 size=1377 bytes
+x264 [debug]: frame= 885 QP=27.86 NAL=2 Slice:P Poc:42  I:107  P:505  SKIP:1008 size=1524 bytes
+x264 [debug]: frame= 886 QP=29.05 NAL=2 Slice:P Poc:44  I:88   P:498  SKIP:1034 size=1588 bytes
+x264 [debug]: frame= 887 QP=28.30 NAL=2 Slice:P Poc:46  I:79   P:544  SKIP:997  size=1592 bytes
+x264 [debug]: frame= 888 QP=27.74 NAL=2 Slice:P Poc:48  I:85   P:516  SKIP:1019 size=1458 bytes
+x264 [debug]: frame= 889 QP=28.97 NAL=2 Slice:P Poc:50  I:79   P:539  SKIP:1002 size=1527 bytes
+x264 [debug]: frame= 890 QP=26.76 NAL=2 Slice:P Poc:52  I:107  P:479  SKIP:1034 size=1504 bytes
+x264 [debug]: frame= 891 QP=28.07 NAL=2 Slice:P Poc:54  I:110  P:527  SKIP:983  size=1522 bytes
+x264 [debug]: frame= 892 QP=26.45 NAL=2 Slice:P Poc:56  I:99   P:557  SKIP:964  size=1539 bytes
+x264 [debug]: frame= 893 QP=28.22 NAL=2 Slice:P Poc:58  I:99   P:508  SKIP:1013 size=1461 bytes
+x264 [debug]: frame= 894 QP=28.94 NAL=2 Slice:P Poc:60  I:68   P:541  SKIP:1011 size=1471 bytes
+x264 [debug]: frame= 895 QP=28.07 NAL=2 Slice:P Poc:62  I:90   P:527  SKIP:1003 size=1469 bytes
+x264 [debug]: frame= 896 QP=28.62 NAL=2 Slice:P Poc:64  I:81   P:526  SKIP:1013 size=1433 bytes
+x264 [debug]: frame= 897 QP=26.33 NAL=2 Slice:P Poc:66  I:89   P:503  SKIP:1028 size=1501 bytes
+x264 [debug]: frame= 898 QP=26.36 NAL=2 Slice:P Poc:68  I:86   P:491  SKIP:1043 size=1394 bytes
+x264 [debug]: frame= 899 QP=27.42 NAL=2 Slice:P Poc:70  I:82   P:518  SKIP:1020 size=1582 bytes
+x264 [debug]: frame= 900 QP=27.54 NAL=2 Slice:P Poc:72  I:64   P:502  SKIP:1054 size=1453 bytes
+x264 [debug]: frame= 901 QP=28.14 NAL=2 Slice:P Poc:74  I:72   P:526  SKIP:1022 size=1553 bytes
+x264 [debug]: frame= 902 QP=26.92 NAL=2 Slice:P Poc:76  I:63   P:518  SKIP:1039 size=1494 bytes
+x264 [debug]: frame= 903 QP=27.02 NAL=2 Slice:P Poc:78  I:73   P:525  SKIP:1022 size=1492 bytes
+x264 [debug]: frame= 904 QP=27.16 NAL=2 Slice:P Poc:80  I:95   P:525  SKIP:1000 size=1601 bytes
+x264 [debug]: frame= 905 QP=27.37 NAL=2 Slice:P Poc:82  I:77   P:532  SKIP:1011 size=1446 bytes
+x264 [debug]: frame= 906 QP=27.29 NAL=2 Slice:P Poc:84  I:81   P:538  SKIP:1001 size=1535 bytes
+x264 [debug]: frame= 907 QP=25.49 NAL=2 Slice:P Poc:86  I:72   P:503  SKIP:1045 size=1430 bytes
+x264 [debug]: frame= 908 QP=27.23 NAL=2 Slice:P Poc:88  I:82   P:505  SKIP:1033 size=1490 bytes
+x264 [debug]: frame= 909 QP=26.83 NAL=2 Slice:P Poc:90  I:83   P:550  SKIP:987  size=1520 bytes
+x264 [debug]: frame= 910 QP=27.55 NAL=2 Slice:P Poc:92  I:77   P:537  SKIP:1006 size=1461 bytes
+x264 [debug]: frame= 911 QP=24.34 NAL=2 Slice:P Poc:94  I:82   P:548  SKIP:990  size=1508 bytes
+x264 [debug]: frame= 912 QP=24.33 NAL=3 Slice:I Poc:0   I:1620 P:0    SKIP:0    size=7850 bytes
+x264 [debug]: frame= 913 QP=26.07 NAL=2 Slice:P Poc:2   I:63   P:415  SKIP:1142 size=1100 bytes
+x264 [debug]: frame= 914 QP=26.78 NAL=2 Slice:P Poc:4   I:72   P:557  SKIP:991  size=1291 bytes
+x264 [debug]: frame= 915 QP=25.74 NAL=2 Slice:P Poc:6   I:63   P:542  SKIP:1015 size=1300 bytes
+x264 [debug]: frame= 916 QP=25.75 NAL=2 Slice:P Poc:8   I:59   P:547  SKIP:1014 size=1331 bytes
+x264 [debug]: frame= 917 QP=23.55 NAL=2 Slice:P Poc:10  I:68   P:525  SKIP:1027 size=1377 bytes
+x264 [debug]: frame= 918 QP=24.86 NAL=2 Slice:P Poc:12  I:59   P:515  SKIP:1046 size=1330 bytes
+x264 [debug]: frame= 919 QP=23.66 NAL=2 Slice:P Poc:14  I:59   P:575  SKIP:986  size=1620 bytes
+x264 [debug]: frame= 920 QP=23.59 NAL=2 Slice:P Poc:16  I:56   P:511  SKIP:1053 size=1465 bytes
+x264 [debug]: frame= 921 QP=26.09 NAL=2 Slice:P Poc:18  I:42   P:502  SKIP:1076 size=1364 bytes
+x264 [debug]: frame= 922 QP=26.07 NAL=2 Slice:P Poc:20  I:47   P:531  SKIP:1042 size=1328 bytes
+x264 [debug]: frame= 923 QP=23.61 NAL=2 Slice:P Poc:22  I:48   P:511  SKIP:1061 size=1356 bytes
+x264 [debug]: frame= 924 QP=23.89 NAL=2 Slice:P Poc:24  I:35   P:503  SKIP:1082 size=1262 bytes
+x264 [debug]: frame= 925 QP=24.25 NAL=2 Slice:P Poc:26  I:30   P:489  SKIP:1101 size=1170 bytes
+x264 [debug]: frame= 926 QP=25.73 NAL=2 Slice:P Poc:28  I:30   P:483  SKIP:1107 size=1187 bytes
+x264 [debug]: frame= 927 QP=23.24 NAL=2 Slice:P Poc:30  I:38   P:487  SKIP:1095 size=1198 bytes
+x264 [debug]: frame= 928 QP=25.77 NAL=2 Slice:P Poc:32  I:36   P:495  SKIP:1089 size=1190 bytes
+x264 [debug]: frame= 929 QP=24.28 NAL=2 Slice:P Poc:34  I:27   P:503  SKIP:1090 size=1253 bytes
+x264 [debug]: frame= 930 QP=25.34 NAL=2 Slice:P Poc:36  I:27   P:495  SKIP:1098 size=1307 bytes
+x264 [debug]: frame= 931 QP=23.13 NAL=2 Slice:P Poc:38  I:21   P:499  SKIP:1100 size=1267 bytes
+x264 [debug]: frame= 932 QP=24.58 NAL=2 Slice:P Poc:40  I:34   P:486  SKIP:1100 size=1321 bytes
+x264 [debug]: frame= 933 QP=23.62 NAL=2 Slice:P Poc:42  I:20   P:539  SKIP:1061 size=1390 bytes
+x264 [debug]: frame= 934 QP=23.20 NAL=2 Slice:P Poc:44  I:19   P:495  SKIP:1106 size=1362 bytes
+x264 [debug]: frame= 935 QP=24.99 NAL=2 Slice:P Poc:46  I:21   P:447  SKIP:1152 size=1222 bytes
+x264 [debug]: frame= 936 QP=24.21 NAL=2 Slice:P Poc:48  I:8    P:471  SKIP:1141 size=1138 bytes
+x264 [debug]: frame= 937 QP=22.96 NAL=2 Slice:P Poc:50  I:17   P:505  SKIP:1098 size=1364 bytes
+x264 [debug]: frame= 938 QP=24.63 NAL=2 Slice:P Poc:52  I:27   P:484  SKIP:1109 size=1335 bytes
+x264 [debug]: frame= 939 QP=23.38 NAL=2 Slice:P Poc:54  I:17   P:479  SKIP:1124 size=1266 bytes
+x264 [debug]: frame= 940 QP=24.55 NAL=2 Slice:P Poc:56  I:135  P:794  SKIP:691  size=3131 bytes
+x264 [debug]: frame= 941 QP=25.31 NAL=2 Slice:P Poc:58  I:174  P:751  SKIP:695  size=3220 bytes
+x264 [debug]: frame= 942 QP=24.09 NAL=2 Slice:P Poc:60  I:236  P:782  SKIP:602  size=3763 bytes
+x264 [debug]: frame= 943 QP=23.23 NAL=2 Slice:P Poc:62  I:171  P:765  SKIP:684  size=3528 bytes
+x264 [debug]: frame= 944 QP=26.15 NAL=2 Slice:P Poc:64  I:265  P:735  SKIP:620  size=3499 bytes
+x264 [debug]: frame= 945 QP=23.93 NAL=2 Slice:P Poc:66  I:199  P:718  SKIP:703  size=3117 bytes
+x264 [debug]: frame= 946 QP=27.32 NAL=2 Slice:P Poc:68  I:154  P:544  SKIP:922  size=1701 bytes
+x264 [debug]: frame= 947 QP=28.97 NAL=2 Slice:P Poc:70  I:231  P:529  SKIP:860  size=1951 bytes
+x264 [debug]: frame= 948 QP=31.49 NAL=2 Slice:P Poc:72  I:220  P:425  SKIP:975  size=1452 bytes
+x264 [debug]: frame= 949 QP=31.67 NAL=2 Slice:P Poc:74  I:284  P:473  SKIP:863  size=1940 bytes
+x264 [debug]: frame= 950 QP=30.36 NAL=2 Slice:P Poc:76  I:245  P:419  SKIP:956  size=1573 bytes
+x264 [debug]: frame= 951 QP=30.39 NAL=2 Slice:P Poc:78  I:239  P:497  SKIP:884  size=1876 bytes
+x264 [debug]: frame= 952 QP=29.12 NAL=2 Slice:P Poc:80  I:291  P:512  SKIP:817  size=2286 bytes
+x264 [debug]: frame= 953 QP=31.73 NAL=2 Slice:P Poc:82  I:230  P:414  SKIP:976  size=1465 bytes
+x264 [debug]: frame= 954 QP=29.99 NAL=2 Slice:P Poc:84  I:311  P:480  SKIP:829  size=2020 bytes
+x264 [debug]: frame= 955 QP=30.55 NAL=2 Slice:P Poc:86  I:234  P:374  SKIP:1012 size=1287 bytes
+x264 [debug]: frame= 956 QP=33.39 NAL=2 Slice:P Poc:88  I:316  P:426  SKIP:878  size=1761 bytes
+x264 [debug]: frame= 957 QP=32.08 NAL=2 Slice:P Poc:90  I:294  P:365  SKIP:961  size=1465 bytes
+x264 [debug]: frame= 958 QP=34.12 NAL=2 Slice:P Poc:92  I:271  P:333  SKIP:1016 size=1235 bytes
+x264 [debug]: frame= 959 QP=33.06 NAL=2 Slice:P Poc:94  I:378  P:413  SKIP:829  size=1909 bytes
+x264 [debug]: frame= 960 QP=30.07 NAL=3 Slice:I Poc:0   I:1620 P:0    SKIP:0    size=3715 bytes
+x264 [debug]: frame= 961 QP=29.88 NAL=2 Slice:P Poc:2   I:251  P:318  SKIP:1051 size=1050 bytes
+x264 [debug]: frame= 962 QP=31.09 NAL=2 Slice:P Poc:4   I:308  P:375  SKIP:937  size=1250 bytes
+x264 [debug]: frame= 963 QP=31.28 NAL=2 Slice:P Poc:6   I:316  P:338  SKIP:966  size=1325 bytes
+x264 [debug]: frame= 964 QP=30.79 NAL=2 Slice:P Poc:8   I:359  P:364  SKIP:897  size=1608 bytes
+x264 [debug]: frame= 965 QP=31.37 NAL=2 Slice:P Poc:10  I:309  P:320  SKIP:991  size=1330 bytes
+x264 [debug]: frame= 966 QP=33.29 NAL=2 Slice:P Poc:12  I:356  P:359  SKIP:905  size=1583 bytes
+x264 [debug]: frame= 967 QP=30.42 NAL=2 Slice:P Poc:14  I:359  P:434  SKIP:827  size=2009 bytes
+x264 [debug]: frame= 968 QP=30.33 NAL=2 Slice:P Poc:16  I:311  P:411  SKIP:898  size=1747 bytes
+x264 [debug]: frame= 969 QP=30.17 NAL=2 Slice:P Poc:18  I:398  P:422  SKIP:800  size=2100 bytes
+x264 [debug]: frame= 970 QP=30.58 NAL=2 Slice:P Poc:20  I:305  P:335  SKIP:980  size=1439 bytes
+x264 [debug]: frame= 971 QP=30.54 NAL=2 Slice:P Poc:22  I:381  P:369  SKIP:870  size=1914 bytes
+x264 [debug]: frame= 972 QP=31.14 NAL=2 Slice:P Poc:24  I:318  P:316  SKIP:986  size=1408 bytes
+x264 [debug]: frame= 973 QP=30.80 NAL=2 Slice:P Poc:26  I:403  P:326  SKIP:891  size=1785 bytes
+x264 [debug]: frame= 974 QP=32.27 NAL=2 Slice:P Poc:28  I:337  P:359  SKIP:924  size=1765 bytes
+x264 [debug]: frame= 975 QP=31.36 NAL=2 Slice:P Poc:30  I:372  P:284  SKIP:964  size=1425 bytes
+x264 [debug]: frame= 976 QP=32.50 NAL=2 Slice:P Poc:32  I:463  P:378  SKIP:779  size=2340 bytes
+x264 [debug]: frame= 977 QP=32.12 NAL=2 Slice:P Poc:34  I:364  P:325  SKIP:931  size=1526 bytes
+x264 [debug]: frame= 978 QP=30.75 NAL=2 Slice:P Poc:36  I:391  P:392  SKIP:837  size=2016 bytes
+x264 [debug]: frame= 979 QP=30.78 NAL=2 Slice:P Poc:38  I:336  P:303  SKIP:981  size=1476 bytes
+x264 [debug]: frame= 980 QP=30.35 NAL=2 Slice:P Poc:40  I:368  P:345  SKIP:907  size=1700 bytes
+x264 [debug]: frame= 981 QP=30.90 NAL=2 Slice:P Poc:42  I:473  P:333  SKIP:814  size=2025 bytes
+x264 [debug]: frame= 982 QP=32.92 NAL=2 Slice:P Poc:44  I:349  P:290  SKIP:981  size=1453 bytes
+x264 [debug]: frame= 983 QP=30.56 NAL=2 Slice:P Poc:46  I:470  P:373  SKIP:777  size=2253 bytes
+x264 [debug]: frame= 984 QP=29.45 NAL=2 Slice:P Poc:48  I:349  P:301  SKIP:970  size=1434 bytes
+x264 [debug]: frame= 985 QP=30.23 NAL=2 Slice:P Poc:50  I:504  P:328  SKIP:788  size=2181 bytes
+x264 [debug]: frame= 986 QP=30.33 NAL=2 Slice:P Poc:52  I:416  P:321  SKIP:883  size=1871 bytes
+x264 [debug]: frame= 987 QP=29.04 NAL=2 Slice:P Poc:54  I:401  P:305  SKIP:914  size=1566 bytes
+x264 [debug]: frame= 988 QP=30.70 NAL=2 Slice:P Poc:56  I:575  P:317  SKIP:728  size=2474 bytes
+x264 [debug]: frame= 989 QP=29.19 NAL=2 Slice:P Poc:58  I:461  P:252  SKIP:907  size=1510 bytes
+x264 [debug]: frame= 990 QP=29.10 NAL=2 Slice:P Poc:60  I:581  P:294  SKIP:745  size=2424 bytes
+x264 [debug]: frame= 991 QP=28.62 NAL=2 Slice:P Poc:62  I:436  P:244  SKIP:940  size=1419 bytes
+x264 [debug]: frame= 992 QP=30.35 NAL=2 Slice:P Poc:64  I:445  P:299  SKIP:876  size=1927 bytes
+x264 [debug]: frame= 993 QP=30.07 NAL=2 Slice:P Poc:66  I:597  P:319  SKIP:704  size=2291 bytes
+x264 [debug]: frame= 994 QP=29.65 NAL=2 Slice:P Poc:68  I:508  P:249  SKIP:863  size=1680 bytes
+x264 [debug]: frame= 995 QP=27.98 NAL=2 Slice:P Poc:70  I:639  P:281  SKIP:700  size=2170 bytes
+x264 [debug]: frame= 996 QP=29.68 NAL=2 Slice:P Poc:72  I:552  P:245  SKIP:823  size=1838 bytes
+x264 [debug]: frame= 997 QP=28.85 NAL=2 Slice:P Poc:74  I:541  P:299  SKIP:780  size=2223 bytes
+x264 [debug]: frame= 998 QP=26.63 NAL=2 Slice:P Poc:76  I:663  P:284  SKIP:673  size=2311 bytes
+x264 [debug]: frame= 999 QP=27.02 NAL=2 Slice:P Poc:78  I:573  P:237  SKIP:810  size=1853 bytes
+x264 [debug]: frame=1000 QP=26.72 NAL=2 Slice:P Poc:80  I:698  P:211  SKIP:711  size=2159 bytes
+x264 [debug]: frame=1001 QP=26.48 NAL=2 Slice:P Poc:82  I:670  P:219  SKIP:731  size=1963 bytes
+x264 [debug]: frame=1002 QP=28.33 NAL=2 Slice:P Poc:84  I:684  P:232  SKIP:704  size=2193 bytes
+x264 [debug]: frame=1003 QP=27.39 NAL=2 Slice:P Poc:86  I:656  P:220  SKIP:744  size=1971 bytes
+x264 [debug]: frame=1004 QP=25.78 NAL=2 Slice:P Poc:88  I:757  P:215  SKIP:648  size=2146 bytes
+x264 [debug]: frame=1005 QP=27.58 NAL=2 Slice:P Poc:90  I:819  P:184  SKIP:617  size=2176 bytes
+x264 [debug]: frame=1006 QP=25.72 NAL=2 Slice:P Poc:92  I:805  P:132  SKIP:683  size=1873 bytes
+x264 [debug]: frame=1007 QP=27.01 NAL=2 Slice:P Poc:94  I:876  P:127  SKIP:617  size=2160 bytes
+x264 [debug]: frame=1008 QP=23.31 NAL=3 Slice:I Poc:0   I:1620 P:0    SKIP:0    size=4669 bytes
+x264 [debug]: frame=1009 QP=24.28 NAL=2 Slice:P Poc:2   I:690  P:66   SKIP:864  size=1303 bytes
+x264 [debug]: frame=1010 QP=25.11 NAL=2 Slice:P Poc:4   I:903  P:83   SKIP:634  size=1741 bytes
+x264 [debug]: frame=1011 QP=24.96 NAL=2 Slice:P Poc:6   I:923  P:76   SKIP:621  size=1764 bytes
+x264 [debug]: frame=1012 QP=24.79 NAL=2 Slice:P Poc:8   I:1016 P:66   SKIP:538  size=1766 bytes
+x264 [debug]: frame=1013 QP=23.17 NAL=2 Slice:P Poc:10  I:638  P:55   SKIP:927  size=1356 bytes
+x264 [debug]: frame=1014 QP=20.51 NAL=2 Slice:P Poc:12  I:1134 P:61   SKIP:425  size=1749 bytes
+x264 [debug]: frame=1015 QP=21.24 NAL=2 Slice:P Poc:14  I:72   P:82   SKIP:1466 size=824 bytes
+x264 [debug]: frame=1016 QP=20.56 NAL=2 Slice:P Poc:16  I:27   P:46   SKIP:1547 size=357 bytes
+x264 [debug]: frame=1017 QP=22.73 NAL=2 Slice:P Poc:18  I:10   P:75   SKIP:1535 size=343 bytes
+x264 [debug]: frame=1018 QP=31.81 NAL=2 Slice:P Poc:20  I:2    P:51   SKIP:1567 size=180 bytes
+x264 [debug]: frame=1019 QP=30.53 NAL=2 Slice:P Poc:22  I:6    P:83   SKIP:1531 size=407 bytes
+x264 [debug]: frame=1020 QP=29.60 NAL=2 Slice:P Poc:24  I:9    P:41   SKIP:1570 size=245 bytes
+x264 [debug]: frame=1021 QP=21.90 NAL=2 Slice:P Poc:26  I:7    P:82   SKIP:1531 size=675 bytes
+x264 [debug]: frame=1022 QP=18.83 NAL=2 Slice:P Poc:28  I:15   P:86   SKIP:1519 size=793 bytes
+x264 [debug]: frame=1023 QP=23.74 NAL=2 Slice:P Poc:30  I:13   P:88   SKIP:1519 size=1002 bytes
+x264 [debug]: frame=1024 QP=17.77 NAL=2 Slice:P Poc:32  I:18   P:84   SKIP:1518 size=1064 bytes
+x264 [debug]: frame=1025 QP=21.50 NAL=2 Slice:P Poc:34  I:8    P:105  SKIP:1507 size=1090 bytes
+x264 [debug]: frame=1026 QP=21.03 NAL=2 Slice:P Poc:36  I:11   P:75   SKIP:1534 size=983 bytes
+x264 [debug]: frame=1027 QP=21.82 NAL=2 Slice:P Poc:38  I:4    P:108  SKIP:1508 size=1087 bytes
+x264 [debug]: frame=1028 QP=21.81 NAL=2 Slice:P Poc:40  I:6    P:99   SKIP:1515 size=843 bytes
+x264 [debug]: frame=1029 QP=22.53 NAL=2 Slice:P Poc:42  I:4    P:83   SKIP:1533 size=715 bytes
+x264 [debug]: frame=1030 QP=18.13 NAL=2 Slice:P Poc:44  I:7    P:102  SKIP:1511 size=886 bytes
+x264 [debug]: frame=1031 QP=18.21 NAL=2 Slice:P Poc:46  I:3    P:87   SKIP:1530 size=862 bytes
+x264 [debug]: frame=1032 QP=22.68 NAL=2 Slice:P Poc:48  I:4    P:86   SKIP:1530 size=1043 bytes
+x264 [debug]: frame=1033 QP=22.19 NAL=2 Slice:P Poc:50  I:4    P:86   SKIP:1530 size=1019 bytes
+x264 [debug]: frame=1034 QP=21.44 NAL=2 Slice:P Poc:52  I:5    P:108  SKIP:1507 size=1074 bytes
+x264 [debug]: frame=1035 QP=22.15 NAL=2 Slice:P Poc:54  I:2    P:107  SKIP:1511 size=1172 bytes
+x264 [debug]: frame=1036 QP=22.11 NAL=2 Slice:P Poc:56  I:4    P:96   SKIP:1520 size=1139 bytes
+x264 [debug]: frame=1037 QP=22.21 NAL=2 Slice:P Poc:58  I:2    P:102  SKIP:1516 size=1005 bytes
+x264 [debug]: frame=1038 QP=22.24 NAL=2 Slice:P Poc:60  I:2    P:99   SKIP:1519 size=1042 bytes
+x264 [debug]: frame=1039 QP=22.23 NAL=2 Slice:P Poc:62  I:4    P:102  SKIP:1514 size=1060 bytes
+x264 [debug]: frame=1040 QP=21.77 NAL=2 Slice:P Poc:64  I:3    P:94   SKIP:1523 size=1082 bytes
+x264 [debug]: frame=1041 QP=22.15 NAL=2 Slice:P Poc:66  I:2    P:104  SKIP:1514 size=1002 bytes
+x264 [debug]: frame=1042 QP=22.53 NAL=2 Slice:P Poc:68  I:2    P:106  SKIP:1512 size=1068 bytes
+x264 [debug]: frame=1043 QP=22.20 NAL=2 Slice:P Poc:70  I:3    P:102  SKIP:1515 size=1135 bytes
+x264 [debug]: frame=1044 QP=21.62 NAL=2 Slice:P Poc:72  I:5    P:97   SKIP:1518 size=1154 bytes
+x264 [debug]: frame=1045 QP=21.82 NAL=2 Slice:P Poc:74  I:2    P:108  SKIP:1510 size=1114 bytes
+x264 [debug]: frame=1046 QP=22.16 NAL=2 Slice:P Poc:76  I:1    P:93   SKIP:1526 size=1105 bytes
+x264 [debug]: frame=1047 QP=24.18 NAL=2 Slice:P Poc:78  I:3    P:92   SKIP:1525 size=1090 bytes
+x264 [debug]: frame=1048 QP=22.51 NAL=2 Slice:P Poc:80  I:2    P:92   SKIP:1526 size=1066 bytes
+x264 [debug]: frame=1049 QP=20.82 NAL=2 Slice:P Poc:82  I:5    P:97   SKIP:1518 size=1167 bytes
+x264 [debug]: frame=1050 QP=21.65 NAL=2 Slice:P Poc:84  I:4    P:86   SKIP:1530 size=1071 bytes
+x264 [debug]: frame=1051 QP=21.76 NAL=2 Slice:P Poc:86  I:3    P:107  SKIP:1510 size=1104 bytes
+x264 [debug]: frame=1052 QP=22.11 NAL=2 Slice:P Poc:88  I:1    P:109  SKIP:1510 size=1124 bytes
+x264 [debug]: frame=1053 QP=21.37 NAL=2 Slice:P Poc:90  I:0    P:111  SKIP:1509 size=1136 bytes
+x264 [debug]: frame=1054 QP=21.28 NAL=2 Slice:P Poc:92  I:3    P:93   SKIP:1524 size=1117 bytes
+x264 [debug]: frame=1055 QP=20.21 NAL=2 Slice:P Poc:94  I:3    P:96   SKIP:1521 size=1124 bytes
+x264 [debug]: frame=1056 QP=10.81 NAL=3 Slice:I Poc:0   I:1620 P:0    SKIP:0    size=5835 bytes
+x264 [debug]: frame=1057 QP=22.17 NAL=2 Slice:P Poc:2   I:1    P:86   SKIP:1533 size=595 bytes
+x264 [debug]: frame=1058 QP=21.76 NAL=2 Slice:P Poc:4   I:3    P:99   SKIP:1518 size=1036 bytes
+x264 [debug]: frame=1059 QP=22.07 NAL=2 Slice:P Poc:6   I:1    P:104  SKIP:1515 size=1068 bytes
+x264 [debug]: frame=1060 QP=21.37 NAL=2 Slice:P Poc:8   I:3    P:93   SKIP:1524 size=1124 bytes
+x264 [debug]: frame=1061 QP=21.09 NAL=2 Slice:P Poc:10  I:1    P:103  SKIP:1516 size=1011 bytes
+x264 [debug]: frame=1062 QP=21.29 NAL=2 Slice:P Poc:12  I:1    P:92   SKIP:1527 size=1146 bytes
+x264 [debug]: frame=1063 QP=21.93 NAL=2 Slice:P Poc:14  I:0    P:93   SKIP:1527 size=1189 bytes
+x264 [debug]: frame=1064 QP=21.69 NAL=2 Slice:P Poc:16  I:3    P:107  SKIP:1510 size=1071 bytes
+x264 [debug]: frame=1065 QP=22.21 NAL=2 Slice:P Poc:18  I:2    P:92   SKIP:1526 size=1172 bytes
+x264 [debug]: frame=1066 QP=22.11 NAL=2 Slice:P Poc:20  I:1    P:99   SKIP:1520 size=1146 bytes
+x264 [debug]: frame=1067 QP=22.26 NAL=2 Slice:P Poc:22  I:2    P:90   SKIP:1528 size=1159 bytes
+x264 [debug]: frame=1068 QP=22.33 NAL=2 Slice:P Poc:24  I:3    P:110  SKIP:1507 size=1161 bytes
+x264 [debug]: frame=1069 QP=22.23 NAL=2 Slice:P Poc:26  I:0    P:104  SKIP:1516 size=1008 bytes
+x264 [debug]: frame=1070 QP=22.26 NAL=2 Slice:P Poc:28  I:2    P:96   SKIP:1522 size=1184 bytes
+x264 [debug]: frame=1071 QP=22.12 NAL=2 Slice:P Poc:30  I:4    P:109  SKIP:1507 size=1139 bytes
+x264 [debug]: frame=1072 QP=22.17 NAL=2 Slice:P Poc:32  I:4    P:96   SKIP:1520 size=1091 bytes
+x264 [debug]: frame=1073 QP=22.06 NAL=2 Slice:P Poc:34  I:6    P:109  SKIP:1505 size=1146 bytes
+x264 [debug]: frame=1074 QP=22.31 NAL=2 Slice:P Poc:36  I:3    P:94   SKIP:1523 size=1158 bytes
+x264 [debug]: frame=1075 QP=22.30 NAL=2 Slice:P Poc:38  I:4    P:105  SKIP:1511 size=1060 bytes
+x264 [debug]: frame=1076 QP=22.25 NAL=2 Slice:P Poc:40  I:0    P:106  SKIP:1514 size=1074 bytes
+x264 [debug]: frame=1077 QP=22.75 NAL=2 Slice:P Poc:42  I:6    P:104  SKIP:1510 size=1133 bytes
+x264 [debug]: frame=1078 QP=22.59 NAL=2 Slice:P Poc:44  I:1    P:104  SKIP:1515 size=1099 bytes
+x264 [debug]: frame=1079 QP=22.77 NAL=2 Slice:P Poc:46  I:5    P:109  SKIP:1506 size=1116 bytes
+x264 [debug]: frame=1080 QP=22.79 NAL=2 Slice:P Poc:48  I:3    P:96   SKIP:1521 size=1097 bytes
+x264 [debug]: frame=1081 QP=16.78 NAL=2 Slice:P Poc:50  I:4    P:103  SKIP:1513 size=1121 bytes
+x264 [debug]: frame=1082 QP=22.70 NAL=2 Slice:P Poc:52  I:3    P:94   SKIP:1523 size=1072 bytes
+x264 [debug]: frame=1083 QP=16.73 NAL=2 Slice:P Poc:54  I:4    P:90   SKIP:1526 size=1043 bytes
+x264 [debug]: frame=1084 QP=16.16 NAL=2 Slice:P Poc:56  I:7    P:102  SKIP:1511 size=1165 bytes
+x264 [debug]: frame=1085 QP=16.53 NAL=2 Slice:P Poc:58  I:4    P:99   SKIP:1517 size=1223 bytes
+x264 [debug]: frame=1086 QP=22.23 NAL=2 Slice:P Poc:60  I:2    P:97   SKIP:1521 size=1245 bytes
+x264 [debug]: frame=1087 QP=16.57 NAL=2 Slice:P Poc:62  I:7    P:87   SKIP:1526 size=1250 bytes
+x264 [debug]: frame=1088 QP=22.60 NAL=2 Slice:P Poc:64  I:2    P:90   SKIP:1528 size=1110 bytes
+x264 [debug]: frame=1089 QP=22.40 NAL=2 Slice:P Poc:66  I:2    P:88   SKIP:1530 size=1259 bytes
+x264 [debug]: frame=1090 QP=22.75 NAL=2 Slice:P Poc:68  I:2    P:114  SKIP:1504 size=1265 bytes
+x264 [debug]: frame=1091 QP=22.77 NAL=2 Slice:P Poc:70  I:5    P:86   SKIP:1529 size=1195 bytes
+x264 [debug]: frame=1092 QP=16.60 NAL=2 Slice:P Poc:72  I:4    P:90   SKIP:1526 size=1232 bytes
+x264 [debug]: frame=1093 QP=22.30 NAL=2 Slice:P Poc:74  I:4    P:101  SKIP:1515 size=1196 bytes
+x264 [debug]: frame=1094 QP=22.14 NAL=2 Slice:P Poc:76  I:3    P:101  SKIP:1516 size=1216 bytes
+x264 [debug]: frame=1095 QP=22.40 NAL=2 Slice:P Poc:78  I:5    P:97   SKIP:1518 size=1160 bytes
+x264 [debug]: frame=1096 QP=22.33 NAL=2 Slice:P Poc:80  I:3    P:92   SKIP:1525 size=1169 bytes
+x264 [debug]: frame=1097 QP=16.54 NAL=2 Slice:P Poc:82  I:4    P:102  SKIP:1514 size=1159 bytes
+x264 [debug]: frame=1098 QP=22.41 NAL=2 Slice:P Poc:84  I:3    P:104  SKIP:1513 size=1138 bytes
+x264 [debug]: frame=1099 QP=16.34 NAL=2 Slice:P Poc:86  I:4    P:108  SKIP:1508 size=998 bytes
+x264 [debug]: frame=1100 QP=22.40 NAL=2 Slice:P Poc:88  I:4    P:87   SKIP:1529 size=1100 bytes
+x264 [debug]: frame=1101 QP=22.30 NAL=2 Slice:P Poc:90  I:1    P:104  SKIP:1515 size=1065 bytes
+x264 [debug]: frame=1102 QP=22.43 NAL=2 Slice:P Poc:92  I:4    P:89   SKIP:1527 size=1010 bytes
+x264 [debug]: frame=1103 QP=16.29 NAL=2 Slice:P Poc:94  I:4    P:86   SKIP:1530 size=1001 bytes
+x264 [debug]: frame=1104 QP=8.89 NAL=3 Slice:I Poc:0   I:1620 P:0    SKIP:0    size=5566 bytes
+x264 [debug]: frame=1105 QP=22.27 NAL=2 Slice:P Poc:2   I:0    P:75   SKIP:1545 size=484 bytes
+x264 [debug]: frame=1106 QP=22.59 NAL=2 Slice:P Poc:4   I:0    P:89   SKIP:1531 size=954 bytes
+x264 [debug]: frame=1107 QP=15.72 NAL=2 Slice:P Poc:6   I:3    P:84   SKIP:1533 size=958 bytes
+x264 [debug]: frame=1108 QP=15.69 NAL=2 Slice:P Poc:8   I:2    P:98   SKIP:1520 size=959 bytes
+x264 [debug]: frame=1109 QP=15.12 NAL=2 Slice:P Poc:10  I:6    P:88   SKIP:1526 size=962 bytes
+x264 [debug]: frame=1110 QP=15.50 NAL=2 Slice:P Poc:12  I:2    P:89   SKIP:1529 size=960 bytes
+x264 [debug]: frame=1111 QP=15.59 NAL=2 Slice:P Poc:14  I:6    P:97   SKIP:1517 size=1014 bytes
+x264 [debug]: frame=1112 QP=15.57 NAL=2 Slice:P Poc:16  I:4    P:81   SKIP:1535 size=963 bytes
+x264 [debug]: frame=1113 QP=15.13 NAL=2 Slice:P Poc:18  I:6    P:85   SKIP:1529 size=950 bytes
+x264 [debug]: frame=1114 QP=15.35 NAL=2 Slice:P Poc:20  I:7    P:84   SKIP:1529 size=976 bytes
+x264 [debug]: frame=1115 QP=15.40 NAL=2 Slice:P Poc:22  I:3    P:80   SKIP:1537 size=952 bytes
+x264 [debug]: frame=1116 QP=14.84 NAL=2 Slice:P Poc:24  I:11   P:83   SKIP:1526 size=945 bytes
+x264 [debug]: frame=1117 QP=15.34 NAL=2 Slice:P Poc:26  I:4    P:83   SKIP:1533 size=953 bytes
+x264 [debug]: frame=1118 QP=14.80 NAL=2 Slice:P Poc:28  I:10   P:82   SKIP:1528 size=894 bytes
+x264 [debug]: frame=1119 QP=15.30 NAL=2 Slice:P Poc:30  I:2    P:82   SKIP:1536 size=884 bytes
+x264 [debug]: frame=1120 QP=21.06 NAL=2 Slice:P Poc:32  I:2    P:83   SKIP:1535 size=882 bytes
+x264 [debug]: frame=1121 QP=15.30 NAL=2 Slice:P Poc:34  I:12   P:78   SKIP:1530 size=839 bytes
+x264 [debug]: frame=1122 QP=15.09 NAL=2 Slice:P Poc:36  I:7    P:80   SKIP:1533 size=947 bytes
+x264 [debug]: frame=1123 QP=14.89 NAL=2 Slice:P Poc:38  I:8    P:76   SKIP:1536 size=854 bytes
+x264 [debug]: frame=1124 QP=14.66 NAL=2 Slice:P Poc:40  I:10   P:79   SKIP:1531 size=849 bytes
+x264 [debug]: frame=1125 QP=15.07 NAL=2 Slice:P Poc:42  I:6    P:93   SKIP:1521 size=880 bytes
+x264 [debug]: frame=1126 QP=14.97 NAL=2 Slice:P Poc:44  I:12   P:71   SKIP:1537 size=885 bytes
+x264 [debug]: frame=1127 QP=20.10 NAL=2 Slice:P Poc:46  I:9    P:76   SKIP:1535 size=843 bytes
+x264 [debug]: frame=1128 QP=14.71 NAL=2 Slice:P Poc:48  I:19   P:77   SKIP:1524 size=844 bytes
+x264 [debug]: frame=1129 QP=14.11 NAL=2 Slice:P Poc:50  I:31   P:60   SKIP:1529 size=979 bytes
+x264 [debug]: frame=1130 QP=14.07 NAL=2 Slice:P Poc:52  I:33   P:40   SKIP:1547 size=802 bytes
+x264 [debug]: frame=1131 QP=13.72 NAL=2 Slice:P Poc:54  I:45   P:42   SKIP:1533 size=847 bytes
+x264 [debug]: frame=1132 QP=14.65 NAL=2 Slice:P Poc:56  I:52   P:37   SKIP:1531 size=678 bytes
+x264 [debug]: frame=1133 QP=13.00 NAL=2 Slice:P Poc:58  I:72   P:26   SKIP:1522 size=517 bytes
+x264 [debug]: frame=1134 QP=9.00 NAL=2 Slice:P Poc:60  I:92   P:0    SKIP:1528 size=135 bytes
+x264 [debug]: frame=1135 QP=11.00 NAL=2 Slice:P Poc:62  I:0    P:0    SKIP:1620 size=11 bytes
+x264 [debug]: frame=1136 QP=11.00 NAL=2 Slice:P Poc:64  I:0    P:0    SKIP:1620 size=11 bytes
+x264 [debug]: frame=1137 QP=11.00 NAL=2 Slice:P Poc:66  I:0    P:0    SKIP:1620 size=11 bytes
+x264 [debug]: frame=1138 QP=11.00 NAL=2 Slice:P Poc:68  I:0    P:0    SKIP:1620 size=11 bytes
+x264 [debug]: frame=1139 QP=11.00 NAL=2 Slice:P Poc:70  I:0    P:0    SKIP:1620 size=11 bytes
+x264 [debug]: frame=1140 QP=18.81 NAL=2 Slice:P Poc:72  I:20   P:0    SKIP:1600 size=1328 bytes
+x264 [debug]: frame=1141 QP=18.36 NAL=2 Slice:P Poc:74  I:1    P:12   SKIP:1607 size=114 bytes
+x264 [debug]: frame=1142 QP=18.37 NAL=2 Slice:P Poc:76  I:1    P:14   SKIP:1605 size=194 bytes
+x264 [debug]: frame=1143 QP=11.59 NAL=2 Slice:P Poc:78  I:1    P:18   SKIP:1601 size=209 bytes
+x264 [debug]: frame=1144 QP=18.81 NAL=2 Slice:P Poc:80  I:0    P:18   SKIP:1602 size=242 bytes
+x264 [debug]: frame=1145 QP=18.37 NAL=2 Slice:P Poc:82  I:1    P:18   SKIP:1601 size=251 bytes
+x264 [debug]: frame=1146 QP=19.33 NAL=2 Slice:P Poc:84  I:0    P:14   SKIP:1606 size=157 bytes
+x264 [debug]: frame=1147 QP=19.33 NAL=2 Slice:P Poc:86  I:0    P:19   SKIP:1601 size=254 bytes
+x264 [debug]: frame=1148 QP=19.33 NAL=2 Slice:P Poc:88  I:0    P:17   SKIP:1603 size=224 bytes
+x264 [debug]: frame=1149 QP=19.33 NAL=2 Slice:P Poc:90  I:0    P:18   SKIP:1602 size=220 bytes
+x264 [debug]: frame=1150 QP=11.22 NAL=2 Slice:P Poc:92  I:1    P:17   SKIP:1602 size=223 bytes
+x264 [debug]: frame=1151 QP=19.33 NAL=2 Slice:P Poc:94  I:0    P:33   SKIP:1587 size=267 bytes
+x264 [debug]: frame=1152 QP=8.20 NAL=3 Slice:I Poc:0   I:1620 P:0    SKIP:0    size=2662 bytes
+x264 [debug]: frame=1153 QP=19.85 NAL=2 Slice:P Poc:2   I:0    P:6    SKIP:1614 size=47 bytes
+x264 [debug]: frame=1154 QP=19.85 NAL=2 Slice:P Poc:4   I:0    P:15   SKIP:1605 size=148 bytes
+x264 [debug]: frame=1155 QP=19.85 NAL=2 Slice:P Poc:6   I:0    P:16   SKIP:1604 size=145 bytes
+x264 [debug]: frame=1156 QP=20.37 NAL=2 Slice:P Poc:8   I:0    P:14   SKIP:1606 size=135 bytes
+x264 [debug]: frame=1157 QP=20.37 NAL=2 Slice:P Poc:10  I:0    P:14   SKIP:1606 size=161 bytes
+x264 [debug]: frame=1158 QP=19.94 NAL=2 Slice:P Poc:12  I:1    P:12   SKIP:1607 size=97 bytes
+x264 [debug]: frame=1159 QP=20.89 NAL=2 Slice:P Poc:14  I:0    P:15   SKIP:1605 size=136 bytes
+x264 [debug]: frame=1160 QP=11.21 NAL=2 Slice:P Poc:16  I:2    P:11   SKIP:1607 size=94 bytes
+x264 [debug]: frame=1161 QP=21.91 NAL=2 Slice:P Poc:18  I:0    P:8    SKIP:1612 size=70 bytes
+x264 [debug]: frame=1162 QP=11.65 NAL=2 Slice:P Poc:20  I:2    P:3    SKIP:1615 size=42 bytes
+x264 [debug]: frame=1163 QP=20.23 NAL=2 Slice:P Poc:22  I:300  P:22   SKIP:1298 size=21682 bytes
+x264 [debug]: frame=1164 QP=21.13 NAL=2 Slice:P Poc:24  I:1    P:93   SKIP:1526 size=547 bytes
+x264 [debug]: frame=1165 QP=20.86 NAL=2 Slice:P Poc:26  I:0    P:9    SKIP:1611 size=66 bytes
+x264 [debug]: frame=1166 QP=11.00 NAL=2 Slice:P Poc:28  I:0    P:0    SKIP:1620 size=11 bytes
+x264 [debug]: frame=1167 QP=11.00 NAL=2 Slice:P Poc:30  I:0    P:0    SKIP:1620 size=11 bytes
+x264 [debug]: frame=1168 QP=11.00 NAL=2 Slice:P Poc:32  I:0    P:0    SKIP:1620 size=11 bytes
+x264 [debug]: frame=1169 QP=11.00 NAL=2 Slice:P Poc:34  I:0    P:0    SKIP:1620 size=11 bytes
+x264 [debug]: frame=1170 QP=11.00 NAL=2 Slice:P Poc:36  I:0    P:0    SKIP:1620 size=11 bytes
+x264 [debug]: frame=1171 QP=11.00 NAL=2 Slice:P Poc:38  I:0    P:0    SKIP:1620 size=11 bytes
+x264 [debug]: frame=1172 QP=11.00 NAL=2 Slice:P Poc:40  I:0    P:0    SKIP:1620 size=11 bytes
+x264 [debug]: frame=1173 QP=11.00 NAL=2 Slice:P Poc:42  I:0    P:0    SKIP:1620 size=11 bytes
+x264 [debug]: frame=1174 QP=11.00 NAL=2 Slice:P Poc:44  I:0    P:0    SKIP:1620 size=11 bytes
+x264 [debug]: frame=1175 QP=11.00 NAL=2 Slice:P Poc:46  I:0    P:0    SKIP:1620 size=11 bytes
+x264 [debug]: frame=1176 QP=11.00 NAL=2 Slice:P Poc:48  I:0    P:0    SKIP:1620 size=11 bytes
+x264 [debug]: frame=1177 QP=11.00 NAL=2 Slice:P Poc:50  I:0    P:0    SKIP:1620 size=11 bytes
+x264 [debug]: frame=1178 QP=11.00 NAL=2 Slice:P Poc:52  I:0    P:0    SKIP:1620 size=11 bytes
+x264 [debug]: frame=1179 QP=11.00 NAL=2 Slice:P Poc:54  I:0    P:0    SKIP:1620 size=11 bytes
+x264 [debug]: frame=1180 QP=11.00 NAL=2 Slice:P Poc:56  I:0    P:0    SKIP:1620 size=11 bytes
+x264 [debug]: frame=1181 QP=11.00 NAL=2 Slice:P Poc:58  I:0    P:0    SKIP:1620 size=11 bytes
+x264 [debug]: frame=1182 QP=11.00 NAL=2 Slice:P Poc:60  I:0    P:0    SKIP:1620 size=11 bytes
+x264 [debug]: frame=1183 QP=11.00 NAL=2 Slice:P Poc:62  I:0    P:0    SKIP:1620 size=11 bytes
+x264 [debug]: frame=1184 QP=11.00 NAL=2 Slice:P Poc:64  I:0    P:0    SKIP:1620 size=11 bytes
+x264 [debug]: frame=1185 QP=11.00 NAL=2 Slice:P Poc:66  I:0    P:0    SKIP:1620 size=11 bytes
+x264 [debug]: frame=1186 QP=11.00 NAL=2 Slice:P Poc:68  I:0    P:0    SKIP:1620 size=11 bytes
+x264 [debug]: frame=1187 QP=11.00 NAL=2 Slice:P Poc:70  I:0    P:0    SKIP:1620 size=11 bytes
+x264 [debug]: frame=1188 QP=11.00 NAL=2 Slice:P Poc:72  I:0    P:0    SKIP:1620 size=11 bytes
+x264 [debug]: frame=1189 QP=11.00 NAL=2 Slice:P Poc:74  I:0    P:0    SKIP:1620 size=11 bytes
+x264 [debug]: frame=1190 QP=11.00 NAL=2 Slice:P Poc:76  I:0    P:0    SKIP:1620 size=11 bytes
+x264 [debug]: frame=1191 QP=11.00 NAL=2 Slice:P Poc:78  I:0    P:0    SKIP:1620 size=11 bytes
+x264 [debug]: frame=1192 QP=11.00 NAL=2 Slice:P Poc:80  I:0    P:0    SKIP:1620 size=11 bytes
+x264 [debug]: frame=1193 QP=11.00 NAL=2 Slice:P Poc:82  I:0    P:0    SKIP:1620 size=11 bytes
+x264 [debug]: frame=1194 QP=11.00 NAL=2 Slice:P Poc:84  I:0    P:0    SKIP:1620 size=11 bytes
+x264 [debug]: frame=1195 QP=11.00 NAL=2 Slice:P Poc:86  I:0    P:0    SKIP:1620 size=11 bytes
+x264 [debug]: frame=1196 QP=11.00 NAL=2 Slice:P Poc:88  I:0    P:0    SKIP:1620 size=11 bytes
+x264 [debug]: frame=1197 QP=11.00 NAL=2 Slice:P Poc:90  I:0    P:0    SKIP:1620 size=11 bytes
+x264 [debug]: frame=1198 QP=11.00 NAL=2 Slice:P Poc:92  I:0    P:0    SKIP:1620 size=11 bytes
+x264 [debug]: frame=1199 QP=11.00 NAL=2 Slice:P Poc:94  I:0    P:0    SKIP:1620 size=11 bytes
+x264 [debug]: frame=1200 QP=10.67 NAL=3 Slice:I Poc:0   I:1620 P:0    SKIP:0    size=24551 bytes
+x264 [debug]: frame=1201 QP=18.06 NAL=2 Slice:P Poc:2   I:7    P:32   SKIP:1581 size=262 bytes
+x264 [debug]: frame=1202 QP=17.94 NAL=2 Slice:P Poc:4   I:1    P:12   SKIP:1607 size=95 bytes
+x264 [debug]: frame=1203 QP=11.00 NAL=2 Slice:P Poc:6   I:0    P:0    SKIP:1620 size=12 bytes
+x264 [debug]: frame=1204 QP=11.00 NAL=2 Slice:P Poc:8   I:0    P:0    SKIP:1620 size=12 bytes
+x264 [debug]: frame=1205 QP=11.00 NAL=2 Slice:P Poc:10  I:0    P:0    SKIP:1620 size=11 bytes
+x264 [debug]: frame=1206 QP=11.00 NAL=2 Slice:P Poc:12  I:0    P:0    SKIP:1620 size=11 bytes
+x264 [debug]: frame=1207 QP=11.00 NAL=2 Slice:P Poc:14  I:0    P:0    SKIP:1620 size=11 bytes
+x264 [debug]: frame=1208 QP=11.00 NAL=2 Slice:P Poc:16  I:0    P:0    SKIP:1620 size=11 bytes
+x264 [debug]: frame=1209 QP=11.00 NAL=2 Slice:P Poc:18  I:0    P:0    SKIP:1620 size=11 bytes
+x264 [debug]: frame=1210 QP=11.00 NAL=2 Slice:P Poc:20  I:0    P:0    SKIP:1620 size=11 bytes
+x264 [debug]: frame=1211 QP=11.00 NAL=2 Slice:P Poc:22  I:0    P:0    SKIP:1620 size=11 bytes
+x264 [debug]: frame=1212 QP=11.00 NAL=2 Slice:P Poc:24  I:0    P:0    SKIP:1620 size=11 bytes
+x264 [debug]: frame=1213 QP=11.00 NAL=2 Slice:P Poc:26  I:0    P:0    SKIP:1620 size=11 bytes
+x264 [debug]: frame=1214 QP=11.00 NAL=2 Slice:P Poc:28  I:0    P:0    SKIP:1620 size=11 bytes
+x264 [debug]: frame=1215 QP=11.00 NAL=2 Slice:P Poc:30  I:0    P:0    SKIP:1620 size=11 bytes
+x264 [debug]: frame=1216 QP=11.00 NAL=2 Slice:P Poc:32  I:0    P:0    SKIP:1620 size=11 bytes
+x264 [debug]: frame=1217 QP=11.00 NAL=2 Slice:P Poc:34  I:0    P:0    SKIP:1620 size=11 bytes
+x264 [debug]: frame=1218 QP=11.00 NAL=2 Slice:P Poc:36  I:0    P:0    SKIP:1620 size=11 bytes
+x264 [debug]: frame=1219 QP=11.00 NAL=2 Slice:P Poc:38  I:0    P:0    SKIP:1620 size=11 bytes
+x264 [debug]: frame=1220 QP=9.00 NAL=2 Slice:P Poc:40  I:329  P:0    SKIP:1291 size=404 bytes
+x264 [debug]: frame=1221 QP=11.00 NAL=2 Slice:P Poc:42  I:2    P:0    SKIP:1618 size=16 bytes
+x264 [debug]: frame=1222 QP=11.00 NAL=2 Slice:P Poc:44  I:1    P:0    SKIP:1619 size=15 bytes
+x264 [debug]: frame=1223 QP=11.00 NAL=2 Slice:P Poc:46  I:0    P:0    SKIP:1620 size=11 bytes
+x264 [debug]: frame=1224 QP=11.00 NAL=2 Slice:P Poc:48  I:0    P:0    SKIP:1620 size=11 bytes
+x264 [debug]: frame=1225 QP=11.00 NAL=2 Slice:P Poc:50  I:0    P:0    SKIP:1620 size=11 bytes
+x264 [debug]: frame=1226 QP=11.00 NAL=2 Slice:P Poc:52  I:0    P:0    SKIP:1620 size=11 bytes
+x264 [debug]: frame=1227 QP=11.00 NAL=2 Slice:P Poc:54  I:0    P:0    SKIP:1620 size=11 bytes
+x264 [debug]: frame=1228 QP=11.00 NAL=2 Slice:P Poc:56  I:0    P:0    SKIP:1620 size=11 bytes
+x264 [debug]: frame=1229 QP=11.00 NAL=2 Slice:P Poc:58  I:0    P:0    SKIP:1620 size=11 bytes
+x264 [debug]: frame=1230 QP=11.00 NAL=2 Slice:P Poc:60  I:0    P:0    SKIP:1620 size=11 bytes
+x264 [debug]: frame=1231 QP=11.00 NAL=2 Slice:P Poc:62  I:0    P:0    SKIP:1620 size=11 bytes
+x264 [debug]: frame=1232 QP=11.00 NAL=2 Slice:P Poc:64  I:0    P:0    SKIP:1620 size=11 bytes
+x264 [debug]: frame=1233 QP=11.00 NAL=2 Slice:P Poc:66  I:0    P:0    SKIP:1620 size=11 bytes
+x264 [debug]: frame=1234 QP=11.00 NAL=2 Slice:P Poc:68  I:0    P:0    SKIP:1620 size=11 bytes
+x264 [debug]: frame=1235 QP=11.00 NAL=2 Slice:P Poc:70  I:0    P:0    SKIP:1620 size=11 bytes
+x264 [debug]: frame=1236 QP=11.00 NAL=2 Slice:P Poc:72  I:0    P:0    SKIP:1620 size=11 bytes
+x264 [debug]: frame=1237 QP=11.00 NAL=2 Slice:P Poc:74  I:0    P:0    SKIP:1620 size=11 bytes
+x264 [debug]: frame=1238 QP=11.00 NAL=2 Slice:P Poc:76  I:0    P:0    SKIP:1620 size=11 bytes
+x264 [debug]: frame=1239 QP=11.00 NAL=2 Slice:P Poc:78  I:0    P:0    SKIP:1620 size=11 bytes
+x264 [debug]: frame=1240 QP=11.00 NAL=2 Slice:P Poc:80  I:0    P:0    SKIP:1620 size=11 bytes
+x264 [debug]: frame=1241 QP=11.00 NAL=2 Slice:P Poc:82  I:0    P:0    SKIP:1620 size=11 bytes
+x264 [debug]: frame=1242 QP=11.00 NAL=2 Slice:P Poc:84  I:0    P:0    SKIP:1620 size=11 bytes
+x264 [debug]: frame=1243 QP=11.00 NAL=2 Slice:P Poc:86  I:0    P:0    SKIP:1620 size=11 bytes
+x264 [debug]: frame=1244 QP=11.00 NAL=2 Slice:P Poc:88  I:0    P:0    SKIP:1620 size=11 bytes
+x264 [debug]: frame=1245 QP=11.00 NAL=2 Slice:P Poc:90  I:0    P:0    SKIP:1620 size=11 bytes
+x264 [debug]: frame=1246 QP=11.00 NAL=2 Slice:P Poc:92  I:0    P:0    SKIP:1620 size=11 bytes
+x264 [debug]: frame=1247 QP=11.00 NAL=2 Slice:P Poc:94  I:0    P:0    SKIP:1620 size=11 bytes
+x264 [debug]: frame=1248 QP=8.00 NAL=3 Slice:I Poc:0   I:1620 P:0    SKIP:0    size=1266 bytes
+x264 [debug]: frame=1249 QP=11.00 NAL=2 Slice:P Poc:2   I:0    P:0    SKIP:1620 size=12 bytes
+x264 [debug]: frame=1250 QP=11.00 NAL=2 Slice:P Poc:4   I:0    P:0    SKIP:1620 size=12 bytes
+x264 [debug]: frame=1251 QP=12.00 NAL=2 Slice:P Poc:6   I:0    P:0    SKIP:1620 size=12 bytes
+x264 [debug]: frame=1252 QP=13.00 NAL=2 Slice:P Poc:8   I:0    P:0    SKIP:1620 size=12 bytes
+x264 [info]: frame I:27    Avg QP:23.24  size:  5228
+x264 [info]: frame P:1226  Avg QP:27.85  size:  1361
+x264 [info]: mb I  I16..4: 89.7%  0.0% 10.3%
+x264 [info]: mb P  I16..4: 12.1%  0.0%  0.3%  P16..4: 15.4%  1.7%  0.5%  0.0%  0.0%    skip:69.9%
+x264 [info]: coded y,uvDC,uvAC intra: 2.8% 14.8% 0.5% inter: 1.5% 3.0% 0.0%
+x264 [info]: i16 v,h,dc,p: 44% 33%  7% 16%
+x264 [info]: i4 v,h,dc,ddl,ddr,vr,hd,vl,hu:  9% 12% 31% 10% 11%  9%  8%  6%  4%
+x264 [info]: i8c dc,h,v,p: 84% 12%  4%  1%
+x264 [info]: ref P L0: 74.1% 14.0%  7.3%  2.2%  2.3%
+x264 [info]: kb/s:277.22
+
+encoded 1253 frames, 70.46 fps, 277.22 kb/s
