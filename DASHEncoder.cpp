@@ -10,7 +10,6 @@
 #include <iostream>
 #include <fstream>
 #include <map>
-//#include "mysql/mysql.h"
 
 void parse(int argc, char* argv[]);
 void setHelp(AnyOption*);
@@ -63,16 +62,6 @@ void parse(int argc, char* argv[])
 
     std::map<int, std::string> audio_files;
     std::map<int, int> av_mux_mapping;
-
-    /* MySQL Support Disabled
-
-    MYSQL_RES *result;
-
-    MYSQL_ROW row;
-
-    MYSQL *connection, mysql;
-
-    */
 
     m->setFragSize(atoi(opt->getValue("fragment-size")));
     m->setRAPAligned(opt->getFlag("rap-aligned"));
@@ -315,71 +304,6 @@ void parse(int argc, char* argv[])
             system(folder.c_str());
         }
 
-        /************ STORE STATISTICS *********************/
-/* MySQL Support Disabled
-        if(opt->getFlag("store-psnr")){
-
-           mysql_init(&mysql);
-
-           mysql_options(&mysql, MYSQL_READ_DEFAULT_FILE,  "/opt/lampp/etc/my.cnf");
-           //mysql_options(&mysql, MYSQL_OPT_SSL_VERIFY_SERVER_CERT, "/etc/ssl/certs/ComodoIntermediate.pem");
-           //mysql_ssl_set(&mysql, NULL, NULL, "/etc/ssl/certs/ComodoIntermediate.pem",NULL, NULL);
-
-           connection = mysql_real_connect(&mysql,opt->getValue("sql-host"),opt->getValue("sql-user"),opt->getValue("sql-pw"),opt->getValue("sql-database"),0,0,0);
-
-           if (connection == NULL)
-           {
-               std::cout << "MySQL Error: " << mysql_error(&mysql) << "\n";
-               return ;
-           }
-           infile.open("out.txt", ifstream::in);
-
-           act_rep = "";
-           std::string query;
-           int posStart;
-           int posEnd;
-
-           if (infile.is_open())
-           {
-               while (infile.good())
-               {
-                   getline(infile, act_line);
-                   if(act_line.find("x264 [debug]: frame=") != std::string::npos){
-                       //std::cout << act_line << "\n";
-                       query = "INSERT INTO frames (framenr, type, ypsnr,upsnr, vpsnr, representation) Values (";
-
-                       posStart = act_line.find("frame=")+6;
-                       query.append(act_line.substr(posStart,  act_line.find("QP")-posStart));
-                       query.append(", \"");
-
-                       query.append(act_line.substr(act_line.find("Slice:")+6, 1));
-                       query.append("\", ");
-
-                       posStart = act_line.find("Y:")+2;
-                       query.append(act_line.substr(posStart,  act_line.find("U:")-posStart));
-                       query.append(", ");
-
-                       posStart = act_line.find("U:")+2;
-                       query.append(act_line.substr(posStart,  act_line.find("V:")-posStart));
-                       query.append(", ");
-
-                       query.append(act_line.substr(act_line.find("V:")+2));
-                       query.append(", \"");
-
-                       query.append(foldername);
-                       query.append("\")");
-                       //std::cout << "\n" << query;
-                       mysql_query(connection, query.c_str());
-                   }
-               }
-               std::cout << "PSNR data stored in MySQL database!";
-               infile.close();
-           }
-           else
-               cout << "Error: Unable to open Log file!";
-        }
-
-*/
         /************ MULTIPLEXING & SEGMENTATION **************/
 
         h264new = opt->getValue("dest-directory");
@@ -529,10 +453,6 @@ void setHelp(AnyOption* opt)
     opt->addUsage(" -f  --fragment-size     Fragment size in seconds");
     opt->addUsage(" -r  --rap-aligned       Muliplexing at GOP boundaries");
     opt->addUsage(" -o  --store-psnr        Store PSNR statistics to database");
-    opt->addUsage(" -y  --sql-host          MySQL host");
-    opt->addUsage(" -z  --sql-user          MySQL user");
-    opt->addUsage(" -Z  --sql-pw            MySQL password");
-    opt->addUsage(" -Y  --sql-database      MySQL database");
     opt->addUsage(" -N  --segment-name      DASH segment name");
     opt->addUsage(" -S  --segment-size      DASH segment size in seconds");
     opt->addUsage(" -F  --folder-prefix     Represenation folder prefix");
@@ -590,10 +510,6 @@ void setOptions(AnyOption* opt)
     opt->setOption("multiplexer", 'R');
     opt->setOption("const-filesize", 'K');
     opt->setOption("passes", 'k');
-    opt->setOption("sql-host", 'y');
-    opt->setOption("sql-user", 'z');
-    opt->setOption("sql-pw", 'Z');
-    opt->setOption("sql-database", 'Y');
     opt->setFlag("add-non-segmented", 'D');
     opt->setFlag("set-base-url", 'J');
     opt->setFlag("use-ffmpeg-pipe", 'G');
