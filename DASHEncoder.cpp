@@ -74,8 +74,6 @@ void parse(int argc, char* argv[])
 
     */
 
-    int state;
-
     m->setFragSize(atoi(opt->getValue("fragment-size")));
     m->setRAPAligned(opt->getFlag("rap-aligned"));
     m->setOutputDir(opt->getValue("dest-directory"));
