@@ -46,6 +46,12 @@ void parse(int argc, char* argv[])
     /* PROCESS THE COMMANDLINE */
     opt->processCommandArgs(argc, argv);
 
+    /* Need help? */
+    if (opt->getFlag("help")) {
+        opt->printUsage();
+        return;
+    }
+
     /* Run DASH Encoding */
 
     EncoderFactory* encoder_factory= new EncoderFactory();
@@ -480,6 +486,7 @@ void setHelp(AnyOption* opt)
     opt->addUsage(" -e  --segDuration       Segment Duration for MPD");
     opt->addUsage("");
 }
+
 void setOptions(AnyOption* opt)
 {
     opt->setFlag("help", 'h');
@@ -532,6 +539,7 @@ IEncoder::EncoderType getEncoder(std::string e){
 
     return IEncoder::x264;
 }
+
 int convertMPD(std::string input, std::string output, std::string duration, std::string baseurl, std::string minbuffer, std::string segduration){
     std::cout << "\nConvert the to act DASH standard: " << input << "\nto: " << output << "\n";
 
