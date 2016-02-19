@@ -21,13 +21,15 @@ AnyOption *opt;
 
 int main(int argc, char* argv[])
 {
+    std::cout << "==========DASH ENCODER===============\n";
+
     parse(argc, argv);
+    doDash();
     return 0;
 }
 
 void parse(int argc, char* argv[])
 {
-    std::cout << "==========DASH ENCODER===============\n";
     AnyOption *opt = new AnyOption();
 
     /* COMMAND LINE PREFERENCES  */
@@ -38,20 +40,20 @@ void parse(int argc, char* argv[])
     setHelp(opt);
 
     /* SET THE OPTION STRINGS/CHARACTERS */
-
     setOptions(opt);
 
     /* PROCESS THE RESOURCE FILE */
     opt->processFile("./DASHEncoder.config");
+
     /* PROCESS THE COMMANDLINE */
     opt->processCommandArgs(argc, argv);
 
-    /* Need help? */
-    if (opt->getFlag("help")) {
+    /* Only Need help? */
+    if (opt->getFlag("help"))
         opt->printUsage();
-        return;
-    }
+}
 
+void doDash(void) {
     /* Run DASH Encoding */
 
     EncoderFactory* encoder_factory= new EncoderFactory();
