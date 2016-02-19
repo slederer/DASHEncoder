@@ -437,8 +437,13 @@ void parse(int argc, char* argv[])
             convertMPD(exp_nameNonSeg.c_str(), opt->getValue("mpdActStandardPostfix"),  opt->getValue("duration"), opt->getValue("url-root"),opt->getValue("minBufferTime"), opt->getValue("segDuration"));
         }
     }
+
     std::cout << "\nFINISHED\n";
+
     delete opt;
+
+    free(c1);
+    free(c2);
 }
 
 void setHelp(AnyOption* opt)
