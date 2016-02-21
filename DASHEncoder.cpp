@@ -1,4 +1,5 @@
 #include "AnyOption.h"
+#include "DASHOption.h"
 #include "multiplexer/MP4BoxMultiplexer.h"
 #include "encoder/IEncoder.h"
 #include "encoder/AbstractAudioEncoder.h"
@@ -12,35 +13,373 @@
 #include <map>
 
 void parse(int argc, char* argv[]);
-void setHelp(AnyOption*);
-void setOptions(AnyOption*);
+void doDash(void);
 IEncoder::EncoderType getEncoder(std::string);
 int convertMPD(std::string input, std::string output, std::string duration, std::string baseurl, std::string minbuffer, std::string segduration);
 
 AnyOption *opt;
+DASHOption *DASHOpt;
+
+static DASHOption::DASHOptsList generalOptions =
+{
+    "General options:",
+    {
+        {
+            "help",
+            'h',
+            " -h  --help              Print help",
+            false,
+            "",
+            true
+        }, {
+            "input",
+            'i',
+            " -i  --input             Input file",
+            true,
+            "",
+            false
+        }, {
+            "dest-directory",
+            'd',
+            " -d  --dest-directory    Destination directory",
+            true,
+            "",
+            false
+        }, {
+            "video-encoder",
+            'V',
+            " -V  --video-encoder     Video encoder",
+            true,
+            "",
+            false
+        }, {
+            "audio-encoder",
+            'A',
+            " -A  --audio-encoder     Audio encoder",
+            true,
+            "",
+            false
+        }, {
+            "multiplexer",
+            'R',
+            " -R  --multiplexer       Multiplexing tool",
+            false,
+            "",
+            false
+        }, {
+            "add-non-segmented",
+            'D',
+            " -D  --add-non-segmented Generate also non-segmented version",
+            false,
+            "",
+            true
+        }, {
+            "use-ffmpeg-pipe",
+            'G',
+            " -G  --use-ffmpeg-pipe   FFMPEG input conversion pipe",
+            false,
+            "",
+            true
+        }, {
+            "ffmpeg-opt",
+            'g',
+            " -g  --ffmpeg-opt        Additional FFMPEG options",
+            true,
+            "use-ffmpeg-pipe",
+            false
+        }, {
+            "input-res",
+            'I',
+            " -I  --input-res         Resolution of input video",
+            true,
+            "",
+            false
+        }, {
+            "const-filesize",
+            'K',
+            " -K  --const-filesize    Encode using constant filesize",
+            false,
+            "",
+            false
+        }
+    }
+};
+
+static DASHOption::DASHOptsList x264Options =
+{
+    "x264 options:",
+    {
+        {
+            "bitrate",
+            'b',
+            " -b  --bitrate           Video bitrates (exmaple: see config file)",
+            true,
+            "",
+            false
+        }, {
+           "passes",
+            'k',
+            " -k  --passes            Encoding passes",
+            true,
+            "",
+            false
+        }, {
+            "pass1",
+            'x',
+            " -x  --pass1             Additional Options: 1st pass video encoding",
+            true,
+            "",
+            false
+        }, {
+            "pass2",
+            'X',
+            " -X  --pass2             Additional Options: 2nd pass video encoding",
+            true,
+            "",
+            false
+        }, {
+            "statistics",
+            's',
+            " -s  --statistics        Statistic file for multi pass video encoding",
+            true,
+            "",
+            false
+        }, {
+            "gop",
+            'g',
+            " -g  --gop               GOP Size",
+            true,
+            "",
+            false
+        }, {
+            "scenecut",
+            'c',
+            " -c  --scenecut          Scenecut sensitivity",
+            true,
+            "",
+            false
+        }, {
+            "profile",
+            'p',
+            " -p  --profile           h.264 profile",
+            true,
+            "",
+            false
+        }, {
+            "preset",
+            'P',
+            " -P  --preset            x264 preset",
+            true,
+            "",
+            false
+        }
+    }
+};
+
+static DASHOption::DASHOptsList FFMPEGAACOptions =
+{
+    "FFMPEG-AAC options:",
+    {
+        {
+            "audio-quality",
+            'a',
+            " -a  --audio-quality     Audio qualities (see config file)",
+            true,
+            "",
+            false
+        }, {
+            "audio-input",
+            'I',
+            " -I  --audio-input       Audio source",
+            true,
+            "",
+            false
+        }, {
+            "audio-codec",
+            'C',
+            " -C  --audio-codec       Audio codec",
+            true,
+            "",
+            false
+        }
+    }
+};
+
+static DASHOption::DASHOptsList MP4BoxOptions =
+{
+    "MP4Box options:",
+    {
+         {
+            "segment-name",
+            'N',
+            " -N  --segment-name      DASH segment name",
+            true,
+            "",
+            false
+        }, {
+            "fragment-size",
+            'f',
+            " -f  --fragment-size     Fragment size in seconds",
+            true,
+            "",
+            false
+        }, {
+            "segment-size",
+            'S',
+            " -S  --segment-size      DASH segment size in seconds",
+            true,
+            "",
+            false
+        }, {
+            "folder-prefix",
+            'F',
+            " -F  --folder-prefix     Represenation folder prefix",
+            true,
+            "",
+            false
+        }, {
+            "mux-combi",
+            'M',
+            " -M  --mux-combi         A/V muxing combinations",
+            false,
+            "",
+            false
+        }, {
+            "rap-aligned",
+            'r',
+            " -r  --rap-aligned       Muliplexing at GOP boundaries",
+            true,
+            "",
+            true
+        }
+    }
+};
+
+static DASHOption::DASHOptsList MPDOptions =
+{
+    "MPD options:",
+    {
+        {
+            "mpd-name",
+            'm',
+            " -m  --mpd-name          MPD name",
+            true,
+            "",
+            false
+        }, {
+            "url-root",
+            'u',
+            " -u  --url-root          Base url",
+            true,
+            "",
+            false
+        }, {
+            "set-base-url",
+            'J',
+            " -J  --set-base-url      Use the base url",
+            false,
+            "",
+            true
+        }, {
+            "transform-mpd",
+            't',
+            " -t  --transform-mpd     Transform MPD to act standard",
+            false,
+            "",
+            true
+        }, {
+            "duration",
+            'T',
+            " -T  --duration          Content duration for MPD",
+            true,
+            "transform-mpd",
+            false
+        }, {
+            "mpdActStandardPostfix",
+            'a',
+            " -a  --mpdActStandardPostfix ",
+            true,
+            "transform-mpd",
+            false
+        }, {
+            "minBufferTime",
+            'B',
+            " -B  --minBufferTime     Minimum Buffer in MPD",
+            true,
+            "transform-mpd",
+            false
+        }, {
+            "segDuration",
+            'e',
+            " -e  --segDuration       Segment Duration for MPD",
+            true,
+            "transform-mpd",
+            false
+        }
+    }
+};
 
 int main(int argc, char* argv[])
 {
-    std::cout << "==========DASH ENCODER===============\n";
+    std::vector<string> mandatory;
+    std::vector<string>::iterator option;
 
-    parse(argc, argv);
-    doDash();
-    return 0;
-}
-
-void parse(int argc, char* argv[])
-{
-    AnyOption *opt = new AnyOption();
+    opt = new AnyOption();
+    DASHOpt = new DASHOption(opt);
 
     /* COMMAND LINE PREFERENCES  */
     opt->setVerbose(); /* print warnings about unknown options */
     opt->autoUsagePrint(true); /* print usage for bad options */
 
-    /* SET THE USAGE/HELP   */
-    setHelp(opt);
+    DASHOpt->addOptions(&generalOptions, opt);
+    DASHOpt->addOptions(&x264Options, opt);
+    DASHOpt->addOptions(&FFMPEGAACOptions, opt);
+    DASHOpt->addOptions(&MP4BoxOptions, opt);
+    DASHOpt->addOptions(&MPDOptions, opt);
 
-    /* SET THE OPTION STRINGS/CHARACTERS */
-    setOptions(opt);
+    parse(argc, argv);
+
+    /* Only Need help? */
+    if (opt->getFlag("help")) {
+        opt->printUsage();
+        return 0;
+    }
+
+    /*
+     * check if the minimum set of options/flag require for the application
+     * to run are provided
+     */
+    DASHOpt->checkMandatory(&generalOptions, opt, &mandatory);
+    DASHOpt->checkMandatory(&x264Options, opt, &mandatory);
+    DASHOpt->checkMandatory(&FFMPEGAACOptions, opt, &mandatory);
+    DASHOpt->checkMandatory(&MP4BoxOptions, opt, &mandatory);
+    DASHOpt->checkMandatory(&MPDOptions, opt, &mandatory);
+
+    if (!mandatory.empty()) {
+
+        std::cout << "\nDASHEncoder requires at least following options to be able to run."
+                  << " Please, make sure they are provided:\n" << endl;
+
+        for (option = mandatory.begin(); option != mandatory.end(); ++option) {
+            std::cout << " --" << *option << endl;
+        }
+
+        std::cout << endl;
+
+        return 1;
+    }
+
+    /* Generate DASH */
+    doDash();
+
+    delete opt;
+    delete DASHOpt;
+
+    return 0;
+}
+
+void parse(int argc, char* argv[])
+{
 
     /* PROCESS THE RESOURCE FILE */
     opt->processFile("./DASHEncoder.config");
@@ -48,12 +387,11 @@ void parse(int argc, char* argv[])
     /* PROCESS THE COMMANDLINE */
     opt->processCommandArgs(argc, argv);
 
-    /* Only Need help? */
-    if (opt->getFlag("help"))
-        opt->printUsage();
 }
 
 void doDash(void) {
+
+    std::cout << "==========DASH ENCODER===============\n";
     /* Run DASH Encoding */
 
     EncoderFactory* encoder_factory= new EncoderFactory();
@@ -442,98 +780,8 @@ void doDash(void) {
 
     std::cout << "\nFINISHED\n";
 
-    delete opt;
-
     free(c1);
     free(c2);
-}
-
-void setHelp(AnyOption* opt)
-{
-    opt->addUsage("");
-    opt->addUsage("Usage: ");
-    opt->addUsage("");
-    opt->addUsage(" -h  --help              Print help ");
-    opt->addUsage(" -i  --input             Input file");
-    opt->addUsage(" -x  --pass1             Additional Options: 1st pass video encoding");
-    opt->addUsage(" -X  --pass2             Additional Options: 2nd pass video encoding");
-    opt->addUsage(" -b  --bitrate           Video bitrates (exmaple: see config file)");
-    opt->addUsage(" -s  --statistics        Statistic file for multi pass video encoding");
-    opt->addUsage(" -g  --gop               GOP Size");
-    opt->addUsage(" -c  --scenecut          Scenecut sensitivity");
-    opt->addUsage(" -p  --profile           h.264 profile");
-    opt->addUsage(" -P  --preset            x264 preset");
-    opt->addUsage(" -f  --fragment-size     Fragment size in seconds");
-    opt->addUsage(" -r  --rap-aligned       Muliplexing at GOP boundaries");
-    opt->addUsage(" -o  --store-psnr        Store PSNR statistics to database");
-    opt->addUsage(" -N  --segment-name      DASH segment name");
-    opt->addUsage(" -S  --segment-size      DASH segment size in seconds");
-    opt->addUsage(" -F  --folder-prefix     Represenation folder prefix");
-    opt->addUsage(" -d  --dest-directory    Destination directory");
-    opt->addUsage(" -m  --mpd-name          MPD name");
-    opt->addUsage(" -u  --url-root          Base url");
-    opt->addUsage(" -a  --audio-quality     Audio qualities (see config file)");
-    opt->addUsage(" -I  --audio-input       Audio source");
-    opt->addUsage(" -C  --audio-codec       Audio codec");
-    opt->addUsage(" -M  --mux-combi         A/V muxing combinations");
-    opt->addUsage(" -V  --video-encoder     Video encoder");
-    opt->addUsage(" -A  --audio-encoder     Audio encoder");
-    opt->addUsage(" -R  --multiplexer       Multiplexing tool");
-    opt->addUsage(" -K  --const-filesize    Encode using constant filesize");
-    opt->addUsage(" -k  --passes            Encoding passes");
-    opt->addUsage(" -D  --add-non-segmented Generate also non-segmented version");
-    opt->addUsage(" -J  --set-base-url      Use the base url");
-    opt->addUsage(" -G  --use-ffmpeg-pipe   FFMPEG input conversion pipe");
-    opt->addUsage(" -g  --ffmpeg-opt        Additional FFMPEG options");
-    opt->addUsage(" -I  --input-res         Resolution of input video");
-    opt->addUsage(" -t  --transform-mpd     Transform MPD to act standard");
-    opt->addUsage(" -T  --duration          Content duration for MPD");
-    opt->addUsage(" -a  --mpdActStandardPostfix ");
-    opt->addUsage(" -B  --minBufferTime     Minimum Buffer in MPD");
-    opt->addUsage(" -e  --segDuration       Segment Duration for MPD");
-    opt->addUsage("");
-}
-
-void setOptions(AnyOption* opt)
-{
-    opt->setFlag("help", 'h');
-    opt->setOption("input", 'i');
-    opt->setOption("pass1", 'x');
-    opt->setOption("pass2", 'X');
-    opt->setOption("bitrate", 'b');
-    opt->setOption("statistics", 's');
-    opt->setOption("gop", 'g');
-    opt->setOption("scenecut", 'c');
-    opt->setOption("profile", 'p');
-    opt->setOption("preset", 'P');
-    opt->setOption("fragment-size", 'f');
-    opt->setFlag("rap-aligned", 'r');
-    opt->setFlag("store-psnr", 'o');
-    opt->setOption("segment-name", 'N');
-    opt->setOption("segment-size", 'S');
-    opt->setOption("folder-prefix", 'F');
-    opt->setOption("dest-directory", 'd');
-    opt->setOption("mpd-name", 'm');
-    opt->setOption("url-root", 'u');
-    opt->setOption("audio-quality", 'a');
-    opt->setOption("audio-input", 'I');
-    opt->setOption("audio-codec", 'C');
-    opt->setOption("mux-combi", 'M');
-    opt->setOption("video-encoder", 'V');
-    opt->setOption("audio-encoder", 'A');
-    opt->setOption("multiplexer", 'R');
-    opt->setOption("const-filesize", 'K');
-    opt->setOption("passes", 'k');
-    opt->setFlag("add-non-segmented", 'D');
-    opt->setFlag("set-base-url", 'J');
-    opt->setFlag("use-ffmpeg-pipe", 'G');
-    opt->setOption("ffmpeg-opt", 'g');
-    opt->setOption("input-res", 'I');
-    opt->setFlag("transform-mpd", 't');
-    opt->setOption("duration", 'T');
-    opt->setOption("mpdActStandardPostfix", 'a');
-    opt->setOption("minBufferTime", 'B');
-    opt->setOption("segDuration", 'e');
 }
 
 IEncoder::EncoderType getEncoder(std::string e){
