@@ -1,4 +1,5 @@
 #include "AnyOption.h"
+#include "DASHOption.h"
 #include "multiplexer/MP4BoxMultiplexer.h"
 #include "encoder/IEncoder.h"
 #include "encoder/AbstractAudioEncoder.h"
@@ -10,43 +11,156 @@
 #include <iostream>
 #include <fstream>
 #include <map>
-//#include "mysql/mysql.h"
 
 void parse(int argc, char* argv[]);
-void setHelp(AnyOption*);
-void setOptions(AnyOption*);
+void doDash(void);
 IEncoder::EncoderType getEncoder(std::string);
 int convertMPD(std::string input, std::string output, std::string duration, std::string baseurl, std::string minbuffer, std::string segduration);
 
 AnyOption *opt;
+DASHOption *DASHOpt;
+
+static DASHOption::DASHOptsList generalOptions = {
+    "General options:",
+    {
+        {"help",              'h', OPTIONAL_ARG,  "", FLAG,   HELP("Print help")                         },
+        {"input",             'i', MANDATORY_ARG, "", OPTION, HELP("Input file")                         },
+        {"dest-directory",    'd', MANDATORY_ARG, "", OPTION, HELP("Destination directory")              },
+        {"video-encoder",     'V', MANDATORY_ARG, "", OPTION, HELP("Video encoder")                      },
+        {"audio-encoder",     'A', MANDATORY_ARG, "", OPTION, HELP("Audio encoder")                      },
+        {"multiplexer",       'R', OPTIONAL_ARG,  "", OPTION, HELP("Multiplexing tool")                  },
+        {"add-non-segmented", 'D', OPTIONAL_ARG,  "", FLAG,   HELP("Generate also non-segmented version")},
+        {"use-ffmpeg-pipe",   'G', OPTIONAL_ARG,  "", FLAG,   HELP("FFMPEG input conversion pipe")       },
+        {"ffmpeg-opt",        'g', MANDATORY_ARG, "", OPTION, HELP("Additional FFMPEG options")          },
+        {"input-res",         'I', MANDATORY_ARG, "", OPTION, HELP("Resolution of input video")          },
+        {"const-filesize",    'K', OPTIONAL_ARG,  "", OPTION, HELP("Encode using constant filesize")     }
+    }
+};
+
+static DASHOption::DASHOptsList x264Options = {
+    "x264 options:",
+    {
+        {"bitrate",    'b', MANDATORY_ARG, "", OPTION, HELP("Video bitrates (exmaple: see config file)")   },
+        {"passes",     'k', MANDATORY_ARG, "", OPTION, HELP("Encoding passes")                             },
+        {"pass1",      'x', MANDATORY_ARG, "", OPTION, HELP("Additional Options: 1st pass video encoding") },
+        {"pass2",      'X', MANDATORY_ARG, "", OPTION, HELP("Additional Options: 2nd pass video encoding") },
+        {"statistics", 's', MANDATORY_ARG, "", OPTION, HELP("Statistic file for multi pass video encoding")},
+        {"gop",        'g', MANDATORY_ARG, "", OPTION, HELP("GOP Size")                                    },
+        {"scenecut",   'c', MANDATORY_ARG, "", OPTION, HELP("Scenecut sensitivity")                        },
+        {"profile",    'p', MANDATORY_ARG, "", OPTION, HELP("h.264 profile")                               },
+        {"preset",     'P', MANDATORY_ARG, "", OPTION, HELP("x264 preset")                                 }
+    }
+};
+
+static DASHOption::DASHOptsList FFMPEGAACOptions = {
+    "FFMPEG-AAC options:",
+    {
+        {"audio-quality", 'a', MANDATORY_ARG, "", OPTION, HELP("Audio qualities (see config file)")},
+        {"audio-input",   'I', MANDATORY_ARG, "", OPTION, HELP("Audio source")                     },
+        {"audio-codec",   'C', MANDATORY_ARG, "", OPTION, HELP("Audio codec")                      }
+    }
+};
+
+static DASHOption::DASHOptsList MP4BoxOptions = {
+    "MP4Box options:",
+    {
+         {"segment-name",  'N', MANDATORY_ARG, "", OPTION, HELP("DASH segment name")            },
+         {"fragment-size", 'f', MANDATORY_ARG, "", OPTION, HELP("Fragment size in seconds")     },
+         {"segment-size",  'S', MANDATORY_ARG, "", OPTION, HELP("DASH segment size in seconds") },
+         {"folder-prefix", 'F', MANDATORY_ARG, "", OPTION, HELP("Represenation folder prefix")  },
+         {"mux-combi",     'M', OPTIONAL_ARG,  "", OPTION, HELP("A/V muxing combinations")      },
+         {"rap-aligned",   'r', MANDATORY_ARG, "", FLAG,   HELP("Muliplexing at GOP boundaries")}
+    }
+};
+
+static DASHOption::DASHOptsList MPDOptions = {
+    "MPD options:",
+    {
+        {"mpd-name",              'm', MANDATORY_ARG, "",              OPTION, HELP("MPD name")                     },
+        {"url-root",              'u', MANDATORY_ARG, "",              OPTION, HELP("Base url")                     },
+        {"set-base-url",          'J', OPTIONAL_ARG,  "",              FLAG,   HELP("Use the base url")             },
+        {"transform-mpd",         't', OPTIONAL_ARG,  "",              FLAG,   HELP("Transform MPD to act standard")},
+        {"duration",              'T', MANDATORY_ARG, "",              OPTION, HELP("Content duration for MPD")     },
+        {"mpdActStandardPostfix", 'a', MANDATORY_ARG, "transform-mpd", OPTION, HELP("")                             },
+        {"minBufferTime",         'B', MANDATORY_ARG, "transform-mpd", OPTION, HELP("Minimum Buffer in MPD")        },
+        {"segDuration",           'e', MANDATORY_ARG, "transform-mpd", OPTION, HELP("Segment Duration for MPD")     }
+    }
+};
 
 int main(int argc, char* argv[])
 {
-    parse(argc, argv);
-    return 0;
-}
+    std::vector<string> mandatory;
+    std::vector<string>::iterator option;
 
-void parse(int argc, char* argv[])
-{
-    std::cout << "==========DASH ENCODER===============\n";
-    AnyOption *opt = new AnyOption();
+    opt = new AnyOption();
+    DASHOpt = new DASHOption(opt);
 
     /* COMMAND LINE PREFERENCES  */
     opt->setVerbose(); /* print warnings about unknown options */
     opt->autoUsagePrint(true); /* print usage for bad options */
 
-    /* SET THE USAGE/HELP   */
-    setHelp(opt);
+    DASHOpt->addOptions(&generalOptions, opt);
+    DASHOpt->addOptions(&x264Options, opt);
+    DASHOpt->addOptions(&FFMPEGAACOptions, opt);
+    DASHOpt->addOptions(&MP4BoxOptions, opt);
+    DASHOpt->addOptions(&MPDOptions, opt);
 
-    /* SET THE OPTION STRINGS/CHARACTERS */
+    parse(argc, argv);
 
-    setOptions(opt);
+    /* Only Need help? */
+    if (opt->getFlag("help")) {
+        opt->printUsage();
+        return 0;
+    }
+
+    /*
+     * check if the minimum set of options/flag required for the application
+     * to run are provided
+     */
+    DASHOpt->checkMandatory(&generalOptions, opt, &mandatory);
+    DASHOpt->checkMandatory(&x264Options, opt, &mandatory);
+    DASHOpt->checkMandatory(&FFMPEGAACOptions, opt, &mandatory);
+    DASHOpt->checkMandatory(&MP4BoxOptions, opt, &mandatory);
+    DASHOpt->checkMandatory(&MPDOptions, opt, &mandatory);
+
+    if (!mandatory.empty()) {
+
+        std::cout << "DASHEncoder:"
+                  << "\nFollowing options are missing:\n" << endl;
+
+        for (option = mandatory.begin(); option != mandatory.end(); ++option) {
+            std::cout << " --" << *option << endl;
+        }
+
+        std::cout << "\nPlease, make sure they are provided." << endl
+                  << endl;
+
+        return 1;
+    }
+
+    /* Generate DASH */
+    doDash();
+
+    delete opt;
+    delete DASHOpt;
+
+    return 0;
+}
+
+void parse(int argc, char* argv[])
+{
 
     /* PROCESS THE RESOURCE FILE */
     opt->processFile("./DASHEncoder.config");
+
     /* PROCESS THE COMMANDLINE */
     opt->processCommandArgs(argc, argv);
 
+}
+
+void doDash(void) {
+
+    std::cout << "==========DASH ENCODER===============\n";
     /* Run DASH Encoding */
 
     EncoderFactory* encoder_factory= new EncoderFactory();
@@ -63,18 +177,6 @@ void parse(int argc, char* argv[])
 
     std::map<int, std::string> audio_files;
     std::map<int, int> av_mux_mapping;
-
-    /* MySQL Support Disabled
-
-    MYSQL_RES *result;
-
-    MYSQL_ROW row;
-
-    MYSQL *connection, mysql;
-
-    */
-
-    int state;
 
     m->setFragSize(atoi(opt->getValue("fragment-size")));
     m->setRAPAligned(opt->getFlag("rap-aligned"));
@@ -317,71 +419,6 @@ void parse(int argc, char* argv[])
             system(folder.c_str());
         }
 
-        /************ STORE STATISTICS *********************/
-/* MySQL Support Disabled
-        if(opt->getFlag("store-psnr")){
-
-           mysql_init(&mysql);
-
-           mysql_options(&mysql, MYSQL_READ_DEFAULT_FILE,  "/opt/lampp/etc/my.cnf");
-           //mysql_options(&mysql, MYSQL_OPT_SSL_VERIFY_SERVER_CERT, "/etc/ssl/certs/ComodoIntermediate.pem");
-           //mysql_ssl_set(&mysql, NULL, NULL, "/etc/ssl/certs/ComodoIntermediate.pem",NULL, NULL);
-
-           connection = mysql_real_connect(&mysql,opt->getValue("sql-host"),opt->getValue("sql-user"),opt->getValue("sql-pw"),opt->getValue("sql-database"),0,0,0);
-
-           if (connection == NULL)
-           {
-               std::cout << "MySQL Error: " << mysql_error(&mysql) << "\n";
-               return ;
-           }
-           infile.open("out.txt", ifstream::in);
-
-           act_rep = "";
-           std::string query;
-           int posStart;
-           int posEnd;
-
-           if (infile.is_open())
-           {
-               while (infile.good())
-               {
-                   getline(infile, act_line);
-                   if(act_line.find("x264 [debug]: frame=") != std::string::npos){
-                       //std::cout << act_line << "\n";
-                       query = "INSERT INTO frames (framenr, type, ypsnr,upsnr, vpsnr, representation) Values (";
-
-                       posStart = act_line.find("frame=")+6;
-                       query.append(act_line.substr(posStart,  act_line.find("QP")-posStart));
-                       query.append(", \"");
-
-                       query.append(act_line.substr(act_line.find("Slice:")+6, 1));
-                       query.append("\", ");
-
-                       posStart = act_line.find("Y:")+2;
-                       query.append(act_line.substr(posStart,  act_line.find("U:")-posStart));
-                       query.append(", ");
-
-                       posStart = act_line.find("U:")+2;
-                       query.append(act_line.substr(posStart,  act_line.find("V:")-posStart));
-                       query.append(", ");
-
-                       query.append(act_line.substr(act_line.find("V:")+2));
-                       query.append(", \"");
-
-                       query.append(foldername);
-                       query.append("\")");
-                       //std::cout << "\n" << query;
-                       mysql_query(connection, query.c_str());
-                   }
-               }
-               std::cout << "PSNR data stored in MySQL database!";
-               infile.close();
-           }
-           else
-               cout << "Error: Unable to open Log file!";
-        }
-
-*/
         /************ MULTIPLEXING & SEGMENTATION **************/
 
         h264new = opt->getValue("dest-directory");
@@ -509,103 +546,11 @@ void parse(int argc, char* argv[])
             convertMPD(exp_nameNonSeg.c_str(), opt->getValue("mpdActStandardPostfix"),  opt->getValue("duration"), opt->getValue("url-root"),opt->getValue("minBufferTime"), opt->getValue("segDuration"));
         }
     }
-    std::cout << "\nFINISHED\n";
-    delete opt;
-}
 
-void setHelp(AnyOption* opt)
-{
-    opt->addUsage("");
-    opt->addUsage("Usage: ");
-    opt->addUsage("");
-    opt->addUsage(" -h  --help              Print help ");
-    opt->addUsage(" -i  --input             Input file");
-    opt->addUsage(" -x  --pass1             Additional Options: 1st pass video encoding");
-    opt->addUsage(" -X  --pass2             Additional Options: 2nd pass video encoding");
-    opt->addUsage(" -b  --bitrate           Video bitrates (exmaple: see config file)");
-    opt->addUsage(" -s  --statistics        Statistic file for multi pass video encoding");
-    opt->addUsage(" -g  --gop               GOP Size");
-    opt->addUsage(" -c  --scenecut          Scenecut sensitivity");
-    opt->addUsage(" -p  --profile           h.264 profile");
-    opt->addUsage(" -P  --preset            x264 preset");
-    opt->addUsage(" -f  --fragment-size     Fragment size in seconds");
-    opt->addUsage(" -r  --rap-aligned       Muliplexing at GOP boundaries");
-    opt->addUsage(" -o  --store-psnr        Store PSNR statistics to database");
-    opt->addUsage(" -y  --sql-host          MySQL host");
-    opt->addUsage(" -z  --sql-user          MySQL user");
-    opt->addUsage(" -Z  --sql-pw            MySQL password");
-    opt->addUsage(" -Y  --sql-database      MySQL database");
-    opt->addUsage(" -N  --segment-name      DASH segment name");
-    opt->addUsage(" -S  --segment-size      DASH segment size in seconds");
-    opt->addUsage(" -F  --folder-prefix     Represenation folder prefix");
-    opt->addUsage(" -d  --dest-directory    Destination directory");
-    opt->addUsage(" -m  --mpd-name          MPD name");
-    opt->addUsage(" -u  --url-root          Base url");
-    opt->addUsage(" -a  --audio-quality     Audio qualities (see config file)");
-    opt->addUsage(" -I  --audio-input       Audio source");
-    opt->addUsage(" -C  --audio-codec       Audio codec");
-    opt->addUsage(" -M  --mux-combi         A/V muxing combinations");
-    opt->addUsage(" -V  --video-encoder     Video encoder");
-    opt->addUsage(" -A  --audio-encoder     Audio encoder");
-    opt->addUsage(" -R  --multiplexer       Multiplexing tool");
-    opt->addUsage(" -K  --const-filesize    Encode using constant filesize");
-    opt->addUsage(" -k  --passes            Encoding passes");
-    opt->addUsage(" -D  --add-non-segmented Generate also non-segmented version");
-    opt->addUsage(" -J  --set-base-url      Use the base url");
-    opt->addUsage(" -G  --use-ffmpeg-pipe   FFMPEG input conversion pipe");
-    opt->addUsage(" -g  --ffmpeg-opt        Additional FFMPEG options");
-    opt->addUsage(" -I  --input-res         Resolution of input video");
-    opt->addUsage(" -t  --transform-mpd     Transform MPD to act standard");
-    opt->addUsage(" -T  --duration          Content duration for MPD");
-    opt->addUsage(" -a  --mpdActStandardPostfix ");
-    opt->addUsage(" -B  --minBufferTime     Minimum Buffer in MPD");
-    opt->addUsage(" -e  --segDuration       Segment Duration for MPD");
-    opt->addUsage("");
-}
-void setOptions(AnyOption* opt)
-{
-    opt->setFlag("help", 'h');
-    opt->setOption("input", 'i');
-    opt->setOption("pass1", 'x');
-    opt->setOption("pass2", 'X');
-    opt->setOption("bitrate", 'b');
-    opt->setOption("statistics", 's');
-    opt->setOption("gop", 'g');
-    opt->setOption("scenecut", 'c');
-    opt->setOption("profile", 'p');
-    opt->setOption("preset", 'P');
-    opt->setOption("fragment-size", 'f');
-    opt->setFlag("rap-aligned", 'r');
-    opt->setFlag("store-psnr", 'o');
-    opt->setOption("segment-name", 'N');
-    opt->setOption("segment-size", 'S');
-    opt->setOption("folder-prefix", 'F');
-    opt->setOption("dest-directory", 'd');
-    opt->setOption("mpd-name", 'm');
-    opt->setOption("url-root", 'u');
-    opt->setOption("audio-quality", 'a');
-    opt->setOption("audio-input", 'I');
-    opt->setOption("audio-codec", 'C');
-    opt->setOption("mux-combi", 'M');
-    opt->setOption("video-encoder", 'V');
-    opt->setOption("audio-encoder", 'A');
-    opt->setOption("multiplexer", 'R');
-    opt->setOption("const-filesize", 'K');
-    opt->setOption("passes", 'k');
-    opt->setOption("sql-host", 'y');
-    opt->setOption("sql-user", 'z');
-    opt->setOption("sql-pw", 'Z');
-    opt->setOption("sql-database", 'Y');
-    opt->setFlag("add-non-segmented", 'D');
-    opt->setFlag("set-base-url", 'J');
-    opt->setFlag("use-ffmpeg-pipe", 'G');
-    opt->setOption("ffmpeg-opt", 'g');
-    opt->setOption("input-res", 'I');
-    opt->setFlag("transform-mpd", 't');
-    opt->setOption("duration", 'T');
-    opt->setOption("mpdActStandardPostfix", 'a');
-    opt->setOption("minBufferTime", 'B');
-    opt->setOption("segDuration", 'e');
+    std::cout << "\nFINISHED\n";
+
+    free(c1);
+    free(c2);
 }
 
 IEncoder::EncoderType getEncoder(std::string e){
@@ -618,6 +563,7 @@ IEncoder::EncoderType getEncoder(std::string e){
 
     return IEncoder::x264;
 }
+
 int convertMPD(std::string input, std::string output, std::string duration, std::string baseurl, std::string minbuffer, std::string segduration){
     std::cout << "\nConvert the to act DASH standard: " << input << "\nto: " << output << "\n";
 

@@ -47,7 +47,7 @@ We kindly ask you to refer the following paper in any publication mentioning DAS
 Stefan Lederer, Christopher Müller and Christian Timmerer, “Dynamic Adaptive Streaming over HTTP Dataset”, In Proceedings of the ACM Multimedia Systems Conference 2012, Chapel Hill, North Carolina, February 22-24, 2012. [[PDF]](http://www-itec.uni-klu.ac.at/bib/files/p89-lederer.pdf)
 
 ### Support or Contact
-Having trouble? Check out the documentation at [http://dash.itec.aau.at](http://www-itec.uni-klu.ac.at/dash/?page_id=282). We also offer professional services via [www.bitmovin.net](http://www.bitmovin.net), so you are warmly invited to contact sales@bitmovin.net and we’ll get in touch with you.
+Having trouble? Check out the documentation at [http://dash.itec.aau.at](http://www-itec.uni-klu.ac.at/dash/?page_id=282). We also offer professional services via [www.bitmovin.com](http://www.bitmovin.com), so you are warmly invited to contact sales@bitmovin.com and we’ll get in touch with you.
 
 
 [![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/slederer/dashencoder/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
