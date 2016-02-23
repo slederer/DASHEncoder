@@ -27,16 +27,22 @@
 #include "AnyOption.h"
 #include <vector>
 
+#define MANDATORY_ARG true
+#define OPTIONAL_ARG  false
+#define FLAG          true
+#define OPTION        false
+#define HELP(X)       X
+
 class DASHOption
 {
 	public:
 		typedef struct DASHOpt {
 			std::string name;
 			const char shortName;
-			std::string help;
 			bool isMandatory;
 			std::string condition;
 			bool isFlag;
+			std::string help;
 		} DASHOpt;
 
 		typedef struct DASHOptsList {
@@ -44,11 +50,16 @@ class DASHOption
 			vector<DASHOpt> options;
 		} DASHOptsList;
 
+		std::vector<string> usage;
+
 		DASHOption(AnyOption *opt);
 		~DASHOption();
 
 		void addOptions(DASHOptsList *list, AnyOption *opt);
 		void checkMandatory(DASHOptsList *list, AnyOption *opt, vector<string> *mandatory);
+
+	protected:
+		void buildUsageString(std::string name, const char shortName, std::string help);
 };
 
  #endif /* DASHOPTION_H_ */

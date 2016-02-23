@@ -20,302 +20,70 @@ int convertMPD(std::string input, std::string output, std::string duration, std:
 AnyOption *opt;
 DASHOption *DASHOpt;
 
-static DASHOption::DASHOptsList generalOptions =
-{
+static DASHOption::DASHOptsList generalOptions = {
     "General options:",
     {
-        {
-            "help",
-            'h',
-            " -h  --help              Print help",
-            false,
-            "",
-            true
-        }, {
-            "input",
-            'i',
-            " -i  --input             Input file",
-            true,
-            "",
-            false
-        }, {
-            "dest-directory",
-            'd',
-            " -d  --dest-directory    Destination directory",
-            true,
-            "",
-            false
-        }, {
-            "video-encoder",
-            'V',
-            " -V  --video-encoder     Video encoder",
-            true,
-            "",
-            false
-        }, {
-            "audio-encoder",
-            'A',
-            " -A  --audio-encoder     Audio encoder",
-            true,
-            "",
-            false
-        }, {
-            "multiplexer",
-            'R',
-            " -R  --multiplexer       Multiplexing tool",
-            false,
-            "",
-            false
-        }, {
-            "add-non-segmented",
-            'D',
-            " -D  --add-non-segmented Generate also non-segmented version",
-            false,
-            "",
-            true
-        }, {
-            "use-ffmpeg-pipe",
-            'G',
-            " -G  --use-ffmpeg-pipe   FFMPEG input conversion pipe",
-            false,
-            "",
-            true
-        }, {
-            "ffmpeg-opt",
-            'g',
-            " -g  --ffmpeg-opt        Additional FFMPEG options",
-            true,
-            "use-ffmpeg-pipe",
-            false
-        }, {
-            "input-res",
-            'I',
-            " -I  --input-res         Resolution of input video",
-            true,
-            "",
-            false
-        }, {
-            "const-filesize",
-            'K',
-            " -K  --const-filesize    Encode using constant filesize",
-            false,
-            "",
-            false
-        }
+        {"help",              'h', OPTIONAL_ARG,  "", FLAG,   HELP("Print help")                         },
+        {"input",             'i', MANDATORY_ARG, "", OPTION, HELP("Input file")                         },
+        {"dest-directory",    'd', MANDATORY_ARG, "", OPTION, HELP("Destination directory")              },
+        {"video-encoder",     'V', MANDATORY_ARG, "", OPTION, HELP("Video encoder")                      },
+        {"audio-encoder",     'A', MANDATORY_ARG, "", OPTION, HELP("Audio encoder")                      },
+        {"multiplexer",       'R', OPTIONAL_ARG,  "", OPTION, HELP("Multiplexing tool")                  },
+        {"add-non-segmented", 'D', OPTIONAL_ARG,  "", FLAG,   HELP("Generate also non-segmented version")},
+        {"use-ffmpeg-pipe",   'G', OPTIONAL_ARG,  "", FLAG,   HELP("FFMPEG input conversion pipe")       },
+        {"ffmpeg-opt",        'g', MANDATORY_ARG, "", OPTION, HELP("Additional FFMPEG options")          },
+        {"input-res",         'I', MANDATORY_ARG, "", OPTION, HELP("Resolution of input video")          },
+        {"const-filesize",    'K', OPTIONAL_ARG,  "", OPTION, HELP("Encode using constant filesize")     }
     }
 };
 
-static DASHOption::DASHOptsList x264Options =
-{
+static DASHOption::DASHOptsList x264Options = {
     "x264 options:",
     {
-        {
-            "bitrate",
-            'b',
-            " -b  --bitrate           Video bitrates (exmaple: see config file)",
-            true,
-            "",
-            false
-        }, {
-           "passes",
-            'k',
-            " -k  --passes            Encoding passes",
-            true,
-            "",
-            false
-        }, {
-            "pass1",
-            'x',
-            " -x  --pass1             Additional Options: 1st pass video encoding",
-            true,
-            "",
-            false
-        }, {
-            "pass2",
-            'X',
-            " -X  --pass2             Additional Options: 2nd pass video encoding",
-            true,
-            "",
-            false
-        }, {
-            "statistics",
-            's',
-            " -s  --statistics        Statistic file for multi pass video encoding",
-            true,
-            "",
-            false
-        }, {
-            "gop",
-            'g',
-            " -g  --gop               GOP Size",
-            true,
-            "",
-            false
-        }, {
-            "scenecut",
-            'c',
-            " -c  --scenecut          Scenecut sensitivity",
-            true,
-            "",
-            false
-        }, {
-            "profile",
-            'p',
-            " -p  --profile           h.264 profile",
-            true,
-            "",
-            false
-        }, {
-            "preset",
-            'P',
-            " -P  --preset            x264 preset",
-            true,
-            "",
-            false
-        }
+        {"bitrate",    'b', MANDATORY_ARG, "", OPTION, HELP("Video bitrates (exmaple: see config file)")   },
+        {"passes",     'k', MANDATORY_ARG, "", OPTION, HELP("Encoding passes")                             },
+        {"pass1",      'x', MANDATORY_ARG, "", OPTION, HELP("Additional Options: 1st pass video encoding") },
+        {"pass2",      'X', MANDATORY_ARG, "", OPTION, HELP("Additional Options: 2nd pass video encoding") },
+        {"statistics", 's', MANDATORY_ARG, "", OPTION, HELP("Statistic file for multi pass video encoding")},
+        {"gop",        'g', MANDATORY_ARG, "", OPTION, HELP("GOP Size")                                    },
+        {"scenecut",   'c', MANDATORY_ARG, "", OPTION, HELP("Scenecut sensitivity")                        },
+        {"profile",    'p', MANDATORY_ARG, "", OPTION, HELP("h.264 profile")                               },
+        {"preset",     'P', MANDATORY_ARG, "", OPTION, HELP("x264 preset")                                 }
     }
 };
 
-static DASHOption::DASHOptsList FFMPEGAACOptions =
-{
+static DASHOption::DASHOptsList FFMPEGAACOptions = {
     "FFMPEG-AAC options:",
     {
-        {
-            "audio-quality",
-            'a',
-            " -a  --audio-quality     Audio qualities (see config file)",
-            true,
-            "",
-            false
-        }, {
-            "audio-input",
-            'I',
-            " -I  --audio-input       Audio source",
-            true,
-            "",
-            false
-        }, {
-            "audio-codec",
-            'C',
-            " -C  --audio-codec       Audio codec",
-            true,
-            "",
-            false
-        }
+        {"audio-quality", 'a', MANDATORY_ARG, "", OPTION, HELP("Audio qualities (see config file)")},
+        {"audio-input",   'I', MANDATORY_ARG, "", OPTION, HELP("Audio source")                     },
+        {"audio-codec",   'C', MANDATORY_ARG, "", OPTION, HELP("Audio codec")                      }
     }
 };
 
-static DASHOption::DASHOptsList MP4BoxOptions =
-{
+static DASHOption::DASHOptsList MP4BoxOptions = {
     "MP4Box options:",
     {
-         {
-            "segment-name",
-            'N',
-            " -N  --segment-name      DASH segment name",
-            true,
-            "",
-            false
-        }, {
-            "fragment-size",
-            'f',
-            " -f  --fragment-size     Fragment size in seconds",
-            true,
-            "",
-            false
-        }, {
-            "segment-size",
-            'S',
-            " -S  --segment-size      DASH segment size in seconds",
-            true,
-            "",
-            false
-        }, {
-            "folder-prefix",
-            'F',
-            " -F  --folder-prefix     Represenation folder prefix",
-            true,
-            "",
-            false
-        }, {
-            "mux-combi",
-            'M',
-            " -M  --mux-combi         A/V muxing combinations",
-            false,
-            "",
-            false
-        }, {
-            "rap-aligned",
-            'r',
-            " -r  --rap-aligned       Muliplexing at GOP boundaries",
-            true,
-            "",
-            true
-        }
+         {"segment-name",  'N', MANDATORY_ARG, "", OPTION, HELP("DASH segment name")            },
+         {"fragment-size", 'f', MANDATORY_ARG, "", OPTION, HELP("Fragment size in seconds")     },
+         {"segment-size",  'S', MANDATORY_ARG, "", OPTION, HELP("DASH segment size in seconds") },
+         {"folder-prefix", 'F', MANDATORY_ARG, "", OPTION, HELP("Represenation folder prefix")  },
+         {"mux-combi",     'M', OPTIONAL_ARG,  "", OPTION, HELP("A/V muxing combinations")      },
+         {"rap-aligned",   'r', MANDATORY_ARG, "", FLAG,   HELP("Muliplexing at GOP boundaries")}
     }
 };
 
-static DASHOption::DASHOptsList MPDOptions =
-{
+static DASHOption::DASHOptsList MPDOptions = {
     "MPD options:",
     {
-        {
-            "mpd-name",
-            'm',
-            " -m  --mpd-name          MPD name",
-            true,
-            "",
-            false
-        }, {
-            "url-root",
-            'u',
-            " -u  --url-root          Base url",
-            true,
-            "",
-            false
-        }, {
-            "set-base-url",
-            'J',
-            " -J  --set-base-url      Use the base url",
-            false,
-            "",
-            true
-        }, {
-            "transform-mpd",
-            't',
-            " -t  --transform-mpd     Transform MPD to act standard",
-            false,
-            "",
-            true
-        }, {
-            "duration",
-            'T',
-            " -T  --duration          Content duration for MPD",
-            true,
-            "transform-mpd",
-            false
-        }, {
-            "mpdActStandardPostfix",
-            'a',
-            " -a  --mpdActStandardPostfix ",
-            true,
-            "transform-mpd",
-            false
-        }, {
-            "minBufferTime",
-            'B',
-            " -B  --minBufferTime     Minimum Buffer in MPD",
-            true,
-            "transform-mpd",
-            false
-        }, {
-            "segDuration",
-            'e',
-            " -e  --segDuration       Segment Duration for MPD",
-            true,
-            "transform-mpd",
-            false
-        }
+        {"mpd-name",              'm', MANDATORY_ARG, "",              OPTION, HELP("MPD name")                     },
+        {"url-root",              'u', MANDATORY_ARG, "",              OPTION, HELP("Base url")                     },
+        {"set-base-url",          'J', OPTIONAL_ARG,  "",              FLAG,   HELP("Use the base url")             },
+        {"transform-mpd",         't', OPTIONAL_ARG,  "",              FLAG,   HELP("Transform MPD to act standard")},
+        {"duration",              'T', MANDATORY_ARG, "",              OPTION, HELP("Content duration for MPD")     },
+        {"mpdActStandardPostfix", 'a', MANDATORY_ARG, "transform-mpd", OPTION, HELP("")                             },
+        {"minBufferTime",         'B', MANDATORY_ARG, "transform-mpd", OPTION, HELP("Minimum Buffer in MPD")        },
+        {"segDuration",           'e', MANDATORY_ARG, "transform-mpd", OPTION, HELP("Segment Duration for MPD")     }
     }
 };
 
@@ -346,7 +114,7 @@ int main(int argc, char* argv[])
     }
 
     /*
-     * check if the minimum set of options/flag require for the application
+     * check if the minimum set of options/flag required for the application
      * to run are provided
      */
     DASHOpt->checkMandatory(&generalOptions, opt, &mandatory);
@@ -357,14 +125,15 @@ int main(int argc, char* argv[])
 
     if (!mandatory.empty()) {
 
-        std::cout << "\nDASHEncoder requires at least following options to be able to run."
-                  << " Please, make sure they are provided:\n" << endl;
+        std::cout << "DASHEncoder:"
+                  << "\nFollowing options are missing:\n" << endl;
 
         for (option = mandatory.begin(); option != mandatory.end(); ++option) {
             std::cout << " --" << *option << endl;
         }
 
-        std::cout << endl;
+        std::cout << "\nPlease, make sure they are provided." << endl
+                  << endl;
 
         return 1;
     }

@@ -23,6 +23,7 @@
 
 #include "DASHOption.h"
 #include <sstream>
+ #include <iomanip>
 
 DASHOption::DASHOption(AnyOption *opt)
 {
@@ -30,16 +31,31 @@ DASHOption::DASHOption(AnyOption *opt)
     opt->addUsage("");
     opt->addUsage(" * Edit the paramters of the example config file and run:");
     opt->addUsage("");
-    opt->addUsage("     ./DASHEncoder [option]");
+    opt->addUsage("     ./DASHEncoder [options]");
     opt->addUsage("");
     opt->addUsage(" * Or without config file:");
     opt->addUsage("");
-    opt->addUsage("     ./DASHEncoder option");
+    opt->addUsage("     ./DASHEncoder options");
 }
 
 DASHOption::~DASHOption()
 {
 
+}
+
+/**
+ * Build usage string and add it to usage vector
+ * @param name      option/flag name
+ * @param shortName option/flag short name
+ * @param help      option/flag help text
+ */
+void DASHOption::buildUsageString(std::string name, const char shortName, std::string help)
+{
+	std::stringstream ss;
+
+	ss << " -" << shortName << "  --" << std::left << std::setw(25) << std::setfill(' ') << name << help;
+
+	usage.push_back(ss.str());
 }
 
 void DASHOption::addOptions(DASHOptsList *list, AnyOption* opt)
@@ -60,10 +76,18 @@ void DASHOption::addOptions(DASHOptsList *list, AnyOption* opt)
 			opt->setOption(option->name.c_str(), option->shortName);
 		}
 
-		opt->addUsage(option->help.c_str());
+		buildUsageString(option->name, option->shortName, option->help);
+
+		opt->addUsage(usage.back().c_str());
 	}
 }
 
+/**
+ * checks for (potentially) non-provided mandatory options
+ * @param list      Options list
+ * @param opt       Pointer AnyOption object
+ * @param mandatory vector for missing mandatory option names
+ */
 void DASHOption::checkMandatory(DASHOptsList *list, AnyOption* opt, vector<string> *mandatory)
 {
 	std::vector<DASHOpt> options = list->options;
@@ -91,9 +115,9 @@ void DASHOption::checkMandatory(DASHOptsList *list, AnyOption* opt, vector<strin
 				if (opt->getValue(option->condition.c_str()) != NULL ||
 					opt->getFlag(option->condition.c_str())) {
 
-					s.append(" (Depends on --\"");
+					s.append(" (This options is required when --\"");
 					s.append(option->condition);
-					s.append("\")");
+					s.append("\" is set.)");
 
 					if (option->isFlag) {
 
