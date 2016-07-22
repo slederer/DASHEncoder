@@ -1,9 +1,9 @@
 ### Welcome to DASHEncoder
-We (http://dash.itec.aau.at and http://www.bitmovin.net) developed a new content generation tool – on top of GPAC’s MP4Box and x264 – for MPEG-DASH content generation, called DASHEncoder.
+We (http://dash.itec.aau.at and http://www.bitmovin.com) have developed a new content generation tool – on top of GPAC’s MP4Box and x264 – for MPEG-DASH content generation, called DASHEncoder.
 
-Alternatively, it is possible to generate MPEG-DASH and Apple HLS content with the cloud based transcoding service [bitcodin](http://www.bitcodin.com). Visit [www.bitcodin.com](http://www.bitcodin.com) and experience easy access to MPEG-DASH and Apple HLS video transcoding with $ 25 of transcoding credits for free.
+Alternatively, it is possible to generate MPEG-DASH and Apple HLS content with the cloud based transcoding service [Bitmovin](http://www.bitmovin.com). Visit [www.bitmovin.com](http://www.bitmovin.com) and experience easy access to MPEG-DASH and Apple HLS video transcoding with $ 25 of transcoding credits for free.
 
-[![bitcodin](http://www.bitmovin.net/wp-content/uploads/2015/03/General-Try-Now-1024x538.jpg)](http://www.bitcodin.com)
+[![Bitmovin](https://bitmovin.com/wp-content/uploads/2016/07/Encoder-signup.jpg)](http://www.bitmovin.com)
 
 ### How does it work?
 The DASHEncoder steps are depicted here:
@@ -47,8 +47,5 @@ We kindly ask you to refer the following paper in any publication mentioning DAS
 Stefan Lederer, Christopher Müller and Christian Timmerer, “Dynamic Adaptive Streaming over HTTP Dataset”, In Proceedings of the ACM Multimedia Systems Conference 2012, Chapel Hill, North Carolina, February 22-24, 2012. [[PDF]](http://www-itec.uni-klu.ac.at/bib/files/p89-lederer.pdf)
 
 ### Support or Contact
-Having trouble? Check out the documentation at [http://dash.itec.aau.at](http://www-itec.uni-klu.ac.at/dash/?page_id=282). We also offer professional services via [www.bitmovin.net](http://www.bitmovin.net), so you are warmly invited to contact sales@bitmovin.net and we’ll get in touch with you.
-
-
-[![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/slederer/dashencoder/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
+Having trouble? Check out the documentation at [http://dash.itec.aau.at](http://www-itec.uni-klu.ac.at/dash/?page_id=282). We also offer professional services via [www.bitmovin.com/support](https://bitmovin.com/support/), so you are warmly invited to contact sales@bitmovin.com and we’ll get in touch with you.
 
